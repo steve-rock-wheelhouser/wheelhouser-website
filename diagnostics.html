@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Diagnostics — Wheelhouser</title>
+  <style>
+    body{font-family:Inter,system-ui,Arial;background:#071025;color:#dbeafe;padding:20px}
+    h1{margin-bottom:8px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+    .card{background:#0b1230;border-radius:8px;padding:12px;border:1px solid #122235}
+    img{max-width:100%;height:auto;border-radius:6px;display:block;margin:8px 0}
+    .status{font-weight:700}
+    button{padding:8px 12px;border-radius:6px;border:0;background:#0ea5e9;color:#021124;cursor:pointer}
+    a.link{color:#7dd3fc}
+    pre{background:#021124;padding:8px;border-radius:6px;overflow:auto}
+  </style>
+</head>
+<body>
+  <h1>Diagnostics</h1>
+  <p>Use this page to confirm the site is serving images and to inspect SW/cache state.</p>
+
+  <div style="margin-bottom:12px">
+    <button id="refresh">Re-check images</button>
+    <button id="clear-sw">Unregister Service Worker + Clear Caches</button>
+  </div>
+
+  <div id="sw-info" class="card" style="margin-bottom:16px">
+    <strong>Service Worker & Cache</strong>
+    <div id="sw-status">Loading...</div>
+    <div id="cache-keys" style="margin-top:8px"></div>
+  </div>
+
+  <div class="grid" id="images"></div>
+
+  <script>
+  const imgs = [
+    '/assets/images/Product-Images/display-server-hardware-01.png',
+    '/assets/images/Product-Images/display-server-hardware-01.webp',
+    '/assets/images/Designer-Screen-Shots/Designer-Screen-Shot-01.png',
+    '/assets/images/Designer-Screen-Shots/Designer-Screen-Shot-01.webp',
+    '/assets/images/Ad-Images/Marquee-Magic-Ad_06-800.png',
+    '/assets/images/Ad-Images/Marquee-Magic-Ad_06-800.webp',
+    '/images/wheelhouser-icon/resized_icons/wheelhouser-icon_1024x1024.png',
+    '/images/wheelhouser-icon/resized_icons/wheelhouser-icon_1024x1024.webp',
+    '/favicon.png',
+    '/favicon.ico'
+  ];
+
+  function render() {
+    const container = document.getElementById('images');
+    container.innerHTML = '';
+    imgs.forEach((url) => {
+      const card = document.createElement('div'); card.className='card';
+      const title = document.createElement('div'); title.innerHTML = `<a class=link href="${url}" target=_blank>${url}</a>`;
+      const status = document.createElement('div'); status.className='status'; status.textContent = 'Checking...';
+      const wrapper = document.createElement('div');
+      const img = new Image(); img.src = url; img.loading = 'lazy';
+      img.onload = () => status.textContent = 'OK';
+      img.onerror = () => status.textContent = 'ERROR';
+      wrapper.appendChild(img);
+      card.appendChild(title);
+      card.appendChild(status);
+      card.appendChild(wrapper);
+      container.appendChild(card);
+    });
+  }
+
+  async function swInfo(){
+    const el = document.getElementById('sw-status');
+    if ('serviceWorker' in navigator){
+      const regs = await navigator.serviceWorker.getRegistrations();
+      el.textContent = regs.length ? `Registered (${regs.length})` : 'No service worker registrations';
+      // list caches
+      if ('caches' in window){
+        const keys = await caches.keys();
+        document.getElementById('cache-keys').innerHTML = '<strong>Cache keys:</strong><pre>'+keys.join('\n')+'</pre>';
+      }
+    } else {
+      el.textContent = 'Service Worker API not supported';
+    }
+  }
+
+  document.getElementById('refresh').addEventListener('click', ()=>{ render(); swInfo(); });
+  document.getElementById('clear-sw').addEventListener('click', async ()=>{
+    if ('serviceWorker' in navigator){
+      const regs = await navigator.serviceWorker.getRegistrations();
+      for(const r of regs){ await r.unregister(); }
+    }
+    if ('caches' in window){
+      const keys = await caches.keys();
+      for(const k of keys) await caches.delete(k);
+    }
+    alert('Service worker unregistered and caches cleared. Reload the page to fetch fresh assets.');
+    swInfo();
+    render();
+  });
+
+  // initial
+  render(); swInfo();
+  </script>
+
+</body>
+</html>
