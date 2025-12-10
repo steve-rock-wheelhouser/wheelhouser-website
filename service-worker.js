@@ -1,4 +1,4 @@
-const PRECACHE = 'wheelhouser-precache-v2';
+const PRECACHE = 'wheelhouser-precache-v3';
 const RUNTIME = 'wheelhouser-runtime-v1';
 const OFFLINE_URL = '/offline.html';
 
@@ -28,6 +28,10 @@ const PRECACHE_URLS = [
   '/assets/images/Ad-Images/Marquee-Magic-Ad_06-1200.png',
   '/assets/images/Ad-Images/Marquee-Magic-Ad_06-800.png',
   '/assets/images/Ad-Images/Marquee-Magic-Ad_06-480.png'
+  ,'/assets/images/Product-Images/display-server-hardware-01.webp'
+  ,'/assets/images/Product-Images/display-server-hardware-01.png'
+  ,'/assets/images/Designer-Screen-Shots/Designer-Screen-Shot-01.webp'
+  ,'/assets/images/Designer-Screen-Shots/Designer-Screen-Shot-01.png'
 ];
 
 self.addEventListener('install', (event) => {
