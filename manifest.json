@@ -1,0 +1,21 @@
+{
+  "name": "Wheelhouser LLC",
+  "short_name": "Wheelhouser",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "description": "Innovative software solutions and digital signage tools.",
+  "icons": [
+    {
+      "src": "/images/wheelhouser-icon/resized_icons/wheelhouser-icon_512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/wheelhouser-icon/resized_icons/wheelhouser-icon_256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ]
+}

@@ -64,6 +64,9 @@ body {
     margin: 0 auto 40px;
 }
 
+.hero-inner{display:flex;align-items:center;gap:18px;justify-content:center}
+.site-logo{height:64px;width:64px;border-radius:8px;flex:0 0 64px}
+
 /* BUTTONS */
 .btn {
     display: inline-block;
