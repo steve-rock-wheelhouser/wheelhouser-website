@@ -48,7 +48,13 @@
 
     <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="container">
-            <a href="#" class="logo">Wheelhouser LLC</a>
+            <div style="display:flex;gap:12px;align-items:center;">
+                <picture>
+                    <source type="image/webp" srcset="/images/wheelhouser-icon/resized_icons/wheelhouser-icon_64x64.webp 64w, /images/wheelhouser-icon/resized_icons/wheelhouser-icon_32x32.webp 32w">
+                    <img src="/images/wheelhouser-icon/resized_icons/wheelhouser-icon_64x64.png" alt="Wheelhouser logo" style="height:40px;width:40px;">
+                </picture>
+                <a href="#" class="logo">Wheelhouser LLC</a>
+            </div>
             <button id="install-btn" class="install-btn" style="display:none">Install App</button>
             <ul class="nav-links">
                 <li><a href="#marquee">Marquee-Magic</a></li>
