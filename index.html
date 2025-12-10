@@ -11,6 +11,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/images/wheelhouser-icon/resized_icons/wheelhouser-icon_32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/wheelhouser-icon/resized_icons/wheelhouser-icon_16x16.png">
     <link rel="shortcut icon" href="/favicon.png">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="preload" href="/css/style.css" as="style">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/wheelhouser-icon/resized_icons/wheelhouser-icon_512x512.png">
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#000000">
@@ -31,7 +33,10 @@
 
     <header class="hero">
         <div class="container hero-inner">
-            <img src="/images/wheelhouser-icon/resized_icons/wheelhouser-icon_64x64.png" alt="Wheelhouser logo" class="site-logo">
+            <picture>
+                <source type="image/webp" srcset="/images/wheelhouser-icon/resized_icons/wheelhouser-icon_64x64.webp">
+                <img src="/images/wheelhouser-icon/resized_icons/wheelhouser-icon_64x64.png" alt="Wheelhouser logo" class="site-logo" loading="lazy">
+            </picture>
             <div>
                 <h1>Software for the Real World.</h1>
                 <p>We build robust tools for Linux, Windows, and Digital Signage.</p>

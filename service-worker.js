@@ -12,7 +12,15 @@ const PRECACHE_URLS = [
   '/images/wheelhouser-icon/resized_icons/wheelhouser-icon_32x32.png',
   '/images/wheelhouser-icon/resized_icons/wheelhouser-icon_64x64.png',
   '/images/wheelhouser-icon/resized_icons/wheelhouser-icon_256x256.png',
-  '/images/wheelhouser-icon/resized_icons/wheelhouser-icon_512x512.png'
+  '/images/wheelhouser-icon/resized_icons/wheelhouser-icon_512x512.png',
+  '/images/wheelhouser-icon/resized_icons/wheelhouser-icon_16x16.webp',
+  '/images/wheelhouser-icon/resized_icons/wheelhouser-icon_32x32.webp',
+  '/images/wheelhouser-icon/resized_icons/wheelhouser-icon_64x64.webp',
+  '/images/wheelhouser-icon/resized_icons/wheelhouser-icon_128x128.webp',
+  '/images/wheelhouser-icon/resized_icons/wheelhouser-icon_256x256.webp',
+  '/images/wheelhouser-icon/resized_icons/wheelhouser-icon_512x512.webp',
+  '/images/wheelhouser-icon/resized_icons/wheelhouser-icon_1024x1024.webp',
+  '/favicon.ico'
 ];
 
 self.addEventListener('install', (event) => {
@@ -30,6 +38,14 @@ self.addEventListener('activate', (event) => {
       })
     ))).then(() => self.clients.claim())
   );
+});
+
+// Listen for messages from the client (e.g., skip waiting)
+self.addEventListener('message', (event) => {
+  if (!event.data) return;
+  if (event.data.type === 'SKIP_WAITING') {
+    self.skipWaiting();
+  }
 });
 
 self.addEventListener('fetch', (event) => {
