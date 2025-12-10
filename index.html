@@ -3,234 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Wheelhouser LLC - Innovative Software Solutions & Digital Tools">
-    <title>Wheelhouser LLC - Software Solutions</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
-
-        header {
-            background: #000;
-            color: #fff;
-            padding: 80px 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 3.5rem;
-            margin-bottom: 10px;
-            font-weight: 700;
-        }
-
-        header p {
-            font-size: 1.25rem;
-            color: #ccc;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        section {
-            padding: 60px 0;
-            border-bottom: 1px solid #eee;
-        }
-
-        section:last-of-type {
-            border-bottom: none;
-        }
-
-        .section-title {
-            font-size: 2rem;
-            margin-bottom: 30px;
-            color: #000;
-        }
-
-        .product {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            align-items: center;
-            margin-bottom: 60px;
-        }
-
-        .product:nth-child(odd) .product-image {
-            order: 2;
-        }
-
-        .product:nth-child(odd) .product-content {
-            order: 1;
-        }
-
-        .product-image img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            background: #f0f0f0;
-        }
-
-        .product-content h3 {
-            font-size: 1.8rem;
-            margin-bottom: 15px;
-            color: #000;
-        }
-
-        .product-content p {
-            margin-bottom: 20px;
-            color: #555;
-            font-size: 1rem;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 12px 30px;
-            background: #000;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 4px;
-            transition: background 0.3s;
-            border: none;
-            cursor: pointer;
-            font-size: 1rem;
-        }
-
-        .btn:hover {
-            background: #333;
-        }
-
-        .utilities {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-        }
-
-        .utility-card {
-            background: #f9f9f9;
-            padding: 30px;
-            border-radius: 8px;
-            border-left: 4px solid #000;
-        }
-
-        .utility-card h4 {
-            font-size: 1.2rem;
-            margin-bottom: 10px;
-            color: #000;
-        }
-
-        .utility-card p {
-            color: #666;
-            margin-bottom: 15px;
-        }
-
-        .utility-card a {
-            color: #000;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .utility-card a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            background: #000;
-            color: #fff;
-            text-align: center;
-            padding: 30px 20px;
-            margin-top: 60px;
-        }
-
-        footer p {
-            color: #aaa;
-        }
-
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2.5rem;
-            }
-
-            .product {
-                grid-template-columns: 1fr;
-            }
-
-            .product:nth-child(odd) .product-image,
-            .product:nth-child(odd) .product-content {
-                order: unset;
-            }
-
-            .section-title {
-                font-size: 1.5rem;
-            }
-        }
-    </style>
+    <title>Wheelhouser LLC | Software Solutions</title>
+    <meta name="description" content="Innovative software solutions and digital signage tools like Marquee-Magic.">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Wheelhouser LLC</h1>
-        <p>Innovative Software Solutions & Digital Tools</p>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Wheelhouser LLC</a>
+            <ul class="nav-links">
+                <li><a href="#marquee">Marquee-Magic</a></li>
+                <li><a href="#downloads">Downloads</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1>Software for the Real World.</h1>
+            <p>We build robust tools for Linux, Windows, and Digital Signage.</p>
+            <a href="#marquee" class="btn primary-btn">View Marquee-Magic</a>
+        </div>
     </header>
 
-    <main>
-        <div class="container">
-            <section id="products">
-                <h2 class="section-title">Featured Products</h2>
-
-                <div class="product">
-                    <div class="product-image">
-                        <img src="https://placehold.co/500x350/000/fff?text=Marquee+Magic" alt="Marquee Magic - Digital Signage Solution">
-                    </div>
-                    <div class="product-content">
-                        <h3>Marquee-Magic</h3>
-                        <p>The ultimate digital signage solution. Syncs with Google Drive, runs on Linux/Windows, and updates automatically. Manage your displays from anywhere in the world.</p>
-                        <p>Perfect for retail stores, offices, and public spaces that need dynamic, easy-to-manage digital displays.</p>
-                        <a href="#" class="btn">View Features</a>
-                    </div>
+    <section id="marquee" class="product-section">
+        <div class="container split-layout">
+            <div class="product-text">
+                <span class="badge">Flagship Product</span>
+                <h2>Marquee-Magic</h2>
+                <p>The ultimate digital signage solution. Syncs seamlessly with Google Drive, runs on minimal hardware (Raspberry Pi/Linux/Windows), and handles updates automatically.</p>
+                <ul class="feature-list">
+                    <li>✓ Google Drive Integration</li>
+                    <li>✓ Auto-Updating Client</li>
+                    <li>✓ Remote Management</li>
+                </ul>
+                <a href="#" class="btn secondary-btn">Download Installer</a>
+            </div>
+            <div class="product-image">
+                <div class="placeholder-box">
+                    <p>App Screenshot</p>
                 </div>
-            </section>
-
-            <section id="utilities">
-                <h2 class="section-title">Other Utilities & Downloads</h2>
-                <p style="margin-bottom: 40px; color: #666;">Useful tools for developers and system administrators.</p>
-
-                <div class="utilities">
-                    <div class="utility-card">
-                        <h4>Development Tools</h4>
-                        <p>A collection of lightweight utilities designed to streamline your development workflow.</p>
-                        <a href="#">Explore Tools →</a>
-                    </div>
-                    <div class="utility-card">
-                        <h4>System Utilities</h4>
-                        <p>Command-line tools and scripts for system administration and automation tasks.</p>
-                        <a href="#">Browse Utilities →</a>
-                    </div>
-                    <div class="utility-card">
-                        <h4>Documentation</h4>
-                        <p>Comprehensive guides and documentation for all Wheelhouser tools and solutions.</p>
-                        <a href="#">Read Docs →</a>
-                    </div>
-                </div>
-            </section>
+            </div>
         </div>
-    </main>
+    </section>
+
+    <section id="downloads" class="utilities-section">
+        <div class="container">
+            <h2>Developer Utilities</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Icon Resizer</h3>
+                    <p>Simple Python tool to resize images for app development.</p>
+                    <a href="#" class="text-link">Download .zip &rarr;</a>
+                </div>
+                <div class="card">
+                    <h3>Monitor Utility</h3>
+                    <p>System tray tool for managing display outputs on Linux.</p>
+                    <a href="#" class="text-link">Download .zip &rarr;</a>
+                </div>
+                <div class="card">
+                    <h3>Coming Soon</h3>
+                    <p>More tools are currently in development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2025 Wheelhouser LLC. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2025 Wheelhouser LLC. All rights reserved.</p>
+        </div>
     </footer>
-<div class="wp-block-file"><a href="#">Icon-Resizer-Tool.zip</a><a href="#" class="wp-block-file__button wp-element-button" download aria-describedby="wp-block-file--media-b4d6a8f7-9201-443b-8718-4054a433d3c7">Download</a></div>
-</div>
-<div class="wp-block-column">
-<div class="wp-block-file"><a href="#">Monitor-Utility.zip</a><a href="#" class="wp-block-file__button wp-element-button" download aria-describedby="wp-block-file--media-5b6c2d1e-8201-443b-8718-4054a433d3c8">Download</a></div>
-</div>
-</div>
-</div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
