@@ -1,4 +1,5 @@
-const CACHE_NAME = 'wheelhouser-static-v1';
+const PRECACHE = 'wheelhouser-precache-v1';
+const RUNTIME = 'wheelhouser-runtime-v1';
 const OFFLINE_URL = '/offline.html';
 
 const PRECACHE_URLS = [
@@ -9,6 +10,7 @@ const PRECACHE_URLS = [
   '/js/main.js',
   '/manifest.json',
   '/icons.html',
+  '/favicon.ico',
   '/images/wheelhouser-icon/resized_icons/wheelhouser-icon_32x32.png',
   '/images/wheelhouser-icon/resized_icons/wheelhouser-icon_64x64.png',
   '/images/wheelhouser-icon/resized_icons/wheelhouser-icon_256x256.png',
@@ -19,13 +21,12 @@ const PRECACHE_URLS = [
   '/images/wheelhouser-icon/resized_icons/wheelhouser-icon_128x128.webp',
   '/images/wheelhouser-icon/resized_icons/wheelhouser-icon_256x256.webp',
   '/images/wheelhouser-icon/resized_icons/wheelhouser-icon_512x512.webp',
-  '/images/wheelhouser-icon/resized_icons/wheelhouser-icon_1024x1024.webp',
-  '/favicon.ico'
+  '/images/wheelhouser-icon/resized_icons/wheelhouser-icon_1024x1024.webp'
 ];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => cache.addAll(PRECACHE_URLS))
+    caches.open(PRECACHE).then((cache) => cache.addAll(PRECACHE_URLS))
       .then(() => self.skipWaiting())
   );
 });
@@ -34,7 +35,7 @@ self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches.keys().then((keys) => Promise.all(
       keys.map((key) => {
-        if (key !== CACHE_NAME) return caches.delete(key);
+        if (key !== PRECACHE && key !== RUNTIME) return caches.delete(key);
       })
     ))).then(() => self.clients.claim())
   );
@@ -51,31 +52,59 @@ self.addEventListener('message', (event) => {
 self.addEventListener('fetch', (event) => {
   const { request } = event;
 
-  // Always try navigation requests from network first, fallback to cache then offline page
+  // Navigation: network-first, fallback to cache, then offline page
   if (request.mode === 'navigate') {
     event.respondWith(
       fetch(request).then((response) => {
-        // Put a copy in the cache for next time
         const copy = response.clone();
-        caches.open(CACHE_NAME).then((cache) => cache.put(request, copy));
+        caches.open(PRECACHE).then((cache) => cache.put(request, copy));
         return response;
       }).catch(() => caches.match(request).then((r) => r || caches.match(OFFLINE_URL)))
     );
     return;
   }
 
-  // For other requests, respond with cache first, then network
+  const url = new URL(request.url);
+
+  // Images: stale-while-revalidate (return cache if present, update in background)
+  if (request.destination === 'image' || url.pathname.match(/\.(png|jpg|jpeg|webp|svg|gif)$/i)) {
+    event.respondWith(
+      caches.match(request).then((cached) => {
+        const networkFetch = fetch(request).then((resp) => {
+          if (resp && resp.status === 200) {
+            const respClone = resp.clone();
+            caches.open(RUNTIME).then((cache) => cache.put(request, respClone));
+          }
+          return resp;
+        }).catch(() => {});
+        return cached || networkFetch;
+      })
+    );
+    return;
+  }
+
+  // CSS/JS/Font: cache-first (they are precached), fallback to network
+  if (request.destination === 'style' || request.destination === 'script' || request.destination === 'font') {
+    event.respondWith(
+      caches.match(request).then((cached) => cached || fetch(request).then((resp) => {
+        if (resp && resp.status === 200) {
+          const respClone = resp.clone();
+          caches.open(RUNTIME).then((cache) => cache.put(request, respClone));
+        }
+        return resp;
+      }))
+    );
+    return;
+  }
+
+  // Default: network-first, fallback to cache
   event.respondWith(
-    caches.match(request).then((cached) => cached || fetch(request).then((resp) => {
-      // store fetched resource for later
-      if (request.method === 'GET' && resp && resp.status === 200 && resp.type !== 'opaque') {
+    fetch(request).then((resp) => {
+      if (request.method === 'GET' && resp && resp.status === 200) {
         const respClone = resp.clone();
-        caches.open(CACHE_NAME).then((cache) => cache.put(request, respClone));
+        caches.open(RUNTIME).then((cache) => cache.put(request, respClone));
       }
       return resp;
-    }).catch(() => {
-      // If it's an image request and offline, we could return a data URI or leave it
-      return cached;
-    }))
+    }).catch(() => caches.match(request))
   );
 });

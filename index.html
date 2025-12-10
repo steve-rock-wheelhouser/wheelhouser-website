@@ -16,10 +16,20 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/images/wheelhouser-icon/resized_icons/wheelhouser-icon_512x512.png">
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#000000">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Wheelhouser LLC",
+    "url": "https://wheelhouser.com",
+    "logo": "https://steve-rock-wheelhouser.github.io/wheelhouser-website/images/wheelhouser-icon/resized_icons/wheelhouser-icon_512x512.png",
+    "sameAs": []
+  }
+  </script>
 </head>
 <body>
 
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="container">
             <a href="#" class="logo">Wheelhouser LLC</a>
             <button id="install-btn" class="install-btn" style="display:none">Install App</button>
@@ -46,6 +56,7 @@
     </header>
 
     <!-- Responsive hero media -->
+    <main role="main">
     <div class="container" style="max-width:1200px;margin: 20px auto;">
         <picture class="hero-media">
             <source type="image/webp" srcset="https://placehold.co/1200x480.webp 1200w, https://placehold.co/800x320.webp 800w, https://placehold.co/480x192.webp 480w" sizes="(min-width:900px) 1200px, (min-width:600px) 800px, 100vw">
@@ -53,11 +64,12 @@
         </picture>
     </div>
 
-    <section id="marquee" class="product-section">
+    </div>
+    <section id="marquee" class="product-section" role="region" aria-labelledby="marquee-title">
         <div class="container split-layout">
             <div class="product-text">
                 <span class="badge">Flagship Product</span>
-                <h2>Marquee-Magic</h2>
+                <h2 id="marquee-title">Marquee-Magic</h2>
                 <p>The ultimate digital signage solution. Syncs seamlessly with Google Drive, runs on minimal hardware (Raspberry Pi/Linux/Windows), and handles updates automatically.</p>
                 <ul class="feature-list">
                     <li>✓ Google Drive Integration</li>
@@ -76,6 +88,7 @@
     </section>
 
     <section id="downloads" class="utilities-section">
+        
         <div class="container">
             <h2>Developer Utilities</h2>
             <div class="grid-3">
@@ -96,6 +109,8 @@
             </div>
         </div>
     </section>
+
+    </main>
 
     <footer>
         <div class="container">
