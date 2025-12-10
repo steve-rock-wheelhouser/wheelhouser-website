@@ -1,0 +1,19 @@
+{
+    "name": "Marquee-Magic",
+    "short_name": "MarqueeMagic",
+    "icons": [
+        {
+            "src": "/assets/icons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/icons/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ef4444",
+    "background_color": "#0f172a",
+    "display": "standalone"
+}
