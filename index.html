@@ -1,53 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--
-   index.html
-   
-   Copyright 2025 steve <steve@ipicklethey>
-   
-   This program is free software; you can redistribute it and/or modify
-   it under the terms of the GNU General Public License as published by
-   the Free Software Foundation; either version 2 of the License, or
-   (at your option) any later version.
-   
-   This program is distributed in the hope that it will be useful,
-   but WITHOUT ANY WARRANTY; without even the implied warranty of
-   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-   GNU General Public License for more details.
-   
-   You should have received a copy of the GNU General Public License
-   along with this program; if not, write to the Free Software
-   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
-   MA 02110-1301, USA.
-   
-   
--->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wheelhouser LLC - Innovative Software Solutions & Digital Tools">
+    <title>Wheelhouser LLC - Software Solutions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<div class="wp-block-cover alignfull has-black-background-color has-background-dim-0 has-background-dim" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)"><span aria-hidden="true" class="wp-block-cover__background has-black-background-color has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container">
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
 
-<div class="wp-block-group">
-<div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
-<h1 class="wp-block-heading has-text-align-center has-white-color has-text-color" style="font-size:6rem;line-height:1.1">Wheelhouser LLC</h1>
-<p class="has-text-align-center has-white-color has-text-color" style="font-size:1.5rem">Innovative Software Solutions &amp; Digital Tools</p>
-</div>
-</div></div>
-<div class="wp-block-group alignwide" style="margin-top:var(--wp--preset--spacing--60);margin-bottom:var(--wp--preset--spacing--60)">
-<div class="wp-block-columns alignwide are-vertically-aligned-center"><div class="wp-block-column is-vertically-aligned-center">
-<figure class="wp-block-image size-large is-style-default"><img src="https://placehold.co/600x400/png" alt="Marquee Magic Screenshot Placeholder"/></figure>
-</div>
-<div class="wp-block-column is-vertically-aligned-center">
-<h2 class="wp-block-heading">Marquee-Magic</h2>
-<p>The ultimate digital signage solution. Syncs with Google Drive, runs on Linux/Windows, and updates automatically. Manage your displays from anywhere in the world.</p>
-<div class="wp-block-buttons"><div class="wp-block-button"><a class="wp-block-button__link has-black-background-color has-background wp-element-button">View Features</a></div>
-</div>
-</div>
-</div>
-</div>
-<hr class="wp-block-separator alignwide has-alpha-channel-opacity is-style-wide"/>
-<div class="wp-block-group alignwide" style="margin-top:var(--wp--preset--spacing--50);margin-bottom:var(--wp--preset--spacing--60)">
-<h2 class="wp-block-heading has-text-align-left">Other Utilities &amp; Downloads</h2>
-<p>Useful tools for developers and system administrators.</p>
-<div class="wp-block-columns"><div class="wp-block-column">
+        header {
+            background: #000;
+            color: #fff;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.25rem;
+            color: #ccc;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 60px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #000;
+        }
+
+        .product {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+
+        .product:nth-child(odd) .product-image {
+            order: 2;
+        }
+
+        .product:nth-child(odd) .product-content {
+            order: 1;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            background: #f0f0f0;
+        }
+
+        .product-content h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #000;
+        }
+
+        .product-content p {
+            margin-bottom: 20px;
+            color: #555;
+            font-size: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .btn:hover {
+            background: #333;
+        }
+
+        .utilities {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .utility-card {
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 4px solid #000;
+        }
+
+        .utility-card h4 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        .utility-card p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .utility-card a {
+            color: #000;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .utility-card a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: #000;
+            color: #fff;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+        }
+
+        footer p {
+            color: #aaa;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            .product {
+                grid-template-columns: 1fr;
+            }
+
+            .product:nth-child(odd) .product-image,
+            .product:nth-child(odd) .product-content {
+                order: unset;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Wheelhouser LLC</h1>
+        <p>Innovative Software Solutions & Digital Tools</p>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="products">
+                <h2 class="section-title">Featured Products</h2>
+
+                <div class="product">
+                    <div class="product-image">
+                        <img src="https://placehold.co/500x350/000/fff?text=Marquee+Magic" alt="Marquee Magic - Digital Signage Solution">
+                    </div>
+                    <div class="product-content">
+                        <h3>Marquee-Magic</h3>
+                        <p>The ultimate digital signage solution. Syncs with Google Drive, runs on Linux/Windows, and updates automatically. Manage your displays from anywhere in the world.</p>
+                        <p>Perfect for retail stores, offices, and public spaces that need dynamic, easy-to-manage digital displays.</p>
+                        <a href="#" class="btn">View Features</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="utilities">
+                <h2 class="section-title">Other Utilities & Downloads</h2>
+                <p style="margin-bottom: 40px; color: #666;">Useful tools for developers and system administrators.</p>
+
+                <div class="utilities">
+                    <div class="utility-card">
+                        <h4>Development Tools</h4>
+                        <p>A collection of lightweight utilities designed to streamline your development workflow.</p>
+                        <a href="#">Explore Tools →</a>
+                    </div>
+                    <div class="utility-card">
+                        <h4>System Utilities</h4>
+                        <p>Command-line tools and scripts for system administration and automation tasks.</p>
+                        <a href="#">Browse Utilities →</a>
+                    </div>
+                    <div class="utility-card">
+                        <h4>Documentation</h4>
+                        <p>Comprehensive guides and documentation for all Wheelhouser tools and solutions.</p>
+                        <a href="#">Read Docs →</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Wheelhouser LLC. All rights reserved.</p>
+    </footer>
 <div class="wp-block-file"><a href="#">Icon-Resizer-Tool.zip</a><a href="#" class="wp-block-file__button wp-element-button" download aria-describedby="wp-block-file--media-b4d6a8f7-9201-443b-8718-4054a433d3c7">Download</a></div>
 </div>
 <div class="wp-block-column">

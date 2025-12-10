@@ -1,0 +1,22 @@
+
+Create a TXT record in your DNS configuration for the following hostname:
+_github-pages-challenge-steve-rock-wheelhouser
+
+Use this code for the value of the TXT record:
+ea62ec1d8ddcdec98c91df3a4ecb4c
+
+
+Existing wordpress record:
+DNS records
+
+Connect your domain to other services
+A
+@
+Handled by WordPress.com
+CNAME
+www
+wheelhouser.com
+TXT
+_domainconnect
+public-api.wordpress.com/rest/v1.3/domain-connect
+
