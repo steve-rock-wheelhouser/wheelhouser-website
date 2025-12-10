@@ -1,4 +1,4 @@
-const PRECACHE = 'wheelhouser-precache-v1';
+const PRECACHE = 'wheelhouser-precache-v2';
 const RUNTIME = 'wheelhouser-runtime-v1';
 const OFFLINE_URL = '/offline.html';
 
@@ -21,13 +21,13 @@ const PRECACHE_URLS = [
   '/images/wheelhouser-icon/resized_icons/wheelhouser-icon_128x128.webp',
   '/images/wheelhouser-icon/resized_icons/wheelhouser-icon_256x256.webp',
   '/images/wheelhouser-icon/resized_icons/wheelhouser-icon_512x512.webp',
-  '/images/wheelhouser-icon/resized_icons/wheelhouser-icon_1024x1024.webp'
-  ,'/assets/images/hero-1200.webp'
-  ,'/assets/images/hero-800.webp'
-  ,'/assets/images/hero-480.webp'
-  ,'/assets/images/hero-1200.png'
-  ,'/assets/images/hero-800.png'
-  ,'/assets/images/hero-480.png'
+  '/images/wheelhouser-icon/resized_icons/wheelhouser-icon_1024x1024.webp',
+  '/assets/images/Ad-Images/Marquee-Magic-Ad_06-1200.webp',
+  '/assets/images/Ad-Images/Marquee-Magic-Ad_06-800.webp',
+  '/assets/images/Ad-Images/Marquee-Magic-Ad_06-480.webp',
+  '/assets/images/Ad-Images/Marquee-Magic-Ad_06-1200.png',
+  '/assets/images/Ad-Images/Marquee-Magic-Ad_06-800.png',
+  '/assets/images/Ad-Images/Marquee-Magic-Ad_06-480.png'
 ];
 
 self.addEventListener('install', (event) => {
