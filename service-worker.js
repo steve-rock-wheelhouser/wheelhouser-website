@@ -22,6 +22,12 @@ const PRECACHE_URLS = [
   '/images/wheelhouser-icon/resized_icons/wheelhouser-icon_256x256.webp',
   '/images/wheelhouser-icon/resized_icons/wheelhouser-icon_512x512.webp',
   '/images/wheelhouser-icon/resized_icons/wheelhouser-icon_1024x1024.webp'
+  ,'/assets/images/hero-1200.webp'
+  ,'/assets/images/hero-800.webp'
+  ,'/assets/images/hero-480.webp'
+  ,'/assets/images/hero-1200.png'
+  ,'/assets/images/hero-800.png'
+  ,'/assets/images/hero-480.png'
 ];
 
 self.addEventListener('install', (event) => {
