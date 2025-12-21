@@ -3,165 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wheelhouser LLC | Software Solutions</title>
-    <meta name="description" content="Innovative software solutions and digital signage tools like Marquee-Magic.">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-    <!-- Favicons & App Icons -->
-    <link rel="icon" type="image/png" sizes="32x32" href="images/wheelhouser-icon/resized_icons/wheelhouser-icon_32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/wheelhouser-icon/resized_icons/wheelhouser-icon_16x16.png">
-    <link rel="shortcut icon" href="favicon.png">
-    <link rel="icon" href="favicon.ico">
-    <link rel="preload" href="css/style.css" as="style">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/wheelhouser-icon/resized_icons/wheelhouser-icon_512x512.png">
+    <meta name="description" content="Innovative software solutions and digital signage tools.">
+    <title>Wheelhouser LLC</title>
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#000000">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Wheelhouser LLC",
-    "url": "https://wheelhouser.com",
-    "logo": "https://steve-rock-wheelhouser.github.io/wheelhouser-website/images/wheelhouser-icon/resized_icons/wheelhouser-icon_512x512.png",
-    "sameAs": []
-  }
-  </script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "Marquee-Magic",
-        "description": "Marquee-Magic: a lightweight digital signage solution that syncs with Google Drive and runs on Linux/Windows.",
-        "applicationCategory": "BusinessApplication",
-        "operatingSystem": "Linux, Windows",
-        "url": "https://steve-rock-wheelhouser.github.io/wheelhouser-website/",
-        "softwareVersion": "1.0",
-        "offers": {
-            "@type": "Offer",
-            "price": "0.00",
-            "priceCurrency": "USD"
-        }
-    }
-    </script>
+    <link rel="icon" href="images/wheelhouser/wheelhouser-04.png" type="image/png">
 </head>
 <body>
 
-    <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <header class="site-header">
         <div class="container">
-            <div style="display:flex;gap:12px;align-items:center;">
-                <picture>
-                    <source type="image/webp" srcset="images/wheelhouser-icon/resized_icons/wheelhouser-icon_64x64.webp 64w, images/wheelhouser-icon/resized_icons/wheelhouser-icon_32x32.webp 32w">
-                    <img src="images/wheelhouser-icon/resized_icons/wheelhouser-icon_64x64.png" alt="Wheelhouser logo" style="height:40px;width:40px;">
-                </picture>
-                <a href="#" class="logo">Wheelhouser LLC</a>
-            </div>
-            <button id="install-btn" class="install-btn" style="display:none">Install App</button>
-            <ul class="nav-links">
-                <li><a href="#marquee">Marquee-Magic</a></li>
-                <li><a href="#downloads">Downloads</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <header class="hero">
-        <div class="container hero-inner" style="position:relative;padding:80px 48px;border-radius:12px;overflow:hidden;">
-            <picture class="hero-bg" aria-hidden="true">
-                <source type="image/webp" srcset="images/wheelhouser-icon/resized_icons/wheelhouser-icon_1024x1024.webp 1024w, images/wheelhouser-icon/resized_icons/wheelhouser-icon_512x512.webp 512w">
-                <img src="images/wheelhouser-icon/resized_icons/wheelhouser-icon_1024x1024.png" alt="Wheelhouser emblem background" onload="this.classList.add('loaded')" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(0.5);opacity:0.8;">
-            </picture>
-
-            <div style="position:relative;z-index:2;display:flex;flex-direction:column;gap:20px;align-items:center;justify-content:center;text-align:center;">
-                <div>
-                    <h1>Software for the Real World.</h1>
-                    <p>We build robust tools for Linux, Windows, and Digital Signage.</p>
-                    <a href="#marquee" class="btn primary-btn">View Marquee-Magic</a>
-                </div>
-            </div>
+            <div class="logo">Wheelhouser LLC</div>
+            <nav>
+                <a href="#products">Applications</a>
+                <a href="about.html">About</a>
+                <a href="#contact" class="btn-primary">Contact Us</a>
+            </nav>
         </div>
     </header>
 
-    <!-- Marquee-Magic Ad Section -->
-    <main role="main">
-    <div class="container" style="max-width:1200px;margin: 20px auto;">
-        <picture class="hero-media">
-            <source type="image/webp" srcset="assets/images/Ad-Images/Marquee-Magic-Ad_06-1200.webp 1200w, assets/images/Ad-Images/Marquee-Magic-Ad_06-800.webp 800w, assets/images/Ad-Images/Marquee-Magic-Ad_06-480.webp 480w" sizes="(min-width:900px) 1200px, (min-width:600px) 800px, 100vw">
-            <img src="assets/images/Ad-Images/Marquee-Magic-Ad_06-800.png" alt="Marquee-Magic promotional image" style="width:100%;height:auto;border-radius:10px;display:block;" loading="lazy">
-        </picture>
-    </div>
-
-    </div>
-    <section id="marquee" class="product-section" role="region" aria-labelledby="marquee-title">
-        <div class="container split-layout">
-            <div class="product-text">
-                <span class="badge">Flagship Product</span>
-                <h2 id="marquee-title">Marquee-Magic</h2>
-                <p>The ultimate digital signage solution. Syncs seamlessly with Google Drive, runs on minimal hardware (Raspberry Pi/Linux/Windows), and handles updates automatically.</p>
-                <ul class="feature-list">
-                    <li>✓ Google Drive Integration</li>
-                    <li>✓ Auto-Updating Client</li>
-                    <li>✓ Remote Management</li>
-                </ul>
-                <a href="https://marquee-magic.com" class="btn secondary-btn">Learn More & Download</a>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Innovative Software & Digital Signage.</h1>
+                <p class="subtitle">Building the next generation of digital tools for modern businesses.</p>
+                <a href="#products" class="btn-secondary">View Solutions</a>
             </div>
-            <div class="product-image" style="display:flex;gap:18px;flex-wrap:wrap;">
-                <figure style="flex:1 1 320px;margin:0">
-                    <picture>
-                        <source type="image/webp" srcset="assets/images/Product-Images/display-server-hardware-01.webp?v=20251210 1200w">
-                        <img src="assets/images/Product-Images/display-server-hardware-01.png?v=20251210" alt="Display hardware" style="width:100%;height:auto;border-radius:8px;" loading="lazy">
-                    </picture>
-                    <figcaption style="color:#94a3b8;font-size:0.9rem;margin-top:8px">Hardware: display server</figcaption>
-                </figure>
+        </section>
 
-                <figure style="flex:1 1 320px;margin:0">
-                    <picture>
-                        <source type="image/webp" srcset="assets/images/Designer-Screen-Shots/Designer-Screen-Shot-01.webp?v=20251210 1200w">
-                        <img src="assets/images/Designer-Screen-Shots/Designer-Screen-Shot-01.png?v=20251210" alt="Designer software screenshot" style="width:100%;height:auto;border-radius:8px;" loading="lazy">
-                    </picture>
-                    <figcaption style="color:#94a3b8;font-size:0.9rem;margin-top:8px">Designer: Marquee-Magic Designer</figcaption>
-                </figure>
+        <section id="products" class="products-section">
+            <div class="container">
+                <h2>Flagship Suite</h2>
+                <div class="product-grid">
+                    <!-- Flagship -->
+                    <article class="product-card" id="marquee-magic">
+                        <img src="images/marquee-magic/icon.svg" alt="Marquee-Magic Icon" class="product-icon">
+                        <div class="product-card-content">
+                            <h3>Marquee-Magic Designer</h3>
+                            <p>The ultimate digital signage solution. Includes the powerful Marquee-Magic Designer app for creating stunning displays.</p>
+                            <a href="https://Marquee-Magic.com" class="link-arrow">Learn more &rarr;</a>
+                        </div>
+                    </article>
+                </div>
+
+                <h2 class="category-header">General Utilities</h2>
+                <div class="product-grid">
+                    <article class="product-card" id="image-resizer">
+                        <img src="images/image-resizer/icon.svg" alt="Image Resizer Icon" class="product-icon">
+                        <div class="product-card-content">
+                            <h3>Image Resizer</h3>
+                            <p>Resize images with support for multiple input and output formats.</p>
+                            <a href="https://github.com/steve-rock-wheelhouser/image-resizer" class="link-arrow">Learn more &rarr;</a>
+                        </div>
+                    </article>
+                    <article class="product-card" id="image-background-remover">
+                        <img src="images/image-background-remover/icon.svg" alt="Background Remover Icon" class="product-icon">
+                        <div class="product-card-content">
+                            <h3>Image Background Remover</h3>
+                            <p>Automatically remove backgrounds from photos and images using on-device AI.</p>
+                            <a href="https://github.com/steve-rock-wheelhouser/image-background-remover" class="link-arrow">Learn more &rarr;</a>
+                        </div>
+                    </article>
+                    <article class="product-card" id="image-inpainter">
+                        <img src="images/image-inpainter/icon.svg" alt="Image Inpainter Icon" class="product-icon">
+                        <div class="product-card-content">
+                            <h3>Image Inpainter</h3>
+                            <p>Remove unwanted objects from images using AI-powered inpainting.</p>
+                            <a href="https://github.com/steve-rock-wheelhouser/image-inpainter" class="link-arrow">Learn more &rarr;</a>
+                        </div>
+                    </article>
+                </div>
+
+                <h2 class="category-header">Developer Tools</h2>
+                <div class="product-grid">
+                    <article class="product-card" id="create-icons">
+                        <img src="images/create-icons/icon.svg" alt="Create Icon Files Icon" class="product-icon">
+                        <div class="product-card-content">
+                            <h3>Create Icon Files</h3>
+                            <p>Automatically create the set of icon files for Linux, Windows, macOS, and Unix systems.</p>
+                            <a href="https://github.com/steve-rock-wheelhouser/create-icon-files" class="link-arrow">Learn more &rarr;</a>
+                        </div>
+                    </article>
+                    <article class="product-card" id="text-to-speech">
+                        <img src="images/text-to-speech/icon.svg" alt="Text to Speech Icon" class="product-icon">
+                        <div class="product-card-content">
+                            <h3>Text to Speech</h3>
+                            <p>Convert text to speech using Microsoft Edge TTS.</p>
+                            <a href="https://github.com/steve-rock-wheelhouser/text-to-speech" class="link-arrow">Learn more &rarr;</a>
+                        </div>
+                    </article>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <section id="downloads" class="utilities-section">
-        
-        <div class="container">
-            <h2>Developer Utilities</h2>
-            <div class="grid-3">
-                <div class="card">
-                    <h3>Icon Resizer</h3>
-                    <p>Simple Python tool to resize images for app development.</p>
-                    <a href="#" class="text-link">Download .zip &rarr;</a>
-                </div>
-                <div class="card">
-                    <h3>Monitor Utility</h3>
-                    <p>System tray tool for managing display outputs on Linux.</p>
-                    <a href="#" class="text-link">Download .zip &rarr;</a>
-                </div>
-                <div class="card">
-                    <h3>Coming Soon</h3>
-                    <p>More tools are currently in development.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
+        </section>
     </main>
 
-    <footer>
+    <footer class="site-footer" id="contact">
         <div class="container">
+            <p>Contact us at <a href="mailto:steve@wheelhouser.com">steve@wheelhouser.com</a></p>
             <p>&copy; 2025 Wheelhouser LLC. All rights reserved.</p>
         </div>
     </footer>
 
-    <div id="update-banner" class="update-banner" style="display:none">
-        <div class="container">
-            <span>New version available.</span>
-            <button id="update-reload" class="btn primary-btn">Refresh</button>
-        </div>
-    </div>
-
-    <script src="js/main.js"></script>
 </body>
 </html>

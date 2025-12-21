@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.wheelhouser.image_resizer.desktop</id>
+  
+  <name>Image Resizer</name>
+  <summary>Resize images with support for multiple input and output formats</summary>
+  <developer id="com.wheelhouser">
+    <name>Wheelhouser LLC</name>
+  </developer>
+
+
+
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0</project_license>
+  
+  <description>
+    <p>
+      Image Resizer is a user-friendly application designed to help you resize images quickly and easily.
+      It features a modern dark theme interface and supports a wide range of formats.
+    </p>
+    <p>The application includes the following key features:</p>
+    <ul>
+      <li>Support for PNG, JPG, JPEG, TIFF, WEBP, AVIF, PDF, SVG, and BMP input formats</li>
+      <li>Maintain aspect ratio automatically</li>
+      <li>Real-time preview of your source images</li>
+      <li>Modern, dark-themed user interface</li>
+    </ul>
+    <p>The application supports the following output configuration details:</p>
+    <ul>
+      <li>Support for PNG, WEBP, and SVG output formats</li>
+      <li>Single tool for desktop and webapp image creation</li>
+      <li>Convert images to PNG, WEBP, or SVG formats</li>
+    </ul>
+  </description>
+  
+  <launchable type="desktop-id">com.wheelhouser.image_resizer.desktop</launchable>
+  
+    <screenshots>
+    <screenshot type="default">
+      <caption>Main application window</caption>
+      <image>https://github.com/steve-rock-wheelhouser/image-resizer/raw/main/assets/screenshots/screenshot.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>File browser window</caption>
+      <image>https://github.com/steve-rock-wheelhouser/image-resizer/raw/main/assets/screenshots/screenshot-01.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Additional features</caption>
+      <image>https://github.com/steve-rock-wheelhouser/image-resizer/raw/main/assets/screenshots/screenshot-02.png</image>
+    </screenshot>
+  </screenshots>
+  
+  <url type="homepage">https://wheelhouser.com</url>
+  <url type="bugtracker">https://github.com/steve-rock-wheelhouser/image-resizer/issues</url>
+  
+  <content_rating type="oars-1.1" />
+  
+  <releases>
+    <release version="0.3.0" date="2025-12-11">
+      <description>
+        <p>Added support for WEBP output format.</p>
+      </description>
+    </release>
+    <release version="0.2.0" date="2025-12-11">
+      <description>
+        <p>Initial release with support for multiple formats and dark theme.</p>
+      </description>
+    </release>
+  </releases>
+</component>
