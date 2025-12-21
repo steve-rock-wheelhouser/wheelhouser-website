@@ -597,7 +597,7 @@ nav a:hover {
 /* DESKTOP TWEAK: Show smaller items so you see more at once */
 @media (min-width: 768px) {
     .carousel-item {
-        flex: 0 0 70%; /* Shows more of the next image on wider screens */
+        flex: 0 0 91%; /* Increased by 30% (70% * 1.3 = 91%) */
         scroll-snap-align: start; /* Aligns to left instead of center */
     }
 }
