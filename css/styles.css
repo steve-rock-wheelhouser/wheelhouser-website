@@ -379,8 +379,22 @@ nav a:hover {
     border-bottom-color: #fff;
 }
 
+/* --- PRODUCT BOTTOM GRID (Desktop) --- */
+.product-bottom-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
 /* MOBILE RESPONSIVE UPDATE */
 @media (max-width: 768px) {
+    /* Header Fix */
+    .site-header .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
     .product-bottom-grid {
         /* Switch to Flexbox for bulletproof vertical stacking */
         display: flex;
@@ -534,15 +548,26 @@ nav a:hover {
     gap: 1.5rem;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    padding-bottom: 1rem; /* Space for scrollbar if visible */
+    padding-bottom: 1rem;
     
-    /* Hides scrollbar for a cleaner look on modern browsers */
-    scrollbar-width: none;  /* Firefox */
-    -ms-overflow-style: none;  /* IE/Edge */
+    /* Show scrollbar on Firefox but make it thin */
+    scrollbar-width: thin;
+    scrollbar-color: #334155 transparent;
 }
 
+/* Styled Scrollbar for Chrome/Edge/Safari */
 .carousel-track::-webkit-scrollbar {
-    display: none; /* Chrome/Safari */
+    height: 8px; /* Height of horizontal scrollbar */
+}
+
+.carousel-track::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.carousel-track::-webkit-scrollbar-thumb {
+    background-color: #334155; /* Dark grey thumb */
+    border-radius: 20px;       /* Rounded edges */
+    border: 2px solid #0f172a; /* Padding around the thumb */
 }
 
 .carousel-item {
