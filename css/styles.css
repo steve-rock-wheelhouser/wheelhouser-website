@@ -571,7 +571,7 @@ nav a:hover {
 }
 
 .carousel-item {
-    flex: 0 0 85%; /* Shows 85% of the image, peeking the next one */
+    flex: 0 0 100%; /* Full width on mobile */
     scroll-snap-align: center;
     border-radius: 12px;
     overflow: hidden;
