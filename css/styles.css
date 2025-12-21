@@ -381,17 +381,18 @@ nav a:hover {
 
 /* MOBILE RESPONSIVE UPDATE */
 @media (max-width: 768px) {
-    /* Header */
-    .site-header .container {
+    .product-bottom-grid {
+        /* Switch to Flexbox for bulletproof vertical stacking */
+        display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: 2rem; /* This forces 2rem of space between the cards */
     }
-    
+
     nav {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 1rem;
+        gap: 2rem;
     }
 
     nav a {
@@ -439,4 +440,205 @@ nav a:hover {
     .site-footer::before {
         background: var(--border-color); /* Simple line on mobile */
     }
+}
+
+/* ===================================================== */
+/* --- PRODUCT PAGE STYLES --- */
+
+.product-page {
+    padding-bottom: 6rem;
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+    padding: 2rem 0 1rem;
+    font-size: 0.9rem;
+    color: var(--accent-color);
+}
+.breadcrumbs li::after {
+    content: "/";
+    margin-left: 0.5rem;
+    color: #334155;
+}
+.breadcrumbs li:last-child::after { content: ""; }
+.breadcrumbs a:hover { color: var(--primary-color); }
+
+/* Product Header (Hero) */
+.product-header {
+    padding: 2rem 0 4rem;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 4rem;
+    background: radial-gradient(circle at top right, #1e293b 0%, #0f172a 70%);
+}
+
+.product-header-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.product-big-icon {
+    width: 128px;
+    height: 128px;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.product-title-block h1 {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    font-family: "Cheltenham", "ITC Cheltenham Std", "Bookman Old Style", serif;
+}
+
+.product-tagline {
+    font-size: 1.25rem;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+}
+
+.product-meta-row {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.meta-pill {
+    background: rgba(255,255,255,0.1);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+
+/* Two Column Layout */
+.product-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Main content is 2x wider than sidebar */
+    gap: 4rem;
+}
+
+/* Main Content Area */
+/* --- SCREENSHOT CAROUSEL (GNOME Software Style) --- */
+
+.carousel-container {
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 1rem; /* Space for scrollbar if visible */
+    
+    /* Hides scrollbar for a cleaner look on modern browsers */
+    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;  /* IE/Edge */
+}
+
+.carousel-track::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+}
+
+.carousel-item {
+    flex: 0 0 85%; /* Shows 85% of the image, peeking the next one */
+    scroll-snap-align: center;
+    border-radius: 12px;
+    overflow: hidden;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.carousel-hint {
+    font-size: 0.8rem;
+    color: var(--accent-color);
+    text-align: right;
+    margin-top: 0.5rem;
+    opacity: 0.7;
+}
+
+/* DESKTOP TWEAK: Show smaller items so you see more at once */
+@media (min-width: 768px) {
+    .carousel-item {
+        flex: 0 0 70%; /* Shows more of the next image on wider screens */
+        scroll-snap-align: start; /* Aligns to left instead of center */
+    }
+}
+
+.main-screenshot {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+}
+
+.content-block { margin-bottom: 3rem; }
+.content-block h2 { font-size: 1.8rem; margin-bottom: 1rem; color: var(--text-color); }
+.content-block p { color: #cbd5e1; margin-bottom: 1rem; font-size: 1.05rem; }
+
+.feature-list {
+    list-style: none;
+    padding-left: 0;
+}
+.feature-list li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #cbd5e1;
+}
+.feature-list li::before {
+    content: "•";
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -0.2rem;
+}
+
+/* Sidebar */
+.product-sidebar { display: flex; flex-direction: column; gap: 2rem; }
+
+.sidebar-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+
+.sidebar-card h3 { font-size: 1.1rem; margin-bottom: 1rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; }
+
+.full-width-btn {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.specs-list { list-style: none; font-size: 0.9rem; }
+.specs-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+.specs-list li:last-child { border-bottom: none; }
+.specs-list strong { color: var(--text-color); }
+.specs-list li { color: var(--accent-color); }
+
+/* Product Mobile Responsive */
+@media (max-width: 900px) {
+    .product-layout { grid-template-columns: 1fr; gap: 2rem; }
+    .product-header-content { flex-direction: column; text-align: center; }
+    .product-meta-row { justify-content: center; }
+    .product-sidebar { order: -1; } /* Puts download button above description on mobile */
 }
