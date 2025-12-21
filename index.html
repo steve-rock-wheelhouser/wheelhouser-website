@@ -3,106 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Innovative software solutions and digital signage tools.">
-    <title>Wheelhouser LLC</title>
+    <title>Wheelhouser LLC | Professional Software</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="manifest" href="manifest.json">
     <link rel="icon" href="images/wheelhouser/wheelhouser-04.png" type="image/png">
 </head>
 <body>
 
     <header class="site-header">
         <div class="container">
-            <div class="logo">Wheelhouser LLC</div>
+            <div class="logo">
+                <img src="images/wheelhouser-W/wheelhouser-07.png" alt="Wheelhouser Logo">
+                Wheelhouser LLC
+            </div>
+            
             <nav>
-                <a href="#products">Applications</a>
-                <a href="about.html">About</a>
-                <a href="#contact" class="btn-primary">Contact Us</a>
+                <a href="#portfolio">Software Portfolio</a>
+                <a href="about.html">Company</a>
+                <a href="#contact" class="btn-primary">Contact</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="hero">
+        
+        <section class="brand-intro">
             <div class="container">
                 <h1>Innovative Software & Digital Signage.</h1>
-                <p class="subtitle">Building the next generation of digital tools for modern businesses.</p>
-                <a href="#products" class="btn-secondary">View Solutions</a>
+                <p class="brand-subtitle">Building the next generation of digital tools for modern businesses.</p>
             </div>
         </section>
 
-        <section id="products" class="products-section">
+        <section class="hero-featured">
             <div class="container">
-                <h2>Flagship Suite</h2>
-                <div class="product-grid">
-                    <!-- Flagship -->
-                    <article class="product-card" id="marquee-magic">
-                        <img src="images/marquee-magic/icon.svg" alt="Marquee-Magic Icon" class="product-icon">
-                        <div class="product-card-content">
-                            <h3>Marquee-Magic Designer</h3>
-                            <p>The ultimate digital signage solution. Includes the powerful Marquee-Magic Designer app for creating stunning displays.</p>
-                            <a href="https://Marquee-Magic.com" class="link-arrow">Learn more &rarr;</a>
+                <div class="featured-layout">
+                    <div class="featured-text">
+                        <div class="featured-badge">Flagship Platform</div>
+                        <h2>Marquee-Magic</h2>
+                        <p class="featured-lead">The digital signage ecosystem that belongs to you.</p>
+                        <p class="featured-desc">Design, schedule, and deploy stunning displays and reach your customers. Native performance for venues, retail, and events.</p>
+                        <div class="action-row">
+                            <a href="https://Marquee-Magic.com" class="btn-primary">Visit Product Site</a>
+                            <span class="platform-tag">Linux &bull; Windows &bull; macOS</span>
                         </div>
-                    </article>
-                </div>
-
-                <h2 class="category-header">General Utilities</h2>
-                <div class="product-grid">
-                    <article class="product-card" id="image-resizer">
-                        <img src="images/image-resizer/icon.svg" alt="Image Resizer Icon" class="product-icon">
-                        <div class="product-card-content">
-                            <h3>Image Resizer</h3>
-                            <p>Resize images with support for multiple input and output formats.</p>
-                            <a href="https://github.com/steve-rock-wheelhouser/image-resizer" class="link-arrow">Learn more &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="product-card" id="image-background-remover">
-                        <img src="images/image-background-remover/icon.svg" alt="Background Remover Icon" class="product-icon">
-                        <div class="product-card-content">
-                            <h3>Image Background Remover</h3>
-                            <p>Automatically remove backgrounds from photos and images using on-device AI.</p>
-                            <a href="https://github.com/steve-rock-wheelhouser/image-background-remover" class="link-arrow">Learn more &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="product-card" id="image-inpainter">
-                        <img src="images/image-inpainter/icon.svg" alt="Image Inpainter Icon" class="product-icon">
-                        <div class="product-card-content">
-                            <h3>Image Inpainter</h3>
-                            <p>Remove unwanted objects from images using AI-powered inpainting.</p>
-                            <a href="https://github.com/steve-rock-wheelhouser/image-inpainter" class="link-arrow">Learn more &rarr;</a>
-                        </div>
-                    </article>
-                </div>
-
-                <h2 class="category-header">Developer Tools</h2>
-                <div class="product-grid">
-                    <article class="product-card" id="create-icons">
-                        <img src="images/create-icons/icon.svg" alt="Create Icon Files Icon" class="product-icon">
-                        <div class="product-card-content">
-                            <h3>Create Icon Files</h3>
-                            <p>Automatically create the set of icon files for Linux, Windows, macOS, and Unix systems.</p>
-                            <a href="https://github.com/steve-rock-wheelhouser/create-icon-files" class="link-arrow">Learn more &rarr;</a>
-                        </div>
-                    </article>
-                    <article class="product-card" id="text-to-speech">
-                        <img src="images/text-to-speech/icon.svg" alt="Text to Speech Icon" class="product-icon">
-                        <div class="product-card-content">
-                            <h3>Text to Speech</h3>
-                            <p>Convert text to speech using Microsoft Edge TTS.</p>
-                            <a href="https://github.com/steve-rock-wheelhouser/text-to-speech" class="link-arrow">Learn more &rarr;</a>
-                        </div>
-                    </article>
+                    </div>
+                    <div class="featured-visual">
+                        <img src="images/marquee-magic/icon.svg" alt="Marquee Magic Dashboard" class="hero-img">
+                    </div>
                 </div>
             </div>
         </section>
+
+        <section id="portfolio" class="app-grid-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>The Wheelhouser Suite</h2>
+                    <p>Professional native utilities built with Qt and Python.</p>
+                </div>
+
+                <div class="app-grid">
+                    
+                    <div class="grid-category-label">Visual Intelligence</div>
+                    
+                    <a href="products/image-background-remover.html" class="app-card">
+                        <div class="app-icon">
+                            <img src="images/image-background-remover/icon.svg" alt="Icon">
+                        </div>
+                        <div class="app-details">
+                            <h3>Image Background Remover</h3>
+                            <p class="app-summary">Isolate subjects instantly using on-device AI.</p>
+                            <span class="app-badge">Productivity</span>
+                        </div>
+                    </a>
+
+                    <a href="products/image-inpainter.html" class="app-card">
+                        <div class="app-icon">
+                            <img src="images/image-inpainter/icon.svg" alt="Icon">
+                        </div>
+                        <div class="app-details">
+                            <h3>Image Inpainter</h3>
+                            <p class="app-summary">Seamlessly erase unwanted objects from photos.</p>
+                            <span class="app-badge">Design</span>
+                        </div>
+                    </a>
+
+                    <a href="products/image-resizer.html" class="app-card">
+                        <div class="app-icon">
+                            <img src="images/image-resizer/icon.svg" alt="Icon">
+                        </div>
+                        <div class="app-details">
+                            <h3>Image Resizer</h3>
+                            <p class="app-summary">Process thousands of images with smart cropping.</p>
+                            <span class="app-badge">Utility</span>
+                        </div>
+                    </a>
+
+                    <div class="grid-category-label full-width">Developer Ecosystem</div>
+
+                    <a href="products/create-icon-files.html" class="app-card">
+                        <div class="app-icon">
+                            <img src="images/create-icons/icon.svg" alt="Icon">
+                        </div>
+                        <div class="app-details">
+                            <h3>Create Icon Files</h3>
+                            <p class="app-summary">Generate App Store ready assets in one click.</p>
+                            <span class="app-badge">Developer</span>
+                        </div>
+                    </a>
+
+                    <a href="products/text-to-speech.html" class="app-card">
+                        <div class="app-icon">
+                            <img src="images/text-to-speech/icon.svg" alt="Icon">
+                        </div>
+                        <div class="app-details">
+                            <h3>Text to Speech</h3>
+                            <p class="app-summary">Lifelike voice synthesis powered by Edge TTS.</p>
+                            <span class="app-badge">Audio</span>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer class="site-footer" id="contact">
         <div class="container">
-            <p>Contact us at <a href="mailto:steve@wheelhouser.com">steve@wheelhouser.com</a></p>
-            <p>&copy; 2025 Wheelhouser LLC. All rights reserved.</p>
+            <div class="footer-row">
+                <img src="images/wheelhouser-icon/resized_icons/wheelhouser-icon_256x256.webp" alt="Wheelhouser Icon" class="footer-icon">
+                
+                <div class="footer-stack">
+                    <p class="footer-brand">Wheelhouser LLC</p>
+                    <p>Engineering the next generation of native tools.</p>
+                    <p class="footer-cta">See what we can do for you.</p>
+                    <p>156 Winners Circle.</p>
+                    <p>Magnolia, DE</p>
+                    <p>302-506-2442</p>
+                    <p><a href="mailto:steve.rock@wheelhouser.com">steve.rock@wheelhouser.com</a></p>
+                </div>
+            </div>
         </div>
     </footer>
-
 </body>
 </html>

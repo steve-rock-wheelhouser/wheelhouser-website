@@ -1,18 +1,19 @@
+/* --- RESET & VARIABLES --- */
 :root {
-    --bg-color: #0f172a;
-    --text-color: #f8fafc;
-    --primary-color: #38bdf8;
-    --secondary-color: #1e293b;
-    --accent-color: #94a3b8;
+    --bg-color: #0f172a;      
+    --card-bg: #1e293b;        
+    --hover-bg: #334155;       
+    --text-color: #f8fafc;     
+    --accent-color: #94a3b8;   
+    --primary-color: #38bdf8;  
+    --border-color: #334155;
     --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    --spacing-unit: 1rem;
+    /* Hero Gradient made slightly darker to contrast with brand intro */
+    --gradient-hero: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    --gradient-primary: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
     font-family: var(--font-main);
@@ -21,224 +22,372 @@ body {
     line-height: 1.6;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-}
+img { display: block; max-width: 100%; height: auto; }
+a { text-decoration: none; color: inherit; }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
 
-/* Header */
+/* --- HEADER --- */
 .site-header {
-    padding: 1.5rem 0;
-    border-bottom: 1px solid #334155;
+    padding: 1.25rem 0;
     position: sticky;
     top: 0;
-    background: rgba(15, 23, 42, 0.95);
-    backdrop-filter: blur(5px);
     z-index: 100;
+    
+    /* UPDATED: Gradient now fades to #0e0e0e */
+    background: radial-gradient(circle at center bottom, #1e293b 0%, #0e0e0e 100%);
+    
+    border-bottom: none; 
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
 
-.site-header .container {
+/* The "Glowing" Bottom Border Line */
+.site-header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, var(--border-color) 20%, var(--primary-color) 50%, var(--border-color) 80%, transparent 100%);
+    opacity: 0.6;
+}
+
+.site-header .container { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+/* LOGO TYPOGRAPHY */
+.logo { 
     display: flex;
-    justify-content: space-between;
     align-items: center;
-}
-
-.logo {
-    font-weight: 800;
-    font-size: 1.5rem;
-    letter-spacing: -0.5px;
-}
-
-nav a {
-    text-decoration: none;
+    gap: 0.75rem;
+    font-family: "Cheltenham", "ITC Cheltenham Std", "Bookman Old Style", "Century Expanded", "Georgia", serif;
+    font-weight: 700;
+    font-size: 1.6rem; 
     color: var(--text-color);
-    margin-left: 2rem;
-    font-weight: 500;
-    font-size: 0.95rem;
-    transition: color 0.2s;
+    text-transform: uppercase; 
+    letter-spacing: 1px;    
 }
 
-nav a:hover {
-    color: var(--primary-color);
+.logo img {
+    height: 42px;
+    width: auto;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
 }
 
-/* Buttons */
-.btn-primary {
-    background-color: var(--primary-color);
-    color: #0f172a;
-    padding: 0.6rem 1.2rem;
-    border-radius: 4px;
-    text-decoration: none;
+nav a { 
+    margin-left: 2rem; 
+    font-weight: 500; 
+    font-size: 0.9rem; 
+    color: var(--accent-color); 
+    transition: all 0.2s; 
+    font-family: var(--font-main); 
 }
 
-.btn-primary:hover {
-    background-color: #0ea5e9;
-    color: #0f172a;
+nav a:hover { 
+    color: #fff; 
+    text-shadow: 0 0 8px rgba(56, 189, 248, 0.4);
 }
 
-.btn-secondary {
-    display: inline-block;
-    background-color: transparent;
-    color: var(--primary-color);
-    border: 2px solid var(--primary-color);
-    padding: 0.8rem 1.5rem;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: 600;
-    margin-top: 1rem;
-    transition: all 0.2s;
+.btn-primary { 
+    background: var(--gradient-primary); 
+    color: #0f172a; padding: 0.5rem 1rem; 
+    border-radius: 6px; font-weight: 600; 
+    box-shadow: 0 4px 12px rgba(56, 189, 248, 0.3);
 }
 
-.btn-secondary:hover {
-    background-color: var(--primary-color);
-    color: #0f172a;
-}
-
-/* Hero Section */
-.hero {
-    padding: 8rem 0 6rem;
+/* --- NEW: BRAND INTRO SECTION --- */
+.brand-intro {
+    padding: 5rem 0 3rem;
     text-align: center;
-    background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
-}
-
-.hero h1 {
-    font-size: 3.5rem;
-    line-height: 1.1;
-    margin-bottom: 1.5rem;
-    letter-spacing: -1px;
-}
-
-.hero .subtitle {
-    font-size: 1.25rem;
-    color: var(--accent-color);
-    max-width: 600px;
-    margin: 0 auto 2rem;
-}
-
-/* About Section */
-.about-section {
-    padding: 6rem 0;
-}
-
-.about-section h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-}
-
-.about-content {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: var(--accent-color);
-}
-
-.about-content p {
-    margin-bottom: 1.5rem;
-}
-
-/* Products Section */
-.products-section {
-    padding: 6rem 0;
     background-color: var(--bg-color);
 }
 
-.products-section h2 {
-    font-size: 2rem;
-    margin-bottom: 3rem;
-    text-align: center;
+.brand-intro h1 {
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, #f8fafc, #94a3b8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -1px;
 }
 
-.category-header {
-    font-size: 1.75rem;
-    margin: 4rem 0 2rem;
-    text-align: center;
-    color: var(--text-color);
+.brand-subtitle {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    max-width: 700px;
+    margin: 0 auto;
+    font-weight: 500;
 }
 
-.product-grid {
+/* --- FEATURED HERO: MARQUEE MAGIC --- */
+.hero-featured {
+    background: var(--gradient-hero);
+    padding: 4rem 0;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.featured-layout {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 4rem;
+    align-items: center;
 }
 
-.product-card {
+.featured-text h2 {
+    font-size: 3rem; /* Large size for visual hierarchy */
+    font-family: "Times New Roman", serif;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    letter-spacing: -1px;
+}
+
+.featured-badge {
+    display: inline-block;
+    background: rgba(56, 189, 248, 0.1);
+    color: var(--primary-color);
+    border: 1px solid rgba(56, 189, 248, 0.2);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.featured-lead {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+.featured-desc {
+    color: var(--accent-color);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    max-width: 500px;
+}
+
+.action-row {
     display: flex;
     align-items: center;
-    gap: 2rem;
-    background: var(--secondary-color);
-    border: 1px solid #334155;
-    padding: 2rem;
-    border-radius: 8px;
-    transition: transform 0.2s, box-shadow 0.2s;
+    gap: 1.5rem;
 }
 
-.product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+.platform-tag {
+    font-size: 0.85rem;
+    color: var(--accent-color);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
-.icon-placeholder {
-    width: 50px;
-    height: 50px;
-    background-color: rgba(56, 189, 248, 0.1);
-    color: var(--primary-color);
-    border-radius: 8px;
+/* Visual Styling for Hero Image */
+.hero-img {
+    filter: drop-shadow(0 20px 40px rgba(0,0,0,0.5));
+    border-radius: 12px;
+    transform: perspective(1000px) rotateY(-5deg);
+    transition: transform 0.5s ease;
+}
+.hero-img:hover { transform: perspective(1000px) rotateY(0deg); }
+
+
+/* --- APP STORE GRID --- */
+.app-grid-section { padding: 4rem 0 6rem; }
+
+.section-header { margin-bottom: 3rem; text-align: center; }
+.section-header h2 { 
+    font-size: 1.8rem; 
+    margin-bottom: 0.5rem; 
+    font-family: "Cheltenham", "ITC Cheltenham Std", "Bookman Old Style", "Century Expanded", "Georgia", serif;
+    font-weight: 700;
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+}
+.section-header p { color: var(--accent-color); }
+
+.app-grid {
+    display: grid;
+    /* CHANGE: Force exactly 2 columns on desktop */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 2rem; /* Increased gap slightly since cards are bigger */
+}
+
+.grid-category-label {
+    grid-column: 1 / -1; /* Spans the full width */
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+.grid-category-label:first-child { margin-top: 0; }
+
+/* The App Card */
+.app-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 2rem; /* Increased padding for "chunkier" look */
+    border-radius: 12px;
+    display: flex;
+    align-items: center; 
+    gap: 1.5rem;
+    transition: all 0.2s ease;
+}
+
+.app-card:hover {
+    background: var(--hover-bg);
+    transform: translateY(-2px);
+    border-color: var(--accent-color);
+}
+
+.app-icon {
+    flex-shrink: 0;
+    width: 72px; /* Slightly larger icon to match wider card */
+    height: 72px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 0.8rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
 }
 
-.product-icon {
-    width: 96px;
-    height: 96px;
-    flex-shrink: 0;
+.app-icon img {
+    width: 100%;
+    height: 100%;
     object-fit: contain;
+    border-radius: 12px;
 }
 
-.product-card h3 {
-    margin-bottom: 0.5rem;
+.app-details {
+    flex: 1;
+    min-width: 0;
 }
 
-.product-card p {
+.app-details h3 {
+    font-size: 1.25rem; /* Larger heading */
+    margin-bottom: 0.25rem;
+    color: var(--text-color);
+}
+
+.app-summary {
+    font-size: 1rem;
     color: var(--accent-color);
-    margin-bottom: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+    /* Allow 2 lines */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.app-badge {
+    font-size: 0.75rem;
+    background: rgba(255,255,255,0.05);
+    padding: 4px 10px;
+    border-radius: 10px;
+    color: var(--accent-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+
+/* ===================================================== */
+/* --- FOOTER --- */
+.site-footer {
+    padding: 5rem 0;
+    position: relative;
+    /* STUNNING UPDATE: Deep radial gradient instead of flat color */
+    background: radial-gradient(circle at center top, #111827 0%, #000000 100%);
+    color: var(--accent-color);
     font-size: 0.95rem;
 }
 
-.link-arrow {
-    text-decoration: none;
-    color: var(--primary-color);
+/* The "Glowing" Top Border Line */
+.site-footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, var(--border-color) 20%, var(--primary-color) 50%, var(--border-color) 80%, transparent 100%);
+    opacity: 0.5;
+}
+
+.footer-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem; /* Increased gap for a more spacious feel */
+    text-align: left;
+}
+
+.footer-icon {
+    width: 140px; /* Slightly larger for presence */
+    height: 140px;
+    object-fit: contain;
+    /* Subtle drop shadow to lift it off the dark background */
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5));
+    opacity: 1; 
+}
+
+.footer-brand {
+    /* MATCHING THE HEADER FONT */
+    font-family: "Cheltenham", "ITC Cheltenham Std", "Bookman Old Style", "Century Expanded", "Georgia", serif;
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 1.5rem; /* Larger and more authoritative */
+    margin-bottom: 1rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    /* Optional: A subtle text shadow */
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.footer-stack p {
+    margin-bottom: 0.4rem;
+    color: #94a3b8; /* Slate-400 for better readability */
+}
+
+/* The "See what we can do" line needs to stand out */
+.footer-cta {
+    margin-top: 1.5rem;
+    color: #f8fafc !important; /* Bright white */
     font-weight: 600;
-    font-size: 0.9rem;
+    letter-spacing: 0.5px;
 }
 
-/* Footer */
-.site-footer {
-    padding: 3rem 0;
-    border-top: 1px solid #334155;
-    text-align: center;
-    color: var(--accent-color);
-    font-size: 0.9rem;
+.footer-stack a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.2s;
+    border-bottom: 1px dotted rgba(56, 189, 248, 0.4);
+}
+.footer-stack a:hover {
+    color: #fff;
+    border-bottom-color: #fff;
 }
 
-/* Mobile Responsive */
+/* MOBILE RESPONSIVE UPDATE */
 @media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-    
-    .site-header .container {
+    .footer-row {
         flex-direction: column;
-        gap: 1rem;
+        text-align: center;
+        gap: 2rem;
     }
     
-    nav a {
-        margin: 0 0.75rem;
+    .site-footer::before {
+        background: var(--border-color); /* Simple line on mobile */
     }
 }
