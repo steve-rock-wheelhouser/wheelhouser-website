@@ -283,10 +283,10 @@ nav a:hover {
     color: var(--accent-color);
     line-height: 1.5;
     margin-bottom: 0.75rem;
-    /* Allow 2 lines */
+    /* Allow 5 lines */
     display: -webkit-box;
-    -webkit-line-clamp: 2;
-    line-clamp: 2;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
