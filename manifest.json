@@ -8,22 +8,42 @@
   "description": "Innovative software solutions and digital signage tools.",
   "icons": [
     {
-      "src": "/images/wheelhouser-icon/resized_icons/wheelhouser-icon_512x512.png",
+      "src": "/images/wheelhouser-W/web/android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     },
     {
-      "src": "/images/wheelhouser-icon/resized_icons/wheelhouser-icon_256x256.png",
-      "sizes": "256x256",
-      "type": "image/png"
+      "src": "/images/wheelhouser-W/web/android-chrome-512x512.webp",
+      "sizes": "512x512",
+      "type": "image/webp"
     },
     {
-      "src": "/images/wheelhouser-icon/resized_icons/wheelhouser-icon_192x192.png",
+      "src": "/images/wheelhouser-W/web/android-chrome-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/favicon.ico",
+      "src": "/images/wheelhouser-W/web/android-chrome-192x192.webp",
+      "sizes": "192x192",
+      "type": "image/webp"
+    },
+    {
+      "src": "/images/wheelhouser-W/web/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/wheelhouser-W/web/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/wheelhouser-W/web/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/wheelhouser-W/web/favicon.ico",
       "sizes": "64x64 32x32 16x16",
       "type": "image/x-icon"
     }
