@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notez | Wheelhouser LLC</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="../images/wheelhouser-W/web/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="/manifest.json">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <img src="../images/wheelhouser-W/wheelhouser-07.png" alt="Wheelhouser Logo">
+                Wheelhouser LLC
+            </a>
+            <nav>
+                <a href="../index.html#portfolio">Software Portfolio</a>
+                <a href="../about.html">Company</a>
+                <a href="#contact" class="btn-primary">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="product-page">
+        
+        <section class="product-header">
+            <div class="container">
+                <div class="product-header-content">
+                    <img src="../images/notez/icon.svg" alt="App Icon" class="product-big-icon">
+                    <div class="product-title-block">
+                        <h1>Notez</h1>
+                        <p class="product-tagline">Capture your thoughts instantly.</p>
+                        <div class="product-meta-row">
+                            <span class="meta-pill">v1.0.0</span>
+                            <span class="meta-pill">GPL-3.0</span>
+                            <span class="meta-pill">Windows</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="carousel-item">
+                        <img src="../images/notez/screenshots/1.png" alt="Screenshot 1" loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/notez/screenshots/2.png" alt="Screenshot 2" loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/notez/screenshots/3.png" alt="Screenshot 3" loading="lazy">
+                    </div>
+                </div>
+                <p class="carousel-hint">Scroll for more images &rarr;</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="product-main-full">
+                <div class="content-block">
+                    <h2>About the Application</h2>
+                    <p><strong>Notez</strong> is a lightweight note-taking application designed for speed and simplicity. Keep your thoughts organized without the complexity of full-blown word processors.</p>
+                    <p>Whether you need to jot down a quick idea, draft a todo list, or keep snippets of code, Notez provides a distraction-free environment that gets out of your way.</p>
+                </div>
+
+                <div class="content-block">
+                    <h2>Key Features</h2>
+                    <ul class="feature-list">
+                        <li><strong>Fast & Lightweight:</strong> Opens instantly so you never miss an idea.</li>
+                        <li><strong>Local Storage:</strong> Your notes stay on your device for maximum privacy.</li>
+                        <li><strong>Markdown Support:</strong> Format your notes with ease using standard Markdown syntax.</li>
+                        <li><strong>Distraction-Free:</strong> Clean interface focused purely on your content.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="product-bottom-grid">
+                
+                <div class="sidebar-card action-card">
+                    <h3>Downloads</h3>
+                    <div class="download-group">
+                        <h4>Windows</h4>
+                        <a href="https://github.com/steve-rock-wheelhouser/notez/releases/download/v1.0.0/Notez_Setup.exe" class="btn-download">
+                            <img src="../images/icons/windows.svg" alt="Windows icon" class="os-icon">
+                            <span>EXE Installer (v1.0.0)</span>
+                        </a>
+                    </div>
+                    <div class="download-group">
+                        <h4>Linux & macOS</h4>
+                        <p style="color: var(--accent-color); font-size: 0.9rem;">Coming soon.</p>
+                    </div>
+                    <hr class="download-divider">
+                    <a href="https://github.com/steve-rock-wheelhouser/notez/releases" class="btn-secondary full-width-btn">All Releases</a>
+                    <a href="https://github.com/steve-rock-wheelhouser/notez" class="btn-secondary full-width-btn">View Source Code</a>
+                </div>
+
+                <div class="sidebar-card info-card">
+                    <h3>Technical Details</h3>
+                    <ul class="specs-list">
+                        <li><strong>Version:</strong> 1.0.0</li>
+                        <li><strong>License:</strong> GPL-3.0</li>
+                        <li><strong>Framework:</strong> Python / Qt</li>
+                        <li><strong>Platforms:</strong> Windows</li>
+                        <li><strong>Updated:</strong> December 24, 2025</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="site-footer" id="contact">
+        <div class="container">
+            <div class="footer-row">
+                <img src="../images/wheelhouser-icon/resized_icons/wheelhouser-icon_256x256.webp" alt="Wheelhouser Icon" class="footer-icon">
+                <div class="footer-stack">
+                    <p class="footer-brand">Wheelhouser LLC</p>
+                    <p>Engineering the next generation of native tools.</p>
+                    <p class="footer-cta">See what we can do for you.</p>
+                    <p>156 Winners Circle, Magnolia, DE</p>
+                    <p><a href="tel:302-506-2442">302-506-2442</a></p>
+                    <p><a href="mailto:steve.rock@wheelhouser.com">steve.rock@wheelhouser.com</a></p>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.7;">
+                        <a href="../privacy.html">Privacy Policy</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then(reg => console.log('Service Worker registered'))
+                .catch(err => console.log('Service Worker registration failed'));
+        }
+    </script>
+</body>
+</html>
