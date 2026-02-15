@@ -1,6 +1,6 @@
-# Notez v1.0.0
+# Notez v1.4.0
 
-We are pleased to announce the initial release of **Notez v1.0.0**. This lightweight note-taking application is designed for speed and simplicity on Windows.
+We are pleased to announce the initial release of **Notez v1.4.0**. This lightweight note-taking application is designed for speed and simplicity on Windows.
 
 ## 🚀 Key Features
 

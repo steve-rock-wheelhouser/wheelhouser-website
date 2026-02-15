@@ -1,0 +1,8 @@
+{
+  "latest_version": "1.9.0",
+  "release_notes": "Added WAI Assistant standalone module and AI intent orchestrator.",
+  "windows_url": "ms-windows-store://pdp/?productid=XP9M157TJMC9HC",
+  "macos_url": "https://wheelhouser.com/downloads/notez-mac.dmg",
+  "linux_url": "https://wheelhouser.com/downloads/notez-linux.tar.gz",
+  "fallback_url": "https://apps.microsoft.com/store/detail/XP9M157TJMC9HC"
+}
