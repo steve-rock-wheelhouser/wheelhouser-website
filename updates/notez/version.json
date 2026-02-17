@@ -5,13 +5,13 @@
     "release_notes": "Added WAI Assistant standalone module and AI intent orchestrator."
   },
   "macos": {
-    "latest_version": "1.8.5",
-    "url": "https://github.com/WheelhouserLLC/Notez/releases/download/v1.8.5/Notez_1.8.5_macOS.dmg",
+    "latest_version": "1.8.27",
+    "url": "https://github.com/WheelhouserLLC/Notez/releases/download/v1.8.27/Notez_1.8.27_macOS.dmg",
     "release_notes": "Bug fixes for macOS rendering."
   },
   "linux": {
-    "latest_version": "1.8.8",
-    "url": "https://github.com/WheelhouserLLC/Notez/releases/download/v1.8.8/Notez-1.8.8.x86_64.rpm",
+    "latest_version": "1.8.27",
+    "url": "https://github.com/WheelhouserLLC/Notez/releases/download/v1.8.27/Notez-1.8.27.x86_64.rpm",
     "release_notes": "Added transparent background exports."
   },
   "fallback_url": "https://wheelhouser.com/notez"
