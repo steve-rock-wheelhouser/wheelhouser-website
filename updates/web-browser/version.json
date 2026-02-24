@@ -1,0 +1,18 @@
+{
+  "windows": {
+    "latest_version": "1.0.0",
+    "url": "ms-windows-store://pdp/?productid=XP9M157TJMC9HC",
+    "release_notes": "Initial release of Web Browser."
+  },
+  "macos": {
+    "latest_version": "1.0.0",
+    "url": "https://github.com/WheelhouserLLC/web-browser/releases/download/v1.0.0/Web-Browser_1.0.0_macOS.dmg",
+    "release_notes": "Initial release of Web Browser."
+  },
+  "linux": {
+    "latest_version": "1.0.0",
+    "url": "https://github.com/WheelhouserLLC/web-browser/releases/download/v1.0.0/Web-Browser-1.0.0.x86_64.rpm",
+    "release_notes": "Initial release of Web Browser."
+  },
+  "fallback_url": "https://wheelhouser.com/products/web-browser"
+}
