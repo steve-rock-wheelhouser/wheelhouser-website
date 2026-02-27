@@ -1,17 +1,17 @@
 {
   "windows": {
-    "latest_version": "0.3.28",
+    "latest_version": "0.4.20",
     "url": "ms-windows-store://pdp/?productid=XP9CNJZX7011FP",
     "release_notes": "Initial release of File Browser."
   },
   "macos": {
-    "latest_version": "0.3.28",
-    "url": "https://github.com/WheelhouserLLC/FileBrowser/releases/download/v0.3.28/FileBrowser_0.3.28_macOS.dmg",
+    "latest_version": "0.4.20",
+    "url": "https://github.com/WheelhouserLLC/FileBrowser/releases/download/v0.4.20/FileBrowser_0.4.20_macOS.dmg",
     "release_notes": "Initial release of File Browser."
   },
   "linux": {
-    "latest_version": "0.3.28",
-    "url": "https://github.com/WheelhouserLLC/FileBrowser/releases/download/v0.3.28/FileBrowser-0.3.28.x86_64.rpm",
+    "latest_version": "0.4.20",
+    "url": "https://github.com/WheelhouserLLC/FileBrowser/releases/download/v0.4.20/FileBrowser-0.4.20.x86_64.rpm",
     "release_notes": "Initial release of File Browser."
   },
   "fallback_url": "https://wheelhouser.com/products/file-browser"
