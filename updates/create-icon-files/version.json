@@ -1,0 +1,18 @@
+{
+  "windows": {
+    "latest_version": "1.2.0",
+    "url": "ms-windows-store://pdp/?productid=XPDF6J7R6TL1T5",
+    "release_notes": "Initial release of Create Icon Files."
+  },
+  "macos": {
+    "latest_version": "1.2.0",
+    "url": "https://github.com/WheelhouserLLC/CreateIconFiles/releases/download/v1.2.0/CreateIconFiles_1.2.0_macOS.dmg",
+    "release_notes": "Initial release of Create Icon Files."
+  },
+  "linux": {
+    "latest_version": "1.2.0",
+    "url": "https://github.com/WheelhouserLLC/CreateIconFiles/releases/download/v1.2.0/CreateIconFiles-1.2.0.x86_64.rpm",
+    "release_notes": "Initial release of Create Icon Files."
+  },
+  "fallback_url": "https://wheelhouser.com/products/create-icon-files"
+}
