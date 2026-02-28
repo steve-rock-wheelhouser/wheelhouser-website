@@ -1,17 +1,17 @@
 {
   "windows": {
-    "latest_version": "0.18.25",
+    "latest_version": "0.20.0",
     "url": "ms-windows-store://pdp/?productid=XP9M157TJMC9HC",
     "release_notes": "Initial release."
   },
   "macos": {
-    "latest_version": "0.18.25",
-    "url": "https://github.com/WheelhouserLLC/Terminal/releases/download/v0.18.25/Terminal_0.18.25_macOS.dmg",
+    "latest_version": "0.20.0",
+    "url": "https://github.com/WheelhouserLLC/Terminal/releases/download/v0.20.0/Terminal_0.20.0_macOS.dmg",
     "release_notes": "Bug fixes for macOS rendering."
   },
   "linux": {
-    "latest_version": "0.18.25",
-    "url": "https://github.com/WheelhouserLLC/Terminal/releases/download/v0.18.25/Terminal-0.18.25.x86_64.rpm",
+    "latest_version": "0.20.0",
+    "url": "https://github.com/WheelhouserLLC/Terminal/releases/download/v0.20.0/Terminal-0.20.0.x86_64.rpm",
     "release_notes": "Added transparent background exports."
   },
   "fallback_url": "https://wheelhouser.com/products/terminal"
