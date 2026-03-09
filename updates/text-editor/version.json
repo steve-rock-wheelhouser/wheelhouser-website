@@ -1,6 +1,6 @@
 {
   "windows": {
-    "latest_version": "0.1.2",
+    "latest_version": "0.1.4",
     "url": "ms-windows-store://pdp/?productid=XP9M157TJMC9HC",
     "release_notes": "Initial release."
   },
