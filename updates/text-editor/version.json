@@ -1,17 +1,17 @@
 {
   "windows": {
-    "latest_version": "0.2.0",
+    "latest_version": "0.1.34",
     "url": "ms-windows-store://pdp/?productid=XP9M157TJMC9HC",
     "release_notes": "Initial release."
   },
   "macos": {
-    "latest_version": "0.2.0",
-    "url": "https://github.com/WheelhouserLLC/TextEditor/releases/download/v0.2.0/TextEditor_0.2.0_macOS.dmg",
+    "latest_version": "0.1.34",
+    "url": "https://github.com/WheelhouserLLC/TextEditor/releases/download/v0.1.34/TextEditor_0.1.34_macOS.dmg",
     "release_notes": "Initial release."
   },
   "linux": {
-    "latest_version": "0.2.0",
-    "url": "https://github.com/WheelhouserLLC/TextEditor/releases/download/v0.2.0/TextEditor-0.2.0.x86_64.rpm",
+    "latest_version": "0.1.34",
+    "url": "https://github.com/WheelhouserLLC/TextEditor/releases/download/v0.1.34/TextEditor-0.1.34.x86_64.rpm",
     "release_notes": "Initial release."
   },
   "fallback_url": "https://wheelhouser.com/products/text-editor"
