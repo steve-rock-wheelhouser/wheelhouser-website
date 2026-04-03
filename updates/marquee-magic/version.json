@@ -1,17 +1,17 @@
 {
   "windows": {
-    "latest_version": "0.82.0",
+    "latest_version": "0.84.0",
     "url": "ms-windows-store://pdp/?productid=XPDNKZ6QSMWLDD",
     "release_notes": "Initial release."
   },
   "macos": {
-    "latest_version": "0.82.0",
-    "url": "https://github.com/WheelhouserLLC/MarqueeMagic/releases/download/v0.82.0/MarqueeMagic_0.82.0_macOS.dmg",
+    "latest_version": "0.84.0",
+    "url": "https://github.com/WheelhouserLLC/MarqueeMagic/releases/download/v0.84.0/MarqueeMagic_0.84.0_macOS.dmg",
     "release_notes": "Initial release."
   },
   "linux": {
-    "latest_version": "0.82.0",
-    "url": "https://github.com/WheelhouserLLC/MarqueeMagic/releases/download/v0.82.0/MarqueeMagic-0.82.0.x86_64.rpm",
+    "latest_version": "0.84.0",
+    "url": "https://github.com/WheelhouserLLC/MarqueeMagic/releases/download/v0.84.0/MarqueeMagic-0.84.0.x86_64.rpm",
     "release_notes": "Initial release."
   },
   "fallback_url": "https://wheelhouser.com/products/marquee-magic"
