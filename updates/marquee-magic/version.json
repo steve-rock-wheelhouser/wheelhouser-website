@@ -1,6 +1,6 @@
 {
   "windows": {
-    "latest_version": "0.82.5",
+    "latest_version": "0.83.0",
     "url": "ms-windows-store://pdp/?productid=XPDNKZ6QSMWLDD",
     "release_notes": "Initial release."
   },
