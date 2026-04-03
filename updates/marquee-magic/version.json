@@ -1,7 +1,7 @@
 {
   "windows": {
     "latest_version": "0.84.0",
-    "url": "ms-windows-store://pdp/?productid=XPDNKZ6QSMWLDD",
+    "url": "https://marqueemagic.shop/assets/downloads/Marquee-Magic_Setup.exe",
     "release_notes": "Initial release."
   },
   "macos": {
@@ -11,7 +11,7 @@
   },
   "linux": {
     "latest_version": "0.84.0",
-    "url": "https://github.com/WheelhouserLLC/MarqueeMagic/releases/download/v0.84.0/MarqueeMagic-0.84.0.x86_64.rpm",
+    "url": "https://marqueemagic.shop",
     "release_notes": "Initial release."
   },
   "fallback_url": "https://wheelhouser.com/products/marquee-magic"
