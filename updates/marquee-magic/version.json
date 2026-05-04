@@ -1,8 +1,8 @@
 {
   "windows": {
-    "latest_version": "0.92.1",
+    "latest_version": "0.92.2",
     "url": "https://marqueemagic.shop/assets/downloads/Marquee-Magic_Setup.exe",
-    "release_notes": "Python 3.13 support."
+    "release_notes": "Remove Background bug fix."
   },
   "macos": {
     "latest_version": "0.92.0",
