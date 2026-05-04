@@ -1,18 +1,18 @@
 {
   "windows": {
-    "latest_version": "0.91.3",
+    "latest_version": "0.92.0",
     "url": "https://marqueemagic.shop/assets/downloads/Marquee-Magic_Setup.exe",
-    "release_notes": "Facebook Integration."
+    "release_notes": "Python 3.13 support."
   },
   "macos": {
-    "latest_version": "0.91.3",
+    "latest_version": "0.92.0",
     "url": "https://marqueemagic.shop/assets/downloads/Marquee-Magic_Setup_macOS.dmg",
-    "release_notes": "Facebook Integration."
+    "release_notes": "Python 3.13 support."
   },
   "linux": {
-    "latest_version": "0.91.3",
+    "latest_version": "0.92.0",
     "url": "https://marqueemagic.shop",
-    "release_notes": "Facebook Integration."
+    "release_notes": "Python 3.13 support."
   },
   "fallback_url": "https://wheelhouser.com/products/marquee-magic"
 }
