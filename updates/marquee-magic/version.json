@@ -1,18 +1,18 @@
 {
   "windows": {
-    "latest_version": "0.95.15",
+    "latest_version": "0.96.0",
     "url": "https://marqueemagic.shop/assets/downloads/Marquee-Magic_Setup.exe",
-    "release_notes": "Remove Background bug fix."
+    "release_notes": "Magic Enhancements."
   },
   "macos": {
-    "latest_version": "0.92.0",
+    "latest_version": "0.96.0",
     "url": "https://marqueemagic.shop/assets/downloads/Marquee-Magic_Setup_macOS.dmg",
-    "release_notes": "Python 3.13 support."
+    "release_notes": "Magic Enhancements."
   },
   "linux": {
-    "latest_version": "0.92.0",
+    "latest_version": "0.96.0",
     "url": "https://marqueemagic.shop",
-    "release_notes": "Python 3.13 support."
+    "release_notes": "Magic Enhancements."
   },
   "fallback_url": "https://wheelhouser.com/products/marquee-magic"
 }
