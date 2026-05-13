@@ -1,6 +1,6 @@
 {
   "windows": {
-    "latest_version": "0.92.3",
+    "latest_version": "0.95.14",
     "url": "https://marqueemagic.shop/assets/downloads/Marquee-Magic_Setup.exe",
     "release_notes": "Remove Background bug fix."
   },
