@@ -1,18 +1,18 @@
 {
   "windows": {
-    "latest_version": "0.5.2",
+    "latest_version": "0.7.4",
     "url": "ms-windows-store://pdp/?productid=XPDNKZ6QSMWLDD",
-    "release_notes": "Initial release."
+    "release_notes": "Antivirus false positive fix."
   },
   "macos": {
-    "latest_version": "0.5.2",
-    "url": "https://github.com/WheelhouserLLC/TextEditor/releases/download/v0.5.2/TextEditor_0.5.2_macOS.dmg",
-    "release_notes": "Initial release."
+    "latest_version": "0.7.4",
+    "url": "https://github.com/WheelhouserLLC/TextEditor/releases/download/v0.7.4/TextEditor_0.7.4_macOS.dmg",
+    "release_notes": "Antivirus false positive fix."
   },
   "linux": {
-    "latest_version": "0.5.2",
-    "url": "https://github.com/WheelhouserLLC/TextEditor/releases/download/v0.5.2/TextEditor-0.5.2.x86_64.rpm",
-    "release_notes": "Initial release."
+    "latest_version": "0.7.4",
+    "url": "https://github.com/WheelhouserLLC/TextEditor/releases/download/v0.7.4/TextEditor-0.7.4.x86_64.rpm",
+    "release_notes": "Antivirus false positive fix."
   },
   "fallback_url": "https://wheelhouser.com/products/text-editor"
 }
