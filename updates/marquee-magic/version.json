@@ -1,16 +1,16 @@
 {
   "windows": {
-    "latest_version": "1.10.4.0",
+    "latest_version": "1.10.5.0",
     "url": "https://marqueemagic.shop/assets/downloads/Marquee-Magic_Setup.exe",
     "release_notes": "Full Product Release."
   },
   "macos": {
-    "latest_version": "1.10.4",
+    "latest_version": "1.10.5",
     "url": "https://marqueemagic.shop/assets/downloads/Marquee-Magic_Setup_macOS.dmg",
     "release_notes": "Full Product Release."
   },
   "linux": {
-    "latest_version": "1.10.4",
+    "latest_version": "1.10.5",
     "url": "https://marqueemagic.shop",
     "release_notes": "Full Product Release."
   },
