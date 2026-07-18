@@ -1,16 +1,16 @@
 {
   "windows": {
-    "latest_version": "0.11.5",
+    "latest_version": "0.9.29",
     "url": "https://marqueemagic.shop/assets/downloads/Video-Stitcher_Setup.exe",
     "release_notes": "Full Product Release."
   },
   "macos": {
-    "latest_version": "0.11.5",
+    "latest_version": "0.9.29",
     "url": "https://marqueemagic.shop/assets/downloads/Video-Stitcher_Setup_macOS.dmg",
     "release_notes": "Full Product Release."
   },
   "linux": {
-    "latest_version": "0.11.5",
+    "latest_version": "0.9.29",
     "url": "https://marqueemagic.shop",
     "release_notes": "Full Product Release."
   },
