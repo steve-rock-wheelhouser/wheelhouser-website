@@ -1,0 +1,18 @@
+{
+  "windows": {
+    "latest_version": "6.0.0",
+    "url": "https://marqueemagic.shop/assets/downloads/Event-Scheduler_Setup.exe",
+    "release_notes": "Full Product Release."
+  },
+  "macos": {
+    "latest_version": "6.0.0",
+    "url": "https://marqueemagic.shop/assets/downloads/Event-Scheduler_Setup_macOS.dmg",
+    "release_notes": "Full Product Release."
+  },
+  "linux": {
+    "latest_version": "6.0.0",
+    "url": "https://marqueemagic.shop/assets/downloads/Event-Scheduler_Setup.tar.gz",
+    "release_notes": "Full Product Release."
+  },
+  "fallback_url": "https://wheelhouser.com/products/event-scheduler"
+}
