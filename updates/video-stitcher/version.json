@@ -5,12 +5,12 @@
     "release_notes": "Full Product Release."
   },
   "macos": {
-    "latest_version": "0.12.4",
+    "latest_version": "0.12.5",
     "url": "https://marqueemagic.shop/assets/downloads/Video-Stitcher_macOS.dmg",
     "release_notes": "Full Product Release."
   },
   "linux": {
-    "latest_version": "0.12.4",
+    "latest_version": "0.12.5",
     "url": "https://marqueemagic.shop",
     "release_notes": "Full Product Release."
   },
