@@ -1,28 +1,28 @@
 {
   "windows": {
-    "latest_version": "5.57.0",
-    "url": "https://marqueemagic.shop/assets/downloads/Event-Scheduler_5.57.0_Setup.exe",
-    "release_notes": "Version 5.57.0 Release."
+    "latest_version": "6.1.0",
+    "url": "https://marqueemagic.shop/assets/downloads/Event-Scheduler_6.1.0_Setup.exe",
+    "release_notes": "Version 6.1.0 Release."
   },
   "macos": {
-    "latest_version": "5.57.0",
-    "url": "https://marqueemagic.shop/assets/downloads/Event-Scheduler_Setup_macOS.dmg",
-    "release_notes": "Version 5.57.0 Release."
+    "latest_version": "6.1.0",
+    "url": "https://marqueemagic.shop/assets/downloads/Event-Scheduler_6.1.0_Setup_macOS.dmg",
+    "release_notes": "Version 6.1.0 Release."
   },
   "macos_arm64": {
-    "latest_version": "5.57.0",
-    "url": "https://marqueemagic.shop/assets/downloads/Event-Scheduler_5.57.0_macOS_arm64.dmg",
-    "release_notes": "Version 5.57.0 Release (Apple Silicon)."
+    "latest_version": "6.1.0",
+    "url": "https://marqueemagic.shop/assets/downloads/Event-Scheduler_6.1.0_macOS_arm64.dmg",
+    "release_notes": "Version 6.1.0 Release (Apple Silicon)."
   },
   "macos_x86_64": {
-    "latest_version": "5.57.0",
-    "url": "https://marqueemagic.shop/assets/downloads/Event-Scheduler_5.57.0_macOS_x86_64.dmg",
-    "release_notes": "Version 5.57.0 Release (Intel)."
+    "latest_version": "6.1.0",
+    "url": "https://marqueemagic.shop/assets/downloads/Event-Scheduler_6.1.0_macOS_x86_64.dmg",
+    "release_notes": "Version 6.1.0 Release (Intel)."
   },
   "linux": {
-    "latest_version": "5.56.0",
-    "url": "https://marqueemagic.shop/assets/downloads/Event-Scheduler_Setup.tar.gz",
-    "release_notes": "Full Product Release."
+    "latest_version": "6.1.0",
+    "url": "https://marqueemagic.shop/assets/downloads/Event-Scheduler_6.1.0_Setup.tar.gz",
+    "release_notes": "Version 6.1.0 Release."
   },
   "fallback_url": "https://wheelhouser.com/products/event-scheduler"
 }
