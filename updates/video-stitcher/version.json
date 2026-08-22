@@ -1,13 +1,23 @@
 {
   "windows": {
-    "latest_version": "0.13.0",
-    "url": "https://marqueemagic.shop/assets/downloads/Video-Stitcher_Setup.exe",
-    "release_notes": "Full Product Release."
+    "latest_version": "0.15.1",
+    "url": "https://marqueemagic.shop/assets/downloads/Video-Stitcher_0.15.1_Setup.exe",
+    "release_notes": "Version 0.15.1 Release."
   },
   "macos": {
-    "latest_version": "0.13.0",
+    "latest_version": "0.15.1",
     "url": "https://marqueemagic.shop/assets/downloads/Video-Stitcher_macOS.dmg",
-    "release_notes": "Full Product Release."
+    "release_notes": "Version 0.15.1 Release."
+  },
+  "macos_arm64": {
+    "latest_version": "0.15.1",
+    "url": "https://marqueemagic.shop/assets/downloads/Video-Stitcher_0.15.1_macOS_arm64.dmg",
+    "release_notes": "Version 0.15.1 Release (Apple Silicon)."
+  },
+  "macos_x86_64": {
+    "latest_version": "0.15.1",
+    "url": "https://marqueemagic.shop/assets/downloads/Video-Stitcher_0.15.1_macOS_x86_64.dmg",
+    "release_notes": "Version 0.15.1 Release (Intel)."
   },
   "linux": {
     "latest_version": "0.13.0",
