@@ -1,8 +1,8 @@
 {
   "windows": {
-    "latest_version": "1.13.2",
-    "url": "https://marqueemagic.shop/assets/downloads/Marquee-Magic_1.13.2_Setup.exe",
-    "release_notes": "Version 1.13.2 Release."
+    "latest_version": "1.13.3",
+    "url": "https://marqueemagic.shop/assets/downloads/Marquee-Magic_1.13.3_Setup.exe",
+    "release_notes": "Version 1.13.3 Release."
   },
   "macos": {
     "latest_version": "1.13.2",
