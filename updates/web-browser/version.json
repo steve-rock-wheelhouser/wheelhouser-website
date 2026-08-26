@@ -1,6 +1,6 @@
 {
   "windows": {
-    "latest_version": "0.2.44",
+    "latest_version": "0.1.44",
     "url": "ms-windows-store://pdp/?productid=XPFMW4P9RDVKFG",
     "release_notes": "Initial release of Web Browser."
   },
