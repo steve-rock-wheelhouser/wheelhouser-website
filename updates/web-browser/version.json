@@ -10,9 +10,9 @@
     "release_notes": "Initial release of Web Browser."
   },
   "linux": {
-    "latest_version": "0.1.115",
+    "latest_version": "0.2.115",
     "url": "https://github.com/steve-rock-wheelhouser/fedora-repo",
-    "release_notes": "Available in Fedora repo. Upgrade with: sudo dnf upgrade web-browser"
+    "release_notes": "Upgrade with: sudo dnf upgrade web-browser"
   },
   "fallback_url": "https://wheelhouser.com/products/web-browser"
 }
