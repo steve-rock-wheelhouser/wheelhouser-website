@@ -6,13 +6,13 @@
   },
   "macos_arm64": {
     "latest_version": "1.0.0",
-    "url": "https://marqueemagic.shop/assets/downloads/Web-Browser_1.0.0_macOS_arm64.dmg",
-    "release_notes": "Version 1.0.0 Release (Apple Silicon)."
+    "url": "https://marqueemagic.shop/assets/downloads/Web-Browser_0.1.124_macOS_arm64.dmg",
+    "release_notes": "Version 0.1.124 Release (Apple Silicon)."
   },
   "macos_x86_64": {
     "latest_version": "1.0.0",
-    "url": "https://marqueemagic.shop/assets/downloads/Web-Browser_1.0.0_macOS_x86_64.dmg",
-    "release_notes": "Version 1.0.0 Release (Intel)."
+    "url": "https://marqueemagic.shop/assets/downloads/Web-Browser_0.1.124_macOS_x86_64.dmg",
+    "release_notes": "Version 0.1.124 Release (Intel)."
   },
   "linux": {
     "distro": "fedora",
