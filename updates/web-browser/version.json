@@ -4,12 +4,18 @@
     "url": "ms-windows-store://pdp/?productid=XPFMW4P9RDVKFG",
     "release_notes": "Initial release of Web Browser."
   },
-  "macos": {
+  "macos intel": {
+    "latest_version": "0.1.44",
+    "url": "https://github.com/WheelhouserLLC/web-browser/releases/download/v0.1.44/Web-Browser_0.1.44_macOS.dmg",
+    "release_notes": "Initial release of Web Browser."
+  },
+  "macos apple-silicon": {
     "latest_version": "0.1.44",
     "url": "https://github.com/WheelhouserLLC/web-browser/releases/download/v0.1.44/Web-Browser_0.1.44_macOS.dmg",
     "release_notes": "Initial release of Web Browser."
   },
   "linux": {
+    "distro": "fedora",
     "latest_version": "1.0.0",
     "url": "https://github.com/steve-rock-wheelhouser/fedora-repo",
     "release_notes": "Upgrade with: sudo dnf upgrade web-browser"
