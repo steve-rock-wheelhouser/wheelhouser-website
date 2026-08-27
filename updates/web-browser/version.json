@@ -5,14 +5,14 @@
     "release_notes": "Initial release of Web Browser."
   },
   "macos_arm64": {
-    "latest_version": "0.1.124",
-    "url": "https://marqueemagic.shop/assets/downloads/Web-Browser_0.1.124_macOS_arm64.dmg",
-    "release_notes": "Version 0.1.124 Release (Apple Silicon)."
+    "latest_version": "0.1.127",
+    "url": "https://marqueemagic.shop/assets/downloads/Web-Browser_0.1.127_macOS_arm64.dmg",
+    "release_notes": "Version 0.1.127 Release (Apple Silicon)."
   },
   "macos_x86_64": {
-    "latest_version": "0.1.124",
-    "url": "https://marqueemagic.shop/assets/downloads/Web-Browser_0.1.124_macOS_x86_64.dmg",
-    "release_notes": "Version 0.1.124 Release (Intel)."
+    "latest_version": "0.1.127",
+    "url": "https://marqueemagic.shop/assets/downloads/Web-Browser_0.1.127_macOS_x86_64.dmg",
+    "release_notes": "Version 0.1.127 Release (Intel)."
   },
   "linux": {
     "distro": "fedora",
