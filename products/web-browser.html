@@ -34,7 +34,7 @@
                         <h1>Web Browser</h1>
                         <p class="product-tagline">Fast, modern, privacy-focused desktop web browser with native dark mode.</p>
                         <div class="product-meta-row">
-                            <span class="meta-pill">v0.1.124</span>
+                            <span class="meta-pill" id="browser-version-pill">v0.1.127</span>
                             <span class="meta-pill">Native Dark Theme</span>
                             <span class="meta-pill">Windows &bull; macOS &bull; Fedora Linux</span>
                         </div>
@@ -90,29 +90,29 @@
 
                     <div class="download-group">
                         <h4>Windows</h4>
-                        <a href="ms-windows-store://pdp/?productid=XPFMW4P9RDVKFG" class="btn-download">
+                        <a href="ms-windows-store://pdp/?productid=XPFMW4P9RDVKFG" class="btn-download" id="download-windows">
                             <img src="../images/icons/windows.svg" alt="Windows icon" class="os-icon">
-                            <span>Microsoft Store (v0.1.44)</span>
+                            <span id="download-windows-text">Microsoft Store (v0.1.44)</span>
                         </a>
                     </div>
 
                     <div class="download-group">
                         <h4>macOS</h4>
-                        <a href="https://marqueemagic.shop/assets/downloads/Web-Browser_0.1.124_macOS_arm64.dmg" class="btn-download" style="margin-bottom: 0.5rem;">
+                        <a href="https://marqueemagic.shop/assets/downloads/Web-Browser_0.1.127_macOS_arm64.dmg" class="btn-download" id="download-mac-arm" style="margin-bottom: 0.5rem;">
                             <img src="../images/icons/apple.svg" alt="Apple icon" class="os-icon">
-                            <span>Apple Silicon DMG (ARM64 &bull; v0.1.124)</span>
+                            <span id="download-mac-arm-text">Apple Silicon DMG (ARM64 &bull; v0.1.127)</span>
                         </a>
-                        <a href="https://marqueemagic.shop/assets/downloads/Web-Browser_0.1.124_macOS_x86_64.dmg" class="btn-download">
+                        <a href="https://marqueemagic.shop/assets/downloads/Web-Browser_0.1.127_macOS_x86_64.dmg" class="btn-download" id="download-mac-x86">
                             <img src="../images/icons/apple.svg" alt="Apple icon" class="os-icon">
-                            <span>Intel DMG (x86_64 &bull; v0.1.124)</span>
+                            <span id="download-mac-x86-text">Intel DMG (x86_64 &bull; v0.1.127)</span>
                         </a>
                     </div>
 
                     <div class="download-group">
                         <h4>Fedora Linux (RPM / DNF)</h4>
-                        <a href="https://github.com/steve-rock-wheelhouser/fedora-repo" class="btn-download" style="margin-bottom: 0.5rem;">
+                        <a href="https://github.com/steve-rock-wheelhouser/fedora-repo" class="btn-download" id="download-linux" style="margin-bottom: 0.5rem;">
                             <img src="../images/icons/linux.svg" alt="Linux icon" class="os-icon">
-                            <span>Fedora Repository (v0.1.122)</span>
+                            <span id="download-linux-text">Fedora Repository (v0.1.125)</span>
                         </a>
                         <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid var(--border-color); border-radius: 6px; padding: 0.6rem 0.8rem; font-family: monospace; font-size: 0.85rem; color: #38bdf8; word-break: break-all;">
                             <code>sudo dnf upgrade web-browser</code>
@@ -127,12 +127,12 @@
                 <div class="sidebar-card info-card">
                     <h3>Technical Details</h3>
                     <ul class="specs-list">
-                        <li><strong>Version:</strong> 0.1.124 (macOS) / 0.1.122 (Linux) / 0.1.44 (Windows)</li>
+                        <li><strong>Version:</strong> <span id="specs-version">0.1.127 (macOS) / 0.1.125 (Linux) / 0.1.44 (Windows)</span></li>
                         <li><strong>License:</strong> Proprietary (Wheelhouser EULA)</li>
                         <li><strong>Framework:</strong> Python 3.13 / PySide6 / QtWebEngine</li>
                         <li><strong>Engine:</strong> Chromium / Custom Media Transcoding Pipeline</li>
                         <li><strong>Platforms:</strong> Windows 10/11, macOS 12+ (ARM64 & x86_64), Fedora 43/44 (noarch)</li>
-                        <li><strong>Updated:</strong> August 26, 2026</li>
+                        <li><strong>Updated:</strong> August 27, 2026</li>
                     </ul>
                 </div>
 
@@ -166,6 +166,84 @@
                 .then(reg => console.log('Service Worker registered'))
                 .catch(err => console.log('Service Worker registration failed'));
         }
+
+        // Dynamically fetch and populate version and download links from updates/web-browser/version.json
+        async function fetchAndUpdateVersion() {
+            try {
+                const endpoints = [
+                    '../updates/web-browser/version.json',
+                    '/updates/web-browser/version.json'
+                ];
+                let data = null;
+                for (const url of endpoints) {
+                    try {
+                        const response = await fetch(url);
+                        if (response.ok) {
+                            data = await response.json();
+                            break;
+                        }
+                    } catch (e) {
+                        // continue to next endpoint
+                    }
+                }
+                if (!data) return;
+
+                const winVer = data.windows?.latest_version;
+                const winUrl = data.windows?.url;
+                const macArmVer = data.macos_arm64?.latest_version;
+                const macArmUrl = data.macos_arm64?.url;
+                const macX86Ver = data.macos_x86_64?.latest_version;
+                const macX86Url = data.macos_x86_64?.url;
+                const macVer = macArmVer || macX86Ver || data.macos?.latest_version;
+                const linuxVer = data.linux?.latest_version;
+                const linuxUrl = data.linux?.url;
+
+                // Meta Pill
+                const pillEl = document.getElementById('browser-version-pill');
+                if (pillEl && (macVer || linuxVer || winVer)) {
+                    pillEl.textContent = `v${macVer || linuxVer || winVer}`;
+                }
+
+                // Windows
+                const winLink = document.getElementById('download-windows');
+                const winText = document.getElementById('download-windows-text');
+                if (winLink && winUrl) winLink.href = winUrl;
+                if (winText && winVer) winText.textContent = `Microsoft Store (v${winVer})`;
+
+                // macOS ARM64
+                const macArmLink = document.getElementById('download-mac-arm');
+                const macArmText = document.getElementById('download-mac-arm-text');
+                if (macArmLink && macArmUrl) macArmLink.href = macArmUrl;
+                if (macArmText && macArmVer) macArmText.innerHTML = `Apple Silicon DMG (ARM64 &bull; v${macArmVer})`;
+
+                // macOS x86_64
+                const macX86Link = document.getElementById('download-mac-x86');
+                const macX86Text = document.getElementById('download-mac-x86-text');
+                if (macX86Link && macX86Url) macX86Link.href = macX86Url;
+                if (macX86Text && macX86Ver) macX86Text.innerHTML = `Intel DMG (x86_64 &bull; v${macX86Ver})`;
+
+                // Linux
+                const linuxLink = document.getElementById('download-linux');
+                const linuxText = document.getElementById('download-linux-text');
+                if (linuxLink && linuxUrl) linuxLink.href = linuxUrl;
+                if (linuxText && linuxVer) linuxText.textContent = `Fedora Repository (v${linuxVer})`;
+
+                // Specs list
+                const specsVersion = document.getElementById('specs-version');
+                if (specsVersion) {
+                    const parts = [];
+                    if (macVer) parts.push(`${macVer} (macOS)`);
+                    if (linuxVer) parts.push(`${linuxVer} (Linux)`);
+                    if (winVer) parts.push(`${winVer} (Windows)`);
+                    if (parts.length > 0) {
+                        specsVersion.textContent = parts.join(' / ');
+                    }
+                }
+            } catch (err) {
+                console.error('Failed to update web browser version:', err);
+            }
+        }
+        fetchAndUpdateVersion();
     </script>
 </body>
 </html>
