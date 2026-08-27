@@ -12,7 +12,7 @@
   "linux": {
     "latest_version": "0.2.115",
     "url": "https://github.com/steve-rock-wheelhouser/fedora-repo",
-    "release_notes": "Upgrade with: sudo dnf upgrade web-browser"
+    "release_notes": "Upgrade with: sudo dnf upgrade web-browser\n"
   },
   "fallback_url": "https://wheelhouser.com/products/web-browser"
 }
