@@ -1,6 +1,6 @@
 {
   "windows": {
-    "latest_version": "1.1.44",
+    "latest_version": "0.1.44",
     "url": "ms-windows-store://pdp/?productid=XPFMW4P9RDVKFG",
     "release_notes": "Initial release of Web Browser."
   },
@@ -16,7 +16,7 @@
   },
   "linux": {
     "distro": "fedora",
-    "latest_version": "1.0.0",
+    "latest_version": "0.1.119",
     "url": "https://github.com/steve-rock-wheelhouser/fedora-repo",
     "release_notes": "Upgrade with: sudo dnf upgrade web-browser"
   },
