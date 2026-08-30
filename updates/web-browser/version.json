@@ -1,8 +1,8 @@
 {
   "windows": {
-    "latest_version": "0.13.0",
-    "url": "https://marqueemagic.shop/assets/downloads/Web-Browser_0.13.0_Setup.exe",
-    "release_notes": "Version 0.13.0 Release (Windows)."
+    "latest_version": "0.1.44",
+    "url": "ms-windows-store://pdp/?productid=XPFMW4P9RDVKFG",
+    "release_notes": "Initial release of Web Browser."
   },
   "macos_arm64": {
     "latest_version": "0.1.128",
