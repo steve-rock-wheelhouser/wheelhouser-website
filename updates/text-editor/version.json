@@ -1,8 +1,8 @@
 {
   "windows": {
-    "latest_version": "0.7.4",
-    "url": "ms-windows-store://pdp/?productid=XPDNKZ6QSMWLDD",
-    "release_notes": "Antivirus false positive fix."
+    "latest_version": "0.12.5",
+    "url": "ms-windows-store://pdp/?productid=9PDMKDMPCJRG",
+    "release_notes": "Version 0.12.5 Release."
   },
   "macos": {
     "latest_version": "0.7.4",
