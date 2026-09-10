@@ -1,8 +1,8 @@
 {
   "windows": {
-    "latest_version": "0.16.6",
-    "url": "https://marqueemagic.shop/assets/downloads/Video-Stitcher_0.16.6_x64_Sideload.msix",
-    "release_notes": "Version 0.16.6 Release."
+    "latest_version": "0.16.7",
+    "url": "https://marqueemagic.shop/assets/downloads/Video-Stitcher_0.16.7_x64_Sideload.msix",
+    "release_notes": "Version 0.16.7 Release."
   },
   "macos": {
     "latest_version": "0.16.4",
