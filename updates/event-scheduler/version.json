@@ -1,8 +1,8 @@
 {
   "windows": {
-    "latest_version": "6.1.0",
-    "url": "https://marqueemagic.shop/assets/downloads/Event-Scheduler_6.1.0_Setup.exe",
-    "release_notes": "Version 6.1.0 Release."
+    "latest_version": "6.2.4",
+    "url": "https://marqueemagic.shop/assets/downloads/Event-Scheduler_6.2.4_x64_Sideload.msix",
+    "release_notes": "Version 6.2.4 Release."
   },
   "macos": {
     "latest_version": "6.1.0",
