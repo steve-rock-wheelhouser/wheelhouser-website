@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor | Wheelhouser LLC</title>
+    <meta name="description" content="Fast, modern desktop text editor with code folding, multi-cursor editing, syntax highlighting across dozens of languages, and native dark mode for Rocky Linux 10, Fedora, and Windows.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="../images/wheelhouser-W/web/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="/manifest.json">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <img src="../images/wheelhouser-W/wheelhouser-07.png" alt="Wheelhouser Logo">
+                Wheelhouser LLC
+            </a>
+            <nav>
+                <a href="../index.html#portfolio">Software Portfolio</a>
+                <a href="../about.html">Company</a>
+                <a href="../index.html#contact" class="btn-primary">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="product-page">
+        
+        <section class="product-header">
+            <div class="container">
+                <div class="product-header-content">
+                    <img src="../images/text-editor/icon.svg" alt="Text Editor Icon" class="product-big-icon">
+                    <div class="product-title-block">
+                        <h1>Text Editor</h1>
+                        <p class="product-tagline">Fast, modern desktop text editor with code folding, multi-cursor editing, and rich syntax highlighting.</p>
+                        <div class="product-meta-row">
+                            <span class="meta-pill" id="editor-version-pill">v0.12.6</span>
+                            <span class="meta-pill">Native Dark Theme</span>
+                            <span class="meta-pill">Rocky Linux 10 &bull; Fedora &bull; Windows &bull; macOS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="carousel-item">
+                        <img src="../images/text-editor/screenshots/1.png" alt="Text Editor Screenshot 1" loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/text-editor/screenshots/2.png" alt="Text Editor Screenshot 2" loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/text-editor/screenshots/3.png" alt="Text Editor Screenshot 3" loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/text-editor/screenshots/4.png" alt="Text Editor Screenshot 4" loading="lazy">
+                    </div>
+                </div>
+                <p class="carousel-hint">Scroll for more images &rarr;</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="product-main-full">
+                <div class="content-block">
+                    <h2>About the Application</h2>
+                    <p><strong>Text Editor</strong> is an ergonomic, high-performance desktop code and plain text editor developed by Wheelhouser LLC. Designed for developers, systems engineers, and writers, it combines lightning-fast file operations with advanced code editing capabilities in a cohesive, distraction-free environment.</p>
+                    <p>Featuring multi-cursor editing, multi-level code folding, intelligent auto-indentation, find and replace with regex support, dynamic tab favicons, and integrated spell checking, Wheelhouser Text Editor is optimized for both everyday notes and demanding source code development across Linux, Windows, and macOS.</p>
+                </div>
+
+                <div class="content-block">
+                    <h2>Key Features</h2>
+                    <ul class="feature-list">
+                        <li><strong>Multi-Language Syntax Highlighting:</strong> First-class color coding for Python, C, C++, Java, Rust, Ruby, HTML, CSS, JavaScript, TypeScript, Markdown, JSON, Shell scripts, and PowerShell.</li>
+                        <li><strong>Code Folding &amp; Structure Navigation:</strong> Collapse and expand code blocks with keyboard shortcuts (<kbd>Ctrl+Shift+[</kbd> / <kbd>Ctrl+Shift+]</kbd>), preserving folding states across application restarts.</li>
+                        <li><strong>Simultaneous Multi-Cursor Editing:</strong> Multiple cursors (<kbd>Ctrl+Click</kbd>, <kbd>Ctrl+D</kbd>, <kbd>Ctrl+Alt+Up/Down</kbd>) for blazing fast parallel refactoring and editing.</li>
+                        <li><strong>Wheelhouser Dark &amp; Theme Customization:</strong> Native dark mode with user-definable ANSI color palettes, typography customization, and dynamic JSON theme plugins.</li>
+                        <li><strong>Integrated Spell &amp; Grammar Check:</strong> Real-time spelling suggestions and custom dictionary management powered by pyspellchecker.</li>
+                        <li><strong>Native RPM Packaging:</strong> Built and signed for Enterprise Linux (Rocky Linux 10) and Fedora with full desktop icon integration and DNF repository delivery.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="product-bottom-grid">
+                
+                <div class="sidebar-card action-card">
+                    <h3>Downloads & Installation</h3>
+
+                    <div class="download-group">
+                        <h4>Windows</h4>
+                        <a href="ms-windows-store://pdp/?productid=9PDMKDMPCJRG" class="btn-download" id="download-windows">
+                            <img src="../images/icons/windows.svg" alt="Windows icon" class="os-icon">
+                            <span id="download-windows-text">Microsoft Store (v0.12.6)</span>
+                        </a>
+                    </div>
+
+                    <div class="download-group">
+                        <h4>Linux (RPM / DNF)</h4>
+                        <a href="https://github.com/steve-rock-wheelhouser/wheelhouserllc-repo" class="btn-download" id="download-linux" style="margin-bottom: 0.5rem;">
+                            <img src="../images/icons/linux.svg" alt="Linux icon" class="os-icon">
+                            <span id="download-linux-text">Wheelhouser RPM Repo (v0.12.6)</span>
+                        </a>
+                        <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid var(--border-color); border-radius: 6px; padding: 0.6rem 0.8rem; font-family: monospace; font-size: 0.85rem; color: #38bdf8; word-break: break-all;">
+                            <code>sudo dnf install text-editor</code>
+                        </div>
+                    </div>
+
+                    <div class="download-group">
+                        <h4>macOS</h4>
+                        <a href="https://github.com/steve-rock-wheelhouser/text-editor" class="btn-download" id="download-mac" target="_blank" rel="noopener">
+                            <img src="../images/icons/apple.svg" alt="Apple icon" class="os-icon">
+                            <span id="download-mac-text">GitHub Releases (macOS)</span>
+                        </a>
+                    </div>
+
+                    <hr class="download-divider">
+                    <a href="https://github.com/steve-rock-wheelhouser/text-editor" class="btn-secondary full-width-btn" style="margin-bottom: 0.5rem;" target="_blank" rel="noopener">View Source Code</a>
+                    <a href="https://repo.wheelhouser.com" class="btn-secondary full-width-btn" target="_blank" rel="noopener">Wheelhouser RPM Repository</a>
+                </div>
+
+                <div class="sidebar-card info-card">
+                    <h3>Technical Details</h3>
+                    <ul class="specs-list">
+                        <li><strong>Version:</strong> <span id="specs-version">0.12.6 (Linux / Windows)</span></li>
+                        <li><strong>License:</strong> Proprietary (Wheelhouser EULA)</li>
+                        <li><strong>Framework:</strong> Python 3.12/3.13 / PySide6 / Qt6</li>
+                        <li><strong>Architecture:</strong> Hardware-Accelerated Native GUI</li>
+                        <li><strong>Platforms:</strong> Rocky Linux 10, Fedora 43/44, Windows 10/11, macOS 12+</li>
+                        <li><strong>Updated:</strong> September 20, 2026</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="site-footer" id="contact">
+        <div class="container">
+            <div class="footer-row">
+                <img src="../images/wheelhouser-icon/resized_icons/wheelhouser-icon_256x256.webp" alt="Wheelhouser Icon" class="footer-icon">
+                <div class="footer-stack">
+                    <p class="footer-brand">Wheelhouser LLC</p>
+                    <p>Engineering the next generation of native tools.</p>
+                    <p class="footer-cta">See what we can do for you.</p>
+                    <p>156 Winners Circle, Magnolia, DE</p>
+                    <p><a href="tel:302-506-2442">302-506-2442</a></p>
+                    <p><a href="mailto:steve.rock@wheelhouser.com">steve.rock@wheelhouser.com</a></p>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.7;">
+                        <a href="../privacy.html">Privacy Policy</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then(reg => console.log('Service Worker registered'))
+                .catch(err => console.log('Service Worker registration failed'));
+        }
+
+        async function fetchAndUpdateVersion() {
+            try {
+                const endpoints = [
+                    '../updates/text-editor/version.json',
+                    '/updates/text-editor/version.json'
+                ];
+                let data = null;
+                for (const url of endpoints) {
+                    try {
+                        const response = await fetch(url);
+                        if (response.ok) {
+                            data = await response.json();
+                            break;
+                        }
+                    } catch (e) {
+                        // continue to next endpoint
+                    }
+                }
+                if (!data) return;
+
+                const winVer = data.windows?.latest_version;
+                const winUrl = data.windows?.url;
+                const linuxVer = data.linux?.latest_version;
+                const linuxUrl = data.linux?.url;
+
+                if (winVer) {
+                    const el = document.getElementById('download-windows-text');
+                    if (el) el.textContent = `Microsoft Store (v${winVer})`;
+                    const pill = document.getElementById('editor-version-pill');
+                    if (pill) pill.textContent = `v${winVer}`;
+                    const specs = document.getElementById('specs-version');
+                    if (specs) specs.textContent = `${winVer} (Linux / Windows)`;
+                }
+                if (winUrl) {
+                    const btn = document.getElementById('download-windows');
+                    if (btn) btn.href = winUrl;
+                }
+                if (linuxVer) {
+                    const el = document.getElementById('download-linux-text');
+                    if (el) el.textContent = `Wheelhouser RPM Repo (v${linuxVer})`;
+                }
+                if (linuxUrl) {
+                    const btn = document.getElementById('download-linux');
+                    if (btn) btn.href = linuxUrl;
+                }
+            } catch (err) {
+                console.warn('Could not update version info dynamically:', err);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', fetchAndUpdateVersion);
+    </script>
+</body>
+</html>

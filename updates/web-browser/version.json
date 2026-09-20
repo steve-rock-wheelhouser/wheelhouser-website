@@ -15,10 +15,10 @@
     "release_notes": "Version 0.1.127 Release (Intel)."
   },
   "linux": {
-    "distro": "fedora",
-    "latest_version": "0.1.125",
+    "distro": "rocky/fedora",
+    "latest_version": "0.14.1",
     "url": "https://github.com/steve-rock-wheelhouser/wheelhouserllc-repo",
-    "release_notes": "Upgrade with: sudo dnf upgrade web-browser"
+    "release_notes": "Install or upgrade with: sudo dnf install web-browser"
   },
   "fallback_url": "https://wheelhouser.com/products/web-browser"
 }
