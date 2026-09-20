@@ -1,2 +1,25 @@
-.token
-assets/downloads/Marquee-Magic_Setup.exe
+# Keys and credentials (AGENTS.md Section 2.1)
+*.key
+*.pem
+*.asc
+*.p12
+*-secret.*
+.env*
+.token*
+DNS_Records*
+
+# Internal tooling and epics (per AGENTS.md Section 6.4)
+epics/
+scripts/
+
+# Large binary installers (served via external release assets or updates/)
+assets/downloads/*.exe
+assets/downloads/*.msi
+assets/downloads/*.dmg
+assets/downloads/*.pkg
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+*.swp
+*~
