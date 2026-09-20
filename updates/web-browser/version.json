@@ -17,7 +17,7 @@
   "linux": {
     "distro": "fedora",
     "latest_version": "0.1.125",
-    "url": "https://github.com/steve-rock-wheelhouser/fedora-repo",
+    "url": "https://github.com/steve-rock-wheelhouser/wheelhouserllc-repo",
     "release_notes": "Upgrade with: sudo dnf upgrade web-browser"
   },
   "fallback_url": "https://wheelhouser.com/products/web-browser"

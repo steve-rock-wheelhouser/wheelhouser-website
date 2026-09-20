@@ -109,10 +109,10 @@
                     </div>
 
                     <div class="download-group">
-                        <h4>Fedora Linux (RPM / DNF)</h4>
-                        <a href="https://github.com/steve-rock-wheelhouser/fedora-repo" class="btn-download" id="download-linux" style="margin-bottom: 0.5rem;">
+                        <h4>Linux (RPM / DNF)</h4>
+                        <a href="https://github.com/steve-rock-wheelhouser/wheelhouserllc-repo" class="btn-download" id="download-linux" style="margin-bottom: 0.5rem;">
                             <img src="../images/icons/linux.svg" alt="Linux icon" class="os-icon">
-                            <span id="download-linux-text">Fedora Repository (v0.1.125)</span>
+                            <span id="download-linux-text">Linux Repository (v0.1.125)</span>
                         </a>
                         <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid var(--border-color); border-radius: 6px; padding: 0.6rem 0.8rem; font-family: monospace; font-size: 0.85rem; color: #38bdf8; word-break: break-all;">
                             <code>sudo dnf upgrade web-browser</code>
@@ -121,7 +121,7 @@
 
                     <hr class="download-divider">
                     <a href="https://github.com/steve-rock-wheelhouser/web-browser" class="btn-secondary full-width-btn" style="margin-bottom: 0.5rem;">View Source Code</a>
-                    <a href="https://github.com/steve-rock-wheelhouser/fedora-repo" class="btn-secondary full-width-btn">View Fedora RPM Repo</a>
+                    <a href="https://github.com/steve-rock-wheelhouser/wheelhouserllc-repo" class="btn-secondary full-width-btn">View Wheelhouser RPM Repo</a>
                 </div>
 
                 <div class="sidebar-card info-card">
@@ -226,7 +226,7 @@
                 const linuxLink = document.getElementById('download-linux');
                 const linuxText = document.getElementById('download-linux-text');
                 if (linuxLink && linuxUrl) linuxLink.href = linuxUrl;
-                if (linuxText && linuxVer) linuxText.textContent = `Fedora Repository (v${linuxVer})`;
+                if (linuxText && linuxVer) linuxText.textContent = `Linux Repository (v${linuxVer})`;
 
                 // Specs list
                 const specsVersion = document.getElementById('specs-version');
