@@ -1,5 +1,5 @@
 // Ultra-minimal Service Worker for Wheelhouser LLC
-const CACHE_NAME = 'wheelhouser-minimal-v1';
+const CACHE_NAME = 'wheelhouser-minimal-v2';
 
 // We only cache the absolute essentials to prevent any install failures
 const PRE_CACHE_RESOURCES = [
@@ -19,7 +19,13 @@ self.addEventListener('install', (event) => {
 });
 
 self.addEventListener('activate', (event) => {
-  event.waitUntil(self.clients.claim());
+  event.waitUntil(
+    caches.keys().then((keys) => {
+      return Promise.all(
+        keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key))
+      );
+    }).then(() => self.clients.claim())
+  );
 });
 
 self.addEventListener('fetch', (event) => {
