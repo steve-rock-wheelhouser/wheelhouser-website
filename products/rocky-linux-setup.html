@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocky Linux Setup | Wheelhouser LLC</title>
+    <meta name="description" content="Automated workstation provisioning, repository coordinator (CRB, EPEL 10), developer toolchains, and management CLI for Rocky Linux 10 and Enterprise Linux.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="../images/wheelhouser-W/web/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="/manifest.json">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <img src="../images/wheelhouser-W/wheelhouser-07.png" alt="Wheelhouser Logo">
+                Wheelhouser LLC
+            </a>
+            <nav>
+                <a href="../index.html#portfolio">Software Portfolio</a>
+                <a href="https://repo.wheelhouser.com" target="_blank" rel="noopener">Linux Repository</a>
+                <a href="../about.html">Company</a>
+                <a href="../index.html#contact" class="btn-primary">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="product-page">
+
+        <section class="product-header">
+            <div class="container">
+                <div class="product-header-content">
+                    <img src="../images/rocky-linux-setup/icon.svg" alt="Rocky Linux Setup Icon" class="product-big-icon">
+                    <div class="product-title-block">
+                        <h1>Rocky Linux Setup</h1>
+                        <p class="product-tagline">Automated workstation provisioning, repository bootstrapping, and developer environment management CLI for Enterprise Linux 10.</p>
+                        <div class="product-meta-row">
+                            <span class="meta-pill">v1.0.0-1</span>
+                            <span class="meta-pill">GPL-3.0</span>
+                            <span class="meta-pill">Rocky Linux 10 &bull; Enterprise Linux 10</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="product-main-full">
+                <div class="content-block">
+                    <h2>About the Application</h2>
+                    <p><strong>Rocky Linux Setup</strong> is an automated workstation provisioning and developer orchestration suite engineered by Wheelhouser LLC for <strong>Rocky Linux 10</strong> and Enterprise Linux systems. Designed to eliminate manual setup overhead across physical developer workstations, virtual machines, and cloud instances, it bootstraps official Wheelhouser repositories, configures essential upstream package channels, and provisions modern development environments.</p>
+                    <p>Packaged natively as an RPM meta-package (<code>rocky-linux-setup</code>), it coordinates repository activation (including CodeReady Linux Builder and EPEL 10), installs development and RPM packaging toolchains, integrates Google Antigravity IDE, and supplies the <code>rocky-linux-setup</code> management CLI for ongoing system health auditing.</p>
+                </div>
+
+                <div class="content-block">
+                    <h2>Key Features</h2>
+                    <ul class="feature-list">
+                        <li><strong>Repository Coordination:</strong> Installs the official Wheelhouser release package and automatically enables <strong>CodeReady Linux Builder (CRB)</strong> and <strong>EPEL 10</strong>.</li>
+                        <li><strong>Developer Toolchain Provisioning:</strong> Deploys core engineering utilities (<code>git</code>, <code>curl</code>, <code>wget</code>) alongside native RPM packaging suites (<code>rpm-build</code>, <code>rpm-sign</code>, <code>createrepo_c</code>).</li>
+                        <li><strong>Workstation Desktop Integration:</strong> Automatically provisions and configures <strong>Google Antigravity IDE</strong> with desktop launcher menus, icons, and shell shortcuts.</li>
+                        <li><strong>Interactive Management CLI:</strong> Includes <code>/usr/bin/rocky-linux-setup</code> to audit workstation readiness, inspect repository states, adjust hostnames, and manage GPG release keys.</li>
+                        <li><strong>100% Unattended OS Automation:</strong> Ships production-tested Kickstart profiles (<code>rocky10-workstation.ks</code>) for hands-free bare-metal and KVM/QEMU automated installations.</li>
+                        <li><strong>Enterprise Cryptographic Signing:</strong> Hosted and cryptographically signed with Wheelhouser LLC's 4096-bit RSA key on <code>repo.wheelhouser.com</code>.</li>
+                    </ul>
+                </div>
+
+                <div class="content-block">
+                    <h2>Management CLI Commands</h2>
+                    <p>The installed <code>rocky-linux-setup</code> CLI provides quick administrative diagnostics and configuration helpers:</p>
+                    <div style="background: rgba(0,0,0,0.4); border: 1px solid var(--border-color); border-radius: 8px; padding: 1rem; font-family: monospace; font-size: 0.9rem; line-height: 1.6; overflow-x: auto;">
+                        <span style="color: #38bdf8;"># Inspect system health, repository status, and build toolchains:</span><br>
+                        $ rocky-linux-setup --status<br><br>
+                        <span style="color: #38bdf8;"># Enable CodeReady Linux Builder (CRB) and EPEL 10:</span><br>
+                        $ sudo rocky-linux-setup --enable-crb<br><br>
+                        <span style="color: #38bdf8;"># Configure system hostname:</span><br>
+                        $ sudo rocky-linux-setup --set-hostname rocky10-workstation<br><br>
+                        <span style="color: #38bdf8;"># Import custom RPM signing key and set ultimate trust:</span><br>
+                        $ rocky-linux-setup --import-key ~/wheelhouser-release-private.asc
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-bottom-grid">
+                
+                <div class="sidebar-card action-card">
+                    <h3>Downloads &amp; Installation</h3>
+
+                    <div class="download-group">
+                        <h4>Quick Install via DNF</h4>
+                        <p style="font-size: 0.85rem; color: var(--accent-color); margin-bottom: 0.5rem;">Configure Wheelhouser repo and install meta-package:</p>
+                        <div style="background: rgba(0,0,0,0.3); border: 1px solid var(--border-color); border-radius: 6px; padding: 0.75rem; font-family: monospace; font-size: 0.85rem; margin-bottom: 0.75rem; word-break: break-all;">
+                            sudo dnf install https://repo.wheelhouser.com/rocky/10/x86_64/steve-rock-wheelhouser-release-1.0-6.el10.noarch.rpm<br>
+                            sudo dnf install rocky-linux-setup<br>
+                            rocky-linux-setup --status
+                        </div>
+                    </div>
+
+                    <div class="download-group">
+                        <h4>Unattended OS Kickstart</h4>
+                        <p style="font-size: 0.85rem; color: var(--accent-color); margin-bottom: 0.5rem;">Boot parameter for ISO or PXE installer:</p>
+                        <div style="background: rgba(0,0,0,0.3); border: 1px solid var(--border-color); border-radius: 6px; padding: 0.75rem; font-family: monospace; font-size: 0.82rem; margin-bottom: 0.75rem; word-break: break-all;">
+                            inst.ks=https://raw.githubusercontent.com/steve-rock-wheelhouser/rocky-linux-setup/main/kickstart/rocky10-workstation.ks
+                        </div>
+                    </div>
+
+                    <hr class="download-divider">
+                    <a href="https://repo.wheelhouser.com" class="btn-primary full-width-btn" style="margin-bottom: 0.5rem; text-align: center; display: block;" target="_blank" rel="noopener">Wheelhouser RPM Repository</a>
+                    <a href="https://github.com/steve-rock-wheelhouser/rocky-linux-setup" class="btn-secondary full-width-btn" style="text-align: center; display: block;" target="_blank" rel="noopener">View Source Code</a>
+                </div>
+
+                <div class="sidebar-card info-card">
+                    <h3>Technical Details</h3>
+                    <ul class="specs-list">
+                        <li><strong>Package:</strong> rocky-linux-setup</li>
+                        <li><strong>Version:</strong> 1.0.0-1</li>
+                        <li><strong>Architecture:</strong> noarch</li>
+                        <li><strong>License:</strong> GPL-3.0-or-later</li>
+                        <li><strong>Platforms:</strong> Rocky Linux 10, Enterprise Linux 10, RHEL 10</li>
+                        <li><strong>Endpoint:</strong> repo.wheelhouser.com</li>
+                        <li><strong>Maintainer:</strong> Wheelhouser LLC</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="site-footer" id="contact">
+        <div class="container">
+            <div class="footer-row">
+                <img src="../images/wheelhouser-icon/resized_icons/wheelhouser-icon_256x256.webp" alt="Wheelhouser Icon" class="footer-icon">
+                <div class="footer-stack">
+                    <p class="footer-brand">Wheelhouser LLC</p>
+                    <p>Engineering the next generation of native tools.</p>
+                    <p class="footer-cta">See what we can do for you.</p>
+                    <p>156 Winners Circle, Magnolia, DE</p>
+                    <p><a href="tel:302-506-2442">302-506-2442</a></p>
+                    <p><a href="mailto:steve.rock@wheelhouser.com">steve.rock@wheelhouser.com</a></p>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.7;">
+                        <a href="https://repo.wheelhouser.com" target="_blank" rel="noopener" style="margin-right: 1.5rem;">Linux Repository</a>
+                        <a href="../privacy.html">Privacy Policy</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

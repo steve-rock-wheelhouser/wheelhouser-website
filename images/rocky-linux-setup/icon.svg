@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f2b1d" />
+      <stop offset="50%" stop-color="#143e2b" />
+      <stop offset="100%" stop-color="#0b1b13" />
+    </linearGradient>
+    <linearGradient id="glow-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Rounded Square -->
+  <rect x="32" y="32" width="960" height="960" rx="220" fill="url(#bg-grad)" filter="url(#shadow)" stroke="#10b981" stroke-opacity="0.3" stroke-width="12"/>
+
+  <!-- Terminal Window Frame -->
+  <rect x="140" y="160" width="744" height="680" rx="36" fill="#07130c" stroke="#10b981" stroke-opacity="0.4" stroke-width="8"/>
+
+  <!-- Window Header Bar -->
+  <rect x="140" y="160" width="744" height="90" rx="36" fill="#0b2417"/>
+  <!-- Corner smoothing behind header -->
+  <rect x="140" y="220" width="744" height="30" fill="#0b2417"/>
+
+  <!-- Window Dots -->
+  <circle cx="210" cy="205" r="16" fill="#ef4444" opacity="0.85"/>
+  <circle cx="260" cy="205" r="16" fill="#f59e0b" opacity="0.85"/>
+  <circle cx="310" cy="205" r="16" fill="#10b981" opacity="0.85"/>
+
+  <!-- Command Prompt (>_) -->
+  <path d="M 260 360 L 380 470 L 260 580" fill="none" stroke="url(#glow-grad)" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="420" y1="580" x2="560" y2="580" stroke="#10b981" stroke-width="36" stroke-linecap="round"/>
+
+  <!-- Rocky Mountains Silhouette / Setup Crest in Bottom Right -->
+  <path d="M 520 740 L 640 560 L 710 650 L 760 590 L 830 740 Z" fill="#10b981" fill-opacity="0.18" stroke="#10b981" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M 610 605 L 640 560 L 670 605 L 650 615 L 635 600 L 625 615 Z" fill="#ffffff" fill-opacity="0.75"/>
+</svg>
