@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.wheelhouser.text-editor</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>LicenseRef-Proprietary</project_license>
+  <name>Text Editor</name>
+  <summary>Fast, modern desktop text editor with syntax highlighting and code folding</summary>
+  <description>
+    <p>
+      Wheelhouser Text Editor is a professional desktop text editor built with Python and PySide6.
+      It features native dark mode, tabbed editing, code folding, multi-cursor editing,
+      comprehensive syntax highlighting across dozens of languages, customizable themes, and integrated spell checking.
+    </p>
+  </description>
+  <launchable type="desktop-id">com.wheelhouser.text-editor.desktop</launchable>
+  <url type="homepage">https://wheelhouser.com</url>
+  <developer id="com.wheelhouser">
+    <name>Wheelhouser LLC</name>
+  </developer>
+  <branding>
+    <color type="primary" scheme_preference="light">#007AFF</color>
+    <color type="primary" scheme_preference="dark">#0f172a</color>
+  </branding>
+  <icon type="stock">com.wheelhouser.text-editor</icon>
+  <icon type="remote">https://raw.githubusercontent.com/steve-rock-wheelhouser/wheelhouser-website/main/images/text-editor/icon.png</icon>
+  <categories>
+    <category>Utility</category>
+    <category>TextEditor</category>
+    <category>Development</category>
+  </categories>
+  <provides>
+    <binary>text-editor</binary>
+    <binary>wheelhouser-text-editor</binary>
+  </provides>
+  <screenshots>
+    <screenshot type="default">
+      <caption xml:lang="en">Text Editor store hero banner</caption>
+      <image>https://raw.githubusercontent.com/steve-rock-wheelhouser/wheelhouser-website/main/images/text-editor/store_hero_banner_1920x1080.png</image>
+    </screenshot>
+    <screenshot>
+      <caption xml:lang="en">Main text editor window with tabbed editing and syntax highlighting</caption>
+      <image>https://raw.githubusercontent.com/steve-rock-wheelhouser/wheelhouser-website/main/images/text-editor/screenshots/1.png</image>
+    </screenshot>
+    <screenshot>
+      <caption xml:lang="en">Multi-language syntax highlighting and code folding</caption>
+      <image>https://raw.githubusercontent.com/steve-rock-wheelhouser/wheelhouser-website/main/images/text-editor/screenshots/2.png</image>
+    </screenshot>
+    <screenshot>
+      <caption xml:lang="en">Find and replace tool with match counter</caption>
+      <image>https://raw.githubusercontent.com/steve-rock-wheelhouser/wheelhouser-website/main/images/text-editor/screenshots/3.png</image>
+    </screenshot>
+    <screenshot>
+      <caption xml:lang="en">Customizable themes, preferences, and plugin support</caption>
+      <image>https://raw.githubusercontent.com/steve-rock-wheelhouser/wheelhouser-website/main/images/text-editor/screenshots/4.png</image>
+    </screenshot>
+  </screenshots>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="0.13.3" date="2026-09-21">
+      <description>
+        <p>Release 0.13.3: Standardize Linux RPM build output path to build-linux/Output/&lt;distro&gt;/&lt;releasever&gt;/.</p>
+      </description>
+    </release>
+    <release version="0.13.2" date="2026-09-21">
+      <description>
+        <p>Release 0.13.2: Set Linux desktop display name to Text Editor and integrate AppStream stock/remote icons for Software Center.</p>
+      </description>
+    </release>
+    <release version="0.13.1" date="2026-09-21">
+      <description>
+        <p>Release 0.13.1: Add AppStream branding colors, store hero banner, and public screenshot integration for Software Center.</p>
+      </description>
+    </release>
+    <release version="0.13.0" date="2026-09-20">
+      <description>
+        <p>Release 0.13.0: Restructure tab right-click context menu order and options.</p>
+      </description>
+    </release>
+    <release version="0.12.6" date="2026-09-20">
+      <description>
+        <p>Release 0.12.6 for Rocky Linux 10 and Fedora 44 with PySide6 runtime and desktop integration.</p>
+      </description>
+    </release>
+  </releases>
+</component>
