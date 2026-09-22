@@ -1,8 +1,8 @@
 {
   "windows": {
-    "latest_version": "0.13.3",
+    "latest_version": "0.12.7",
     "url": "ms-windows-store://pdp/?productid=9PDMKDMPCJRG",
-    "release_notes": "Version 0.13.3 Release."
+    "release_notes": "Version 0.12.7 Release."
   },
   "macos": {
     "latest_version": "0.7.4",
