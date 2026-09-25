@@ -558,9 +558,8 @@ nav a:hover {
 .os-icon {
     height: 2.5em;
     width: auto;
-    /* Makes the icon greyish-white (assuming black source) */
-    filter: invert(1) opacity(0.7);
-    transition: filter 0.2s ease;
+    opacity: 0.9;
+    transition: all 0.2s ease;
 }
 
 .btn-download:hover {
@@ -569,8 +568,9 @@ nav a:hover {
 }
 
 .btn-download:hover .os-icon {
-    /* Makes the icon black for the hover state */
-    filter: invert(0);
+    /* Turns white icon black for the high-contrast hover state */
+    filter: brightness(0);
+    opacity: 1;
 }
 
 .download-divider {

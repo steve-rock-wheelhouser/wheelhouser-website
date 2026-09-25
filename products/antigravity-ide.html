@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Antigravity IDE | Wheelhouser LLC</title>
-    <meta name="description" content="Official Linux enterprise packaging (RPM &amp; DEB), build automation, desktop environment integration, and launcher utility for Google Antigravity IDE across Rocky Linux 10, AlmaLinux 10, Fedora 44, Debian 13, and Ubuntu 24.">
+    <meta name="description" content="Official Linux enterprise packaging (RPM &amp; DEB), build automation, desktop environment integration, and launcher utility for Google Antigravity IDE across Rocky Linux 10, AlmaLinux 10, Fedora 44, Debian 13, and Ubuntu 26.04 LTS.">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" href="../images/wheelhouser-W/web/favicon.ico" type="image/x-icon">
     <link rel="manifest" href="/manifest.json">
@@ -43,7 +43,7 @@
                             <span class="meta-pill distro-pill"><img src="../images/icons/almalinux.svg" alt="AlmaLinux" class="distro-pill-icon"> Alma 10</span>
                             <span class="meta-pill distro-pill"><img src="../images/icons/fedora.svg" alt="Fedora" class="distro-pill-icon"> Fedora 44</span>
                             <span class="meta-pill distro-pill"><img src="../images/icons/debian.svg" alt="Debian" class="distro-pill-icon"> Debian 13</span>
-                            <span class="meta-pill distro-pill"><img src="../images/icons/ubuntu.svg" alt="Ubuntu" class="distro-pill-icon"> Ubuntu 24</span>
+                            <span class="meta-pill distro-pill"><img src="../images/icons/ubuntu.svg" alt="Ubuntu" class="distro-pill-icon"> Ubuntu 26.04 LTS</span>
                             <span class="meta-pill distro-pill"><img src="../images/icons/windows.svg" alt="Windows" class="distro-pill-icon"> Windows</span>
                             <span class="meta-pill distro-pill"><img src="../images/icons/apple.svg" alt="macOS" class="distro-pill-icon"> macOS</span>
                         </div>
@@ -56,7 +56,7 @@
             <div class="product-main-full">
                 <div class="content-block">
                     <h2>About the Application</h2>
-                    <p><strong>Google Antigravity IDE</strong> is the next-generation agentic AI development environment developed by Google DeepMind. While Google officially provides native installers for Windows and macOS, enterprise and community Linux distributions require dedicated system packaging and desktop environment integration. Wheelhouser LLC provides complete open-source RPM and Debian packaging, automated deployment tooling, and native Linux desktop integration for Rocky Linux 10, AlmaLinux 10, Fedora 44, Debian 13 (Trixie), and Ubuntu 24 (Noble).</p>
+                    <p><strong>Google Antigravity IDE</strong> is the next-generation agentic AI development environment developed by Google DeepMind. While Google officially provides native installers for Windows and macOS, enterprise and community Linux distributions require dedicated system packaging and desktop environment integration. Wheelhouser LLC provides complete open-source RPM and Debian packaging, automated deployment tooling, and native Linux desktop integration for Rocky Linux 10, AlmaLinux 10, Fedora 44, Debian 13 (Trixie), and Ubuntu 26.04 LTS (Resolute, with 24 LTS support).</p>
                     <p>This package coordinates system launcher wrappers, registers the GNOME/XDG application menu launchers with high-resolution icons, configures desktop mime-type associations, downloads the stable Antigravity IDE runtime payload directly from official Google channels, and manages single-instance session locking and daemon cleanup.</p>
                 </div>
 
@@ -66,7 +66,7 @@
                         <li><strong>Native RPM &amp; DEB Packaging:</strong> Built and cryptographically signed following modern Fedora/EL10 (RPM) and Debian/Ubuntu (DEB) packaging guidelines.</li>
                         <li><strong>Complete Cross-Platform Ecosystem:</strong> Complements Google's official Windows and macOS native releases by delivering first-class enterprise packaging for Linux workstations and servers.</li>
                         <li><strong>Full Desktop Integration:</strong> Installs high-resolution vector and raster icons, XDG menu launchers (<code>antigravity-ide.desktop</code>), and terminal aliases.</li>
-                        <li><strong>Multi-Distro Enterprise Parity:</strong> Fully verified installation, execution, and update lifecycles across Rocky Linux 10, AlmaLinux 10, Fedora 44, Debian 13, and Ubuntu 24.</li>
+                        <li><strong>Multi-Distro Enterprise Parity:</strong> Fully verified installation, execution, and update lifecycles across Rocky Linux 10, AlmaLinux 10, Fedora 44, Debian 13, and Ubuntu 26.04 LTS.</li>
                         <li><strong>Smart Process &amp; Instance Management:</strong> The launcher utility enforces single-instance session locking and automatically cleans up orphaned background agent daemons.</li>
                         <li><strong>Cryptographic Distribution:</strong> Hosted and signed with Wheelhouser LLC's 4096-bit RSA release key via our custom RPM and APT repository endpoints.</li>
                         <li><strong>CLI &amp; GUI Dual Access:</strong> Launch effortlessly from your desktop application grid or directly from the terminal via <code>antigravity-ide</code> or <code>antigravity</code>.</li>
@@ -161,12 +161,12 @@ sudo apt update &amp;&amp; sudo apt install -y antigravity-ide</code></pre>
                     <div class="download-group">
                         <div class="download-group-header">
                             <img src="../images/icons/ubuntu.svg" alt="Ubuntu" class="distro-header-icon">
-                            <h4>Ubuntu 24 (Noble)</h4>
+                            <h4>Ubuntu 26.04 LTS (Resolute)</h4>
                         </div>
                         <p style="font-size: 0.85rem; color: var(--accent-color); margin-bottom: 0.5rem;">Install GPG keyring and repository source:</p>
                         <div class="code-snippet-box">
                             <pre id="cmd-ubuntu-agi"><code>sudo install -m 0755 -d /etc/apt/keyrings &amp;&amp; curl -fsSL https://repo.wheelhouser.com/steve-rock-wheelhouser-gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/wheelhouser.gpg &amp;&amp; sudo chmod a+r /etc/apt/keyrings/wheelhouser.gpg
-echo "deb [signed-by=/etc/apt/keyrings/wheelhouser.gpg] https://repo.wheelhouser.com/ubuntu/24 ./" | sudo tee /etc/apt/sources.list.d/wheelhouser.list
+echo "deb [signed-by=/etc/apt/keyrings/wheelhouser.gpg] https://repo.wheelhouser.com/ubuntu/26.04 ./" | sudo tee /etc/apt/sources.list.d/wheelhouser.list
 sudo apt update &amp;&amp; sudo apt install -y antigravity-ide</code></pre>
                             <button class="copy-code-btn" onclick="copyCodeSnippet('cmd-ubuntu-agi', this)" title="Copy command" aria-label="Copy to clipboard">
                                 <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
@@ -187,7 +187,7 @@ sudo apt update &amp;&amp; sudo apt install -y antigravity-ide</code></pre>
                         <li><strong>Version:</strong> 1.0.0-38</li>
                         <li><strong>Architecture:</strong> noarch (RPM) / all (DEB)</li>
                         <li><strong>License:</strong> GPL-3.0-or-later</li>
-                        <li><strong>Linux Platforms:</strong> Rocky Linux 10, AlmaLinux 10, Fedora 44, Debian 13, Ubuntu 24</li>
+                        <li><strong>Linux Platforms:</strong> Rocky Linux 10, AlmaLinux 10, Fedora 44, Debian 13, Ubuntu 26.04 LTS (and 24 LTS)</li>
                         <li><strong>Other Platforms:</strong> Windows &amp; macOS (Native installers by Google)</li>
                         <li><strong>Endpoint:</strong> repo.wheelhouser.com</li>
                         <li><strong>Maintainer:</strong> Wheelhouser LLC</li>

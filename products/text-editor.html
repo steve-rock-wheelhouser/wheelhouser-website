@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text Editor | Wheelhouser LLC</title>
-    <meta name="description" content="Fast, modern desktop text editor with code folding, multi-cursor editing, syntax highlighting across dozens of languages, and native dark mode for Linux (Rocky Linux, AlmaLinux, Fedora, Debian, Ubuntu), Windows, and macOS.">
+    <meta name="description" content="Fast, modern desktop text editor with code folding, multi-cursor editing, syntax highlighting across dozens of languages, and native dark mode for Linux (Rocky Linux, AlmaLinux, Fedora, Debian, Ubuntu 26.04 LTS), Windows, and macOS.">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" href="../images/wheelhouser-W/web/favicon.ico" type="image/x-icon">
     <link rel="manifest" href="/manifest.json">
@@ -43,7 +43,7 @@
                             <span class="meta-pill distro-pill"><img src="../images/icons/almalinux.svg" alt="AlmaLinux" class="distro-pill-icon"> Alma 10</span>
                             <span class="meta-pill distro-pill"><img src="../images/icons/fedora.svg" alt="Fedora" class="distro-pill-icon"> Fedora 44</span>
                             <span class="meta-pill distro-pill"><img src="../images/icons/debian.svg" alt="Debian" class="distro-pill-icon"> Debian 13</span>
-                            <span class="meta-pill distro-pill"><img src="../images/icons/ubuntu.svg" alt="Ubuntu" class="distro-pill-icon"> Ubuntu 24</span>
+                            <span class="meta-pill distro-pill"><img src="../images/icons/ubuntu.svg" alt="Ubuntu" class="distro-pill-icon"> Ubuntu 26.04 LTS</span>
                             <span class="meta-pill distro-pill"><img src="../images/icons/windows.svg" alt="Windows" class="distro-pill-icon"> Windows</span>
                             <span class="meta-pill distro-pill"><img src="../images/icons/apple.svg" alt="macOS" class="distro-pill-icon"> macOS</span>
                         </div>
@@ -77,7 +77,7 @@
                 <div class="content-block">
                     <h2>About the Application</h2>
                     <p><strong>Text Editor</strong> is an ergonomic, high-performance desktop code and plain text editor developed by Wheelhouser LLC. Designed for developers, systems engineers, and writers, it combines lightning-fast file operations with advanced code editing capabilities in a cohesive, distraction-free environment with <strong>true cross-platform parity</strong>.</p>
-                    <p>While there are countless notepad utilities available, very few deliver genuine, first-class cross-platform support across modern enterprise and community Linux distributions, Windows, and macOS. Featuring multi-cursor editing, multi-level code folding, intelligent auto-indentation, find and replace with regex support, dynamic tab favicons, and integrated spell checking, Wheelhouser Text Editor is optimized for everyday notes and demanding source code development alike on Rocky Linux 10, AlmaLinux 10, Fedora 44, Debian 13, Ubuntu 24, Windows 10/11, and macOS.</p>
+                    <p>While there are countless notepad utilities available, very few deliver genuine, first-class cross-platform support across modern enterprise and community Linux distributions, Windows, and macOS. Featuring multi-cursor editing, multi-level code folding, intelligent auto-indentation, find and replace with regex support, dynamic tab favicons, and integrated spell checking, Wheelhouser Text Editor is optimized for everyday notes and demanding source code development alike on Rocky Linux 10, AlmaLinux 10, Fedora 44, Debian 13, Ubuntu 26.04 LTS (and 24 LTS), Windows 10/11, and macOS.</p>
                 </div>
 
                 <div class="content-block">
@@ -89,7 +89,7 @@
                         <li><strong>Simultaneous Multi-Cursor Editing:</strong> Multiple cursors (<kbd>Ctrl+Click</kbd>, <kbd>Ctrl+D</kbd>, <kbd>Ctrl+Alt+Up/Down</kbd>) for blazing fast parallel refactoring and editing.</li>
                         <li><strong>Wheelhouser Dark &amp; Theme Customization:</strong> Native dark mode with user-definable ANSI color palettes, typography customization, and dynamic JSON theme plugins.</li>
                         <li><strong>Integrated Spell &amp; Grammar Check:</strong> Real-time spelling suggestions and custom dictionary management powered by pyspellchecker.</li>
-                        <li><strong>Native Linux Packaging (RPM &amp; DEB):</strong> Built with Python 3.13 and cryptographically signed for Enterprise Linux (Rocky Linux 10, AlmaLinux 10), Fedora 44, Debian 13, and Ubuntu 24 with desktop menu integration and repository delivery.</li>
+                        <li><strong>Native Linux Packaging (RPM &amp; DEB):</strong> Built with Python 3.13 and cryptographically signed for Enterprise Linux (Rocky Linux 10, AlmaLinux 10), Fedora 44, Debian 13, and Ubuntu 26.04 LTS with desktop menu integration and repository delivery.</li>
                     </ul>
                 </div>
             </div>
@@ -189,12 +189,12 @@ sudo apt update &amp;&amp; sudo apt install -y text-editor</code></pre>
                     <div class="download-group">
                         <div class="download-group-header">
                             <img src="../images/icons/ubuntu.svg" alt="Ubuntu" class="distro-header-icon">
-                            <h4>Ubuntu 24 (Noble)</h4>
+                            <h4>Ubuntu 26.04 LTS (Resolute)</h4>
                         </div>
                         <p style="font-size: 0.85rem; color: var(--accent-color); margin-bottom: 0.5rem;">Install GPG keyring and repository source:</p>
                         <div class="code-snippet-box">
                             <pre id="cmd-ubuntu-te"><code>sudo install -m 0755 -d /etc/apt/keyrings &amp;&amp; curl -fsSL https://repo.wheelhouser.com/steve-rock-wheelhouser-gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/wheelhouser.gpg &amp;&amp; sudo chmod a+r /etc/apt/keyrings/wheelhouser.gpg
-echo "deb [signed-by=/etc/apt/keyrings/wheelhouser.gpg] https://repo.wheelhouser.com/ubuntu/24 ./" | sudo tee /etc/apt/sources.list.d/wheelhouser.list
+echo "deb [signed-by=/etc/apt/keyrings/wheelhouser.gpg] https://repo.wheelhouser.com/ubuntu/26.04 ./" | sudo tee /etc/apt/sources.list.d/wheelhouser.list
 sudo apt update &amp;&amp; sudo apt install -y text-editor</code></pre>
                             <button class="copy-code-btn" onclick="copyCodeSnippet('cmd-ubuntu-te', this)" title="Copy command" aria-label="Copy to clipboard">
                                 <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
@@ -216,7 +216,7 @@ sudo apt update &amp;&amp; sudo apt install -y text-editor</code></pre>
                         <li><strong>Architecture:</strong> noarch (RPM/DEB) / x86_64</li>
                         <li><strong>License:</strong> GNU General Public License v3.0 (GPL-3.0)</li>
                         <li><strong>Framework:</strong> Python 3.13 / PySide6 / Qt6</li>
-                        <li><strong>Platforms:</strong> Rocky Linux 10, AlmaLinux 10, Fedora 44, Debian 13, Ubuntu 24, Windows 10/11, macOS 12+</li>
+                        <li><strong>Platforms:</strong> Rocky Linux 10, AlmaLinux 10, Fedora 44, Debian 13, Ubuntu 26.04 LTS (and 24 LTS), Windows 10/11, macOS 12+</li>
                         <li><strong>Endpoint:</strong> repo.wheelhouser.com</li>
                         <li><strong>Maintainer:</strong> Wheelhouser LLC</li>
                         <li><strong>Updated:</strong> September 25, 2026</li>
