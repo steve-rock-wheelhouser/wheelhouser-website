@@ -17,6 +17,7 @@
                 Wheelhouser LLC
             </a>
             <nav>
+                <a href="index.html">Products</a>
                 <a href="../index.html#portfolio">Software Portfolio</a>
                 <a href="https://repo.wheelhouser.com" target="_blank" rel="noopener">Linux Repository</a>
                 <a href="../about.html">Company</a>
@@ -38,7 +39,9 @@
                         <div class="product-meta-row">
                             <span class="meta-pill">v0.3.0</span>
                             <span class="meta-pill">GPL-3.0</span>
-                            <span class="meta-pill">Linux / Windows / macOS</span>
+                            <span class="meta-pill distro-pill"><img src="../images/icons/linux.svg" alt="Linux" class="distro-pill-icon"> Linux</span>
+                            <span class="meta-pill distro-pill"><img src="../images/icons/windows.svg" alt="Windows" class="distro-pill-icon"> Windows</span>
+                            <span class="meta-pill distro-pill"><img src="../images/icons/apple.svg" alt="macOS" class="distro-pill-icon"> macOS</span>
                         </div>
                     </div>
                 </div>
@@ -86,21 +89,30 @@
                 <div class="sidebar-card action-card">
                     <h3>Downloads</h3>
                     <div class="download-group">
-                        <h4>Linux</h4>
+                        <div class="download-group-header">
+                            <img src="../images/icons/linux.svg" alt="Linux" class="distro-header-icon">
+                            <h4>Linux</h4>
+                        </div>
                         <a href="https://github.com/steve-rock-wheelhouser/image-resizer/releases/download/v0.3.0/image-resizer-0.3.0-29.fc43.x86_64.rpm" class="btn-download">
                             <img src="../images/icons/linux.svg" alt="Linux icon" class="os-icon">
                             <span>RPM Package (v0.3.0)</span>
                         </a>
                     </div>
                     <div class="download-group">
-                        <h4>macOS</h4>
+                        <div class="download-group-header">
+                            <img src="../images/icons/apple.svg" alt="macOS" class="distro-header-icon">
+                            <h4>macOS</h4>
+                        </div>
                         <a href="https://github.com/steve-rock-wheelhouser/image-resizer/releases/download/v0.3.0/ImageResizer-0.3.0.dmg" class="btn-download">
                             <img src="../images/icons/apple.svg" alt="Apple icon" class="os-icon">
                             <span>DMG Image (v0.3.0)</span>
                         </a>
                     </div>
                     <div class="download-group">
-                        <h4>Windows</h4>
+                        <div class="download-group-header">
+                            <img src="../images/icons/windows.svg" alt="Windows" class="distro-header-icon">
+                            <h4>Windows</h4>
+                        </div>
                         <a href="https://github.com/steve-rock-wheelhouser/image-resizer/releases/download/v0.3.0/Image_Resizer_Setup.exe" class="btn-download">
                             <img src="../images/icons/windows.svg" alt="Windows icon" class="os-icon">
                             <span>EXE Installer (v0.3.0)</span>
@@ -155,5 +167,6 @@
                 .catch(err => console.log('Service Worker registration failed'));
         }
     </script>
+    <script src="../js/main.js"></script>
 </body>
 </html>

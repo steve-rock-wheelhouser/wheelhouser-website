@@ -17,6 +17,7 @@
                 Wheelhouser LLC
             </a>
             <nav>
+                <a href="index.html">Products</a>
                 <a href="../index.html#portfolio">Software Portfolio</a>
                 <a href="https://repo.wheelhouser.com" target="_blank" rel="noopener">Linux Repository</a>
                 <a href="../about.html">Company</a>
@@ -37,7 +38,8 @@
                         <div class="product-meta-row">
                             <span class="meta-pill">v1.4.0</span>
                             <span class="meta-pill">GPL-3.0</span>
-                            <span class="meta-pill">Windows</span>
+                            <span class="meta-pill distro-pill"><img src="../images/icons/windows.svg" alt="Windows" class="distro-pill-icon"> Windows</span>
+                            <span class="meta-pill">Linux &amp; macOS in dev</span>
                         </div>
                     </div>
                 </div>
@@ -94,15 +96,22 @@
                 <div class="sidebar-card action-card">
                     <h3>Downloads</h3>
                     <div class="download-group">
-                        <h4>Windows</h4>
+                        <div class="download-group-header">
+                            <img src="../images/icons/windows.svg" alt="Windows" class="distro-header-icon">
+                            <h4>Windows</h4>
+                        </div>
                         <a href="https://github.com/steve-rock-wheelhouser/notez/releases/download/v1.4.0/Notez_Setup.exe" class="btn-download">
                             <img src="../images/icons/windows.svg" alt="Windows icon" class="os-icon">
                             <span>EXE Installer (v1.4.0)</span>
                         </a>
                     </div>
                     <div class="download-group">
-                        <h4>Linux & macOS</h4>
-                        <p style="color: var(--accent-color); font-size: 0.9rem;">Coming soon.</p>
+                        <div class="download-group-header">
+                            <img src="../images/icons/linux.svg" alt="Linux" class="distro-header-icon">
+                            <img src="../images/icons/apple.svg" alt="macOS" class="distro-header-icon">
+                            <h4>Linux &amp; macOS</h4>
+                        </div>
+                        <p style="color: var(--accent-color); font-size: 0.9rem;">Native builds in active development.</p>
                     </div>
                     <hr class="download-divider">
                     <a href="https://github.com/steve-rock-wheelhouser/notez/releases" class="btn-secondary full-width-btn">All Releases</a>
@@ -152,5 +161,6 @@
                 .catch(err => console.log('Service Worker registration failed'));
         }
     </script>
+    <script src="../js/main.js"></script>
 </body>
 </html>
