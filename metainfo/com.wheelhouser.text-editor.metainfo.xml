@@ -56,6 +56,21 @@
   </screenshots>
   <content_rating type="oars-1.1"/>
   <releases>
+    <release version="0.14.2" date="2026-09-22">
+      <description>
+        <p>Release 0.14.2: Relocate compile.ps1 and nuitka_compile.ps1 from project root to build-msix/ and route build_rpm.sh strictly to versioned Output.</p>
+      </description>
+    </release>
+    <release version="0.14.1" date="2026-09-22">
+      <description>
+        <p>Release 0.14.1: Dual-stage Enterprise Linux RPMs to both rocky/ and almalinux/ in build-linux/Output/ and remove project root RPM copy.</p>
+      </description>
+    </release>
+    <release version="0.14.0" date="2026-09-21">
+      <description>
+        <p>Release 0.14.0: Open source release under GNU General Public License v3.0 (GPL-3.0) with repository sanitization.</p>
+      </description>
+    </release>
     <release version="0.13.3" date="2026-09-21">
       <description>
         <p>Release 0.13.3: Standardize Linux RPM build output path to build-linux/Output/&lt;distro&gt;/&lt;releasever&gt;/.</p>

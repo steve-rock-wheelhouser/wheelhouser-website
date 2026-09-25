@@ -1,10 +1,10 @@
-# Text Editor v0.13.3
+# Text Editor v0.14.2
 
-We are excited to announce the release of **Text Editor v0.13.3**. This update introduces multi-distribution Linux RPM packaging with full support for Enterprise Linux (Rocky Linux 10, AlmaLinux 10) and Fedora 44, alongside Windows 10/11 and macOS.
+We are excited to announce the release of **Text Editor v0.14.2**. This update brings our modern desktop text editor to version 0.14.2 under the GNU General Public License v3.0 (GPL-3.0), featuring standardized multi-distribution Linux RPM packaging for Enterprise Linux (Rocky Linux 10, AlmaLinux 10) and Fedora 44 via `repo.wheelhouser.com`, alongside Windows 10/11 and macOS.
 
 ## 🚀 Key Features
 
-*   **Multi-Language Syntax Highlighting:** High-performance color coding for Python, C, C++, Rust, JavaScript, TypeScript, HTML, CSS, Markdown, JSON, and Shell scripts.
+*   **Multi-Language Syntax Highlighting:** High-performance color coding for Python, C, C++, Java, Rust, Ruby, JavaScript, TypeScript, HTML, CSS, Markdown, JSON, and Shell scripts.
 *   **Code Folding & Structure Navigation:** Fold and unfold logical blocks with intuitive keyboard shortcuts and persistent folding states.
 *   **Simultaneous Multi-Cursor Editing:** Place multiple carets for blazing-fast parallel editing and batch modifications.
 *   **Wheelhouser Dark Theme:** Ergonomic native dark aesthetic engineered for long coding and writing sessions.
@@ -13,9 +13,9 @@ We are excited to announce the release of **Text Editor v0.13.3**. This update i
 
 ## 🛠 Technical Details
 
-*   **Version:** 0.13.3
+*   **Version:** 0.14.2
 *   **Runtime / Framework:** Python 3.13 / PySide6 / Qt6
-*   **License:** Proprietary (Wheelhouser EULA)
+*   **License:** GNU General Public License v3.0 (GPL-3.0)
 *   **Target Distros:** Rocky Linux 10, AlmaLinux 10, Fedora 44
 *   **Cross-Platform:** Linux, Windows (Microsoft Store), macOS
 

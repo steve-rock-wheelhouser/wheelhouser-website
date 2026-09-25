@@ -11,7 +11,7 @@
   },
   "linux": {
     "distro": "rocky/almalinux/fedora",
-    "latest_version": "0.13.3",
+    "latest_version": "0.14.2",
     "url": "https://repo.wheelhouser.com",
     "release_notes": "Install or upgrade with: sudo dnf install text-editor"
   },
