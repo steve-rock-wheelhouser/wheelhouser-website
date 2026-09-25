@@ -122,12 +122,13 @@
                     <div class="download-group">
                         <div class="download-group-header">
                             <img src="../images/icons/rocky.svg" alt="Rocky Linux" class="distro-header-icon">
+                            <img src="../images/icons/almalinux.svg" alt="AlmaLinux" class="distro-header-icon">
                             <img src="../images/icons/fedora.svg" alt="Fedora" class="distro-header-icon">
                             <h4>Linux (RPM / DNF)</h4>
                         </div>
                         <a href="https://github.com/steve-rock-wheelhouser/wheelhouserllc-repo" class="btn-download" id="download-linux" style="margin-bottom: 0.5rem;">
                             <img src="../images/icons/linux.svg" alt="Linux icon" class="os-icon">
-                            <span id="download-linux-text">Wheelhouser RPM Repo (v0.14.1)</span>
+                            <span id="download-linux-text">Wheelhouser Package Repo (v0.15.0)</span>
                         </a>
                         <div class="code-snippet-box">
                             <pre id="cmd-web-browser-dnf"><code>sudo dnf install -y web-browser</code></pre>
@@ -138,20 +139,54 @@
                         </div>
                     </div>
 
+                    <div class="download-group">
+                        <div class="download-group-header">
+                            <img src="../images/icons/debian.svg" alt="Debian" class="distro-header-icon">
+                            <h4>Debian 13 (Trixie)</h4>
+                        </div>
+                        <p style="font-size: 0.85rem; color: var(--accent-color); margin-bottom: 0.5rem;">Install GPG keyring and repository source:</p>
+                        <div class="code-snippet-box">
+                            <pre id="cmd-debian-wb"><code>sudo install -m 0755 -d /etc/apt/keyrings && curl -fsSL https://repo.wheelhouser.com/steve-rock-wheelhouser-gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/wheelhouser.gpg && sudo chmod a+r /etc/apt/keyrings/wheelhouser.gpg
+echo "deb [signed-by=/etc/apt/keyrings/wheelhouser.gpg] https://repo.wheelhouser.com/debian/13 ./" | sudo tee /etc/apt/sources.list.d/wheelhouser.list
+sudo apt update && sudo apt install -y web-browser</code></pre>
+                            <button class="copy-code-btn" onclick="copyCodeSnippet('cmd-debian-wb', this)" title="Copy command" aria-label="Copy to clipboard">
+                                <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                <span class="copy-label">Copy</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="download-group">
+                        <div class="download-group-header">
+                            <img src="../images/icons/ubuntu.svg" alt="Ubuntu" class="distro-header-icon">
+                            <h4>Ubuntu 26.04 LTS (Resolute)</h4>
+                        </div>
+                        <p style="font-size: 0.85rem; color: var(--accent-color); margin-bottom: 0.5rem;">Install modern DEB822 repository source:</p>
+                        <div class="code-snippet-box">
+                            <pre id="cmd-ubuntu-wb"><code>sudo install -m 0755 -d /etc/apt/keyrings && curl -fsSL https://repo.wheelhouser.com/steve-rock-wheelhouser-gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/wheelhouser.gpg && sudo chmod a+r /etc/apt/keyrings/wheelhouser.gpg
+curl -fsSL https://repo.wheelhouser.com/ubuntu.sources | sudo tee /etc/apt/sources.list.d/wheelhouser.sources
+sudo apt update && sudo apt install -y web-browser</code></pre>
+                            <button class="copy-code-btn" onclick="copyCodeSnippet('cmd-ubuntu-wb', this)" title="Copy command" aria-label="Copy to clipboard">
+                                <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                <span class="copy-label">Copy</span>
+                            </button>
+                        </div>
+                    </div>
+
                     <hr class="download-divider">
                     <a href="https://github.com/steve-rock-wheelhouser/web-browser" class="btn-secondary full-width-btn" style="margin-bottom: 0.5rem;" target="_blank" rel="noopener">View Source Code</a>
-                    <a href="https://repo.wheelhouser.com" class="btn-secondary full-width-btn" target="_blank" rel="noopener">Wheelhouser RPM Repository</a>
+                    <a href="https://repo.wheelhouser.com" class="btn-secondary full-width-btn" target="_blank" rel="noopener">Wheelhouser Package Repository</a>
                 </div>
 
                 <div class="sidebar-card info-card">
                     <h3>Technical Details</h3>
                     <ul class="specs-list">
-                        <li><strong>Version:</strong> <span id="specs-version">0.14.1 (Linux / macOS) / 0.14.9 (Windows)</span></li>
-                        <li><strong>License:</strong> Proprietary (Wheelhouser EULA)</li>
+                        <li><strong>Version:</strong> <span id="specs-version">0.15.0 (Linux) / 0.1.127 (macOS) / 0.1.44 (Windows)</span></li>
+                        <li><strong>License:</strong> GPL-3.0-or-later / Open Source</li>
                         <li><strong>Framework:</strong> Python 3.12/3.13 / PySide6 / QtWebEngine</li>
                         <li><strong>Engine:</strong> Chromium / Custom Media Transcoding Pipeline</li>
-                        <li><strong>Platforms:</strong> Rocky Linux 10, Fedora 43/44, Windows 10/11, macOS 12+</li>
-                        <li><strong>Updated:</strong> September 20, 2026</li>
+                        <li><strong>Platforms:</strong> Rocky Linux 10, AlmaLinux 10, Fedora 44, Debian 13, Ubuntu 26.04 LTS, Windows 10/11, macOS 12+</li>
+                        <li><strong>Updated:</strong> September 25, 2026</li>
                     </ul>
                 </div>
 
