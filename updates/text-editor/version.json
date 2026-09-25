@@ -1,19 +1,19 @@
 {
   "windows": {
-    "latest_version": "0.12.7",
+    "latest_version": "0.14.2",
     "url": "ms-windows-store://pdp/?productid=9PDMKDMPCJRG",
-    "release_notes": "Version 0.12.7 Release."
+    "release_notes": "Version 0.14.2 Release."
   },
   "macos": {
-    "latest_version": "0.7.4",
+    "latest_version": "0.14.2",
     "url": "https://github.com/steve-rock-wheelhouser/text-editor/releases",
     "release_notes": "macOS release."
   },
   "linux": {
-    "distro": "rocky/almalinux/fedora",
+    "distro": "rocky/almalinux/fedora/debian/ubuntu",
     "latest_version": "0.14.2",
     "url": "https://repo.wheelhouser.com",
-    "release_notes": "Install or upgrade with: sudo dnf install text-editor"
+    "release_notes": "Install with: sudo dnf install text-editor (RPM) or sudo apt install text-editor (DEB)"
   },
   "fallback_url": "https://wheelhouser.com/products/text-editor"
 }
