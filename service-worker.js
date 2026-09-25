@@ -1,5 +1,5 @@
 // Ultra-minimal Service Worker for Wheelhouser LLC
-const CACHE_NAME = 'wheelhouser-minimal-v3';
+const CACHE_NAME = 'wheelhouser-minimal-v4';
 
 // We only cache the absolute essentials to prevent any install failures
 const PRE_CACHE_RESOURCES = [
