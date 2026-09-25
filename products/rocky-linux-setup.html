@@ -38,7 +38,7 @@
                         <div class="product-meta-row">
                             <span class="meta-pill">v1.0.0-1</span>
                             <span class="meta-pill">GPL-3.0</span>
-                            <span class="meta-pill">Rocky Linux 10 &bull; Enterprise Linux 10</span>
+                            <span class="meta-pill distro-pill"><img src="../images/icons/rocky.svg" alt="Rocky Linux" class="distro-pill-icon"> Rocky Linux 10</span>
                         </div>
                     </div>
                 </div>
@@ -68,15 +68,22 @@
                 <div class="content-block">
                     <h2>Management CLI Commands</h2>
                     <p>The installed <code>rocky-linux-setup</code> CLI provides quick administrative diagnostics and configuration helpers:</p>
-                    <div style="background: rgba(0,0,0,0.4); border: 1px solid var(--border-color); border-radius: 8px; padding: 1rem; font-family: monospace; font-size: 0.9rem; line-height: 1.6; overflow-x: auto;">
-                        <span style="color: #38bdf8;"># Inspect system health, repository status, and build toolchains:</span><br>
-                        $ rocky-linux-setup --status<br><br>
-                        <span style="color: #38bdf8;"># Enable CodeReady Linux Builder (CRB) and EPEL 10:</span><br>
-                        $ sudo rocky-linux-setup --enable-crb<br><br>
-                        <span style="color: #38bdf8;"># Configure system hostname:</span><br>
-                        $ sudo rocky-linux-setup --set-hostname rocky10-workstation<br><br>
-                        <span style="color: #38bdf8;"># Import custom RPM signing key and set ultimate trust:</span><br>
-                        $ rocky-linux-setup --import-key ~/wheelhouser-release-private.asc
+                    <div class="code-snippet-box">
+                        <pre id="cmd-rocky-setup-cli"><code># Inspect system health, repository status, and build toolchains:
+rocky-linux-setup --status
+
+# Enable CodeReady Linux Builder (CRB) and EPEL 10:
+sudo rocky-linux-setup --enable-crb
+
+# Configure system hostname:
+sudo rocky-linux-setup --set-hostname rocky10-workstation
+
+# Import custom RPM signing key and set ultimate trust:
+rocky-linux-setup --import-key ~/wheelhouser-release-private.asc</code></pre>
+                        <button class="copy-code-btn" onclick="copyCodeSnippet('cmd-rocky-setup-cli', this)" title="Copy commands" aria-label="Copy to clipboard">
+                            <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                            <span class="copy-label">Copy</span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -87,20 +94,34 @@
                     <h3>Downloads &amp; Installation</h3>
 
                     <div class="download-group">
-                        <h4>Quick Install via DNF</h4>
+                        <div class="download-group-header">
+                            <img src="../images/icons/rocky.svg" alt="Rocky Linux" class="distro-header-icon">
+                            <h4>Quick Install via DNF</h4>
+                        </div>
                         <p style="font-size: 0.85rem; color: var(--accent-color); margin-bottom: 0.5rem;">Configure Wheelhouser repo and install meta-package:</p>
-                        <div style="background: rgba(0,0,0,0.3); border: 1px solid var(--border-color); border-radius: 6px; padding: 0.75rem; font-family: monospace; font-size: 0.85rem; margin-bottom: 0.75rem; word-break: break-all;">
-                            sudo dnf install https://repo.wheelhouser.com/rocky/10/x86_64/steve-rock-wheelhouser-release-1.0-6.el10.noarch.rpm<br>
-                            sudo dnf install rocky-linux-setup<br>
-                            rocky-linux-setup --status
+                        <div class="code-snippet-box">
+                            <pre id="cmd-rocky-setup-dnf"><code>sudo dnf install https://repo.wheelhouser.com/rocky/10/x86_64/steve-rock-wheelhouser-release-1.0-6.el10.noarch.rpm
+sudo dnf install -y rocky-linux-setup
+rocky-linux-setup --status</code></pre>
+                            <button class="copy-code-btn" onclick="copyCodeSnippet('cmd-rocky-setup-dnf', this)" title="Copy command" aria-label="Copy to clipboard">
+                                <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                <span class="copy-label">Copy</span>
+                            </button>
                         </div>
                     </div>
 
                     <div class="download-group">
-                        <h4>Unattended OS Kickstart</h4>
+                        <div class="download-group-header">
+                            <img src="../images/icons/rocky.svg" alt="Rocky Linux" class="distro-header-icon">
+                            <h4>Unattended OS Kickstart</h4>
+                        </div>
                         <p style="font-size: 0.85rem; color: var(--accent-color); margin-bottom: 0.5rem;">Boot parameter for ISO or PXE installer:</p>
-                        <div style="background: rgba(0,0,0,0.3); border: 1px solid var(--border-color); border-radius: 6px; padding: 0.75rem; font-family: monospace; font-size: 0.82rem; margin-bottom: 0.75rem; word-break: break-all;">
-                            inst.ks=https://raw.githubusercontent.com/steve-rock-wheelhouser/rocky-linux-setup/main/kickstart/rocky10-workstation.ks
+                        <div class="code-snippet-box">
+                            <pre id="cmd-rocky-setup-ks"><code>inst.ks=https://raw.githubusercontent.com/steve-rock-wheelhouser/rocky-linux-setup/main/kickstart/rocky10-workstation.ks</code></pre>
+                            <button class="copy-code-btn" onclick="copyCodeSnippet('cmd-rocky-setup-ks', this)" title="Copy command" aria-label="Copy to clipboard">
+                                <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                <span class="copy-label">Copy</span>
+                            </button>
                         </div>
                     </div>
 
@@ -147,5 +168,6 @@
         </div>
     </footer>
 
+    <script src="../js/main.js"></script>
 </body>
 </html>

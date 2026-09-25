@@ -38,7 +38,13 @@
                         <div class="product-meta-row">
                             <span class="meta-pill" id="editor-version-pill">v0.14.2</span>
                             <span class="meta-pill">Native Dark Theme</span>
-                            <span class="meta-pill">Rocky Linux 10 &bull; AlmaLinux 10 &bull; Fedora 44 &bull; Debian 13 &bull; Ubuntu 24 &bull; Windows &bull; macOS</span>
+                            <span class="meta-pill distro-pill"><img src="../images/icons/rocky.svg" alt="Rocky Linux" class="distro-pill-icon"> Rocky 10</span>
+                            <span class="meta-pill distro-pill"><img src="../images/icons/almalinux.svg" alt="AlmaLinux" class="distro-pill-icon"> Alma 10</span>
+                            <span class="meta-pill distro-pill"><img src="../images/icons/fedora.svg" alt="Fedora" class="distro-pill-icon"> Fedora 44</span>
+                            <span class="meta-pill distro-pill"><img src="../images/icons/debian.svg" alt="Debian" class="distro-pill-icon"> Debian 13</span>
+                            <span class="meta-pill distro-pill"><img src="../images/icons/ubuntu.svg" alt="Ubuntu" class="distro-pill-icon"> Ubuntu 24</span>
+                            <span class="meta-pill distro-pill"><img src="../images/icons/windows.svg" alt="Windows" class="distro-pill-icon"> Windows</span>
+                            <span class="meta-pill distro-pill"><img src="../images/icons/apple.svg" alt="macOS" class="distro-pill-icon"> macOS</span>
                         </div>
                     </div>
                 </div>
@@ -93,7 +99,10 @@
                     <h3>Downloads &amp; Installation</h3>
 
                     <div class="download-group">
-                        <h4>Windows</h4>
+                        <div class="download-group-header">
+                            <img src="../images/icons/windows.svg" alt="Windows" class="distro-header-icon">
+                            <h4>Windows</h4>
+                        </div>
                         <a href="ms-windows-store://pdp/?productid=9PDMKDMPCJRG" class="btn-download" id="download-windows">
                             <img src="../images/icons/windows.svg" alt="Windows icon" class="os-icon">
                             <span id="download-windows-text">Microsoft Store (v0.14.2)</span>
@@ -101,51 +110,96 @@
                     </div>
 
                     <div class="download-group">
-                        <h4>Rocky Linux 10 / Enterprise Linux</h4>
-                        <p style="font-size: 0.85rem; color: var(--accent-color); margin-bottom: 0.5rem;">Install repository release package and application:</p>
-                        <div style="background: rgba(0,0,0,0.3); border: 1px solid var(--border-color); border-radius: 6px; padding: 0.75rem; font-family: monospace; font-size: 0.85rem; margin-bottom: 0.75rem; word-break: break-all;">
-                            sudo dnf install https://repo.wheelhouser.com/rocky/10/x86_64/steve-rock-wheelhouser-release-1.0-6.el10.noarch.rpm<br>
-                            sudo dnf install text-editor
+                        <div class="download-group-header">
+                            <img src="../images/icons/apple.svg" alt="macOS" class="distro-header-icon">
+                            <h4>macOS</h4>
                         </div>
-                    </div>
-
-                    <div class="download-group">
-                        <h4>AlmaLinux 10</h4>
-                        <p style="font-size: 0.85rem; color: var(--accent-color); margin-bottom: 0.5rem;">Install repository release package and application:</p>
-                        <div style="background: rgba(0,0,0,0.3); border: 1px solid var(--border-color); border-radius: 6px; padding: 0.75rem; font-family: monospace; font-size: 0.85rem; margin-bottom: 0.75rem; word-break: break-all;">
-                            sudo dnf install https://repo.wheelhouser.com/almalinux/10/x86_64/steve-rock-wheelhouser-release-1.0-6.el10.noarch.rpm<br>
-                            sudo dnf install text-editor
-                        </div>
-                    </div>
-
-                    <div class="download-group">
-                        <h4>Fedora Linux 44</h4>
-                        <p style="font-size: 0.85rem; color: var(--accent-color); margin-bottom: 0.5rem;">Install repository release package and application:</p>
-                        <div style="background: rgba(0,0,0,0.3); border: 1px solid var(--border-color); border-radius: 6px; padding: 0.75rem; font-family: monospace; font-size: 0.85rem; margin-bottom: 0.75rem; word-break: break-all;">
-                            sudo dnf install https://repo.wheelhouser.com/fedora/44/x86_64/steve-rock-wheelhouser-release-1.0-6.fc44.noarch.rpm<br>
-                            sudo dnf install text-editor
-                        </div>
-                    </div>
-
-                    <div class="download-group">
-                        <h4>Debian 13 &amp; Ubuntu 24 (APT)</h4>
-                        <p style="font-size: 0.85rem; color: var(--accent-color); margin-bottom: 0.5rem;">Install GPG keyring and repository source:</p>
-                        <div style="background: rgba(0,0,0,0.3); border: 1px solid var(--border-color); border-radius: 6px; padding: 0.75rem; font-family: monospace; font-size: 0.85rem; margin-bottom: 0.75rem; word-break: break-all;">
-                            sudo install -m 0755 -d /etc/apt/keyrings &amp;&amp; curl -fsSL https://repo.wheelhouser.com/steve-rock-wheelhouser-gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/wheelhouser.gpg &amp;&amp; sudo chmod a+r /etc/apt/keyrings/wheelhouser.gpg<br><br>
-                            # For Debian 13:<br>
-                            echo "deb [signed-by=/etc/apt/keyrings/wheelhouser.gpg] https://repo.wheelhouser.com/debian/13 ./" | sudo tee /etc/apt/sources.list.d/wheelhouser.list<br><br>
-                            # For Ubuntu 24:<br>
-                            # echo "deb [signed-by=/etc/apt/keyrings/wheelhouser.gpg] https://repo.wheelhouser.com/ubuntu/24 ./" | sudo tee /etc/apt/sources.list.d/wheelhouser.list<br><br>
-                            sudo apt update &amp;&amp; sudo apt install text-editor
-                        </div>
-                    </div>
-
-                    <div class="download-group">
-                        <h4>macOS</h4>
                         <a href="https://github.com/steve-rock-wheelhouser/text-editor" class="btn-download" id="download-mac" target="_blank" rel="noopener">
                             <img src="../images/icons/apple.svg" alt="Apple icon" class="os-icon">
                             <span id="download-mac-text">GitHub Releases (macOS)</span>
                         </a>
+                    </div>
+
+                    <div class="download-group">
+                        <div class="download-group-header">
+                            <img src="../images/icons/rocky.svg" alt="Rocky Linux" class="distro-header-icon">
+                            <h4>Rocky Linux 10 / Enterprise Linux</h4>
+                        </div>
+                        <p style="font-size: 0.85rem; color: var(--accent-color); margin-bottom: 0.5rem;">Install repository release package and application:</p>
+                        <div class="code-snippet-box">
+                            <pre id="cmd-rocky-te"><code>sudo dnf install https://repo.wheelhouser.com/rocky/10/x86_64/steve-rock-wheelhouser-release-1.0-6.el10.noarch.rpm
+sudo dnf install -y text-editor</code></pre>
+                            <button class="copy-code-btn" onclick="copyCodeSnippet('cmd-rocky-te', this)" title="Copy command" aria-label="Copy to clipboard">
+                                <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                <span class="copy-label">Copy</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="download-group">
+                        <div class="download-group-header">
+                            <img src="../images/icons/almalinux.svg" alt="AlmaLinux" class="distro-header-icon">
+                            <h4>AlmaLinux 10</h4>
+                        </div>
+                        <p style="font-size: 0.85rem; color: var(--accent-color); margin-bottom: 0.5rem;">Install repository release package and application:</p>
+                        <div class="code-snippet-box">
+                            <pre id="cmd-alma-te"><code>sudo dnf install https://repo.wheelhouser.com/almalinux/10/x86_64/steve-rock-wheelhouser-release-1.0-6.el10.noarch.rpm
+sudo dnf install -y text-editor</code></pre>
+                            <button class="copy-code-btn" onclick="copyCodeSnippet('cmd-alma-te', this)" title="Copy command" aria-label="Copy to clipboard">
+                                <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                <span class="copy-label">Copy</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="download-group">
+                        <div class="download-group-header">
+                            <img src="../images/icons/fedora.svg" alt="Fedora" class="distro-header-icon">
+                            <h4>Fedora Linux 44</h4>
+                        </div>
+                        <p style="font-size: 0.85rem; color: var(--accent-color); margin-bottom: 0.5rem;">Install repository release package and application:</p>
+                        <div class="code-snippet-box">
+                            <pre id="cmd-fedora-te"><code>sudo dnf install https://repo.wheelhouser.com/fedora/44/x86_64/steve-rock-wheelhouser-release-1.0-6.fc44.noarch.rpm
+sudo dnf install -y text-editor</code></pre>
+                            <button class="copy-code-btn" onclick="copyCodeSnippet('cmd-fedora-te', this)" title="Copy command" aria-label="Copy to clipboard">
+                                <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                <span class="copy-label">Copy</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="download-group">
+                        <div class="download-group-header">
+                            <img src="../images/icons/debian.svg" alt="Debian" class="distro-header-icon">
+                            <h4>Debian 13 (Trixie)</h4>
+                        </div>
+                        <p style="font-size: 0.85rem; color: var(--accent-color); margin-bottom: 0.5rem;">Install GPG keyring and repository source:</p>
+                        <div class="code-snippet-box">
+                            <pre id="cmd-debian-te"><code>sudo install -m 0755 -d /etc/apt/keyrings &amp;&amp; curl -fsSL https://repo.wheelhouser.com/steve-rock-wheelhouser-gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/wheelhouser.gpg &amp;&amp; sudo chmod a+r /etc/apt/keyrings/wheelhouser.gpg
+echo "deb [signed-by=/etc/apt/keyrings/wheelhouser.gpg] https://repo.wheelhouser.com/debian/13 ./" | sudo tee /etc/apt/sources.list.d/wheelhouser.list
+sudo apt update &amp;&amp; sudo apt install -y text-editor</code></pre>
+                            <button class="copy-code-btn" onclick="copyCodeSnippet('cmd-debian-te', this)" title="Copy command" aria-label="Copy to clipboard">
+                                <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                <span class="copy-label">Copy</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="download-group">
+                        <div class="download-group-header">
+                            <img src="../images/icons/ubuntu.svg" alt="Ubuntu" class="distro-header-icon">
+                            <h4>Ubuntu 24 (Noble)</h4>
+                        </div>
+                        <p style="font-size: 0.85rem; color: var(--accent-color); margin-bottom: 0.5rem;">Install GPG keyring and repository source:</p>
+                        <div class="code-snippet-box">
+                            <pre id="cmd-ubuntu-te"><code>sudo install -m 0755 -d /etc/apt/keyrings &amp;&amp; curl -fsSL https://repo.wheelhouser.com/steve-rock-wheelhouser-gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/wheelhouser.gpg &amp;&amp; sudo chmod a+r /etc/apt/keyrings/wheelhouser.gpg
+echo "deb [signed-by=/etc/apt/keyrings/wheelhouser.gpg] https://repo.wheelhouser.com/ubuntu/24 ./" | sudo tee /etc/apt/sources.list.d/wheelhouser.list
+sudo apt update &amp;&amp; sudo apt install -y text-editor</code></pre>
+                            <button class="copy-code-btn" onclick="copyCodeSnippet('cmd-ubuntu-te', this)" title="Copy command" aria-label="Copy to clipboard">
+                                <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                <span class="copy-label">Copy</span>
+                            </button>
+                        </div>
                     </div>
 
                     <hr class="download-divider">
@@ -252,5 +306,6 @@
 
         document.addEventListener('DOMContentLoaded', fetchAndUpdateVersion);
     </script>
+    <script src="../js/main.js"></script>
 </body>
 </html>

@@ -37,7 +37,10 @@
                         <div class="product-meta-row">
                             <span class="meta-pill" id="browser-version-pill">v0.14.1</span>
                             <span class="meta-pill">Native Dark Theme</span>
-                            <span class="meta-pill">Windows &bull; macOS &bull; Rocky Linux 10 &bull; Fedora</span>
+                            <span class="meta-pill distro-pill"><img src="../images/icons/windows.svg" alt="Windows" class="distro-pill-icon"> Windows</span>
+                            <span class="meta-pill distro-pill"><img src="../images/icons/apple.svg" alt="macOS" class="distro-pill-icon"> macOS</span>
+                            <span class="meta-pill distro-pill"><img src="../images/icons/rocky.svg" alt="Rocky Linux" class="distro-pill-icon"> Rocky 10</span>
+                            <span class="meta-pill distro-pill"><img src="../images/icons/fedora.svg" alt="Fedora" class="distro-pill-icon"> Fedora</span>
                         </div>
                     </div>
                 </div>
@@ -90,7 +93,10 @@
                     <h3>Downloads & Installation</h3>
 
                     <div class="download-group">
-                        <h4>Windows</h4>
+                        <div class="download-group-header">
+                            <img src="../images/icons/windows.svg" alt="Windows" class="distro-header-icon">
+                            <h4>Windows</h4>
+                        </div>
                         <a href="ms-windows-store://pdp/?productid=XPFMW4P9RDVKFG" class="btn-download" id="download-windows">
                             <img src="../images/icons/windows.svg" alt="Windows icon" class="os-icon">
                             <span id="download-windows-text">Microsoft Store (v0.1.44)</span>
@@ -98,7 +104,10 @@
                     </div>
 
                     <div class="download-group">
-                        <h4>macOS</h4>
+                        <div class="download-group-header">
+                            <img src="../images/icons/apple.svg" alt="macOS" class="distro-header-icon">
+                            <h4>macOS</h4>
+                        </div>
                         <a href="https://marqueemagic.shop/assets/downloads/Web-Browser_0.1.127_macOS_arm64.dmg" class="btn-download" id="download-mac-arm" style="margin-bottom: 0.5rem;">
                             <img src="../images/icons/apple.svg" alt="Apple icon" class="os-icon">
                             <span id="download-mac-arm-text">Apple Silicon DMG (ARM64 &bull; v0.1.127)</span>
@@ -110,13 +119,21 @@
                     </div>
 
                     <div class="download-group">
-                        <h4>Linux (RPM / DNF)</h4>
+                        <div class="download-group-header">
+                            <img src="../images/icons/rocky.svg" alt="Rocky Linux" class="distro-header-icon">
+                            <img src="../images/icons/fedora.svg" alt="Fedora" class="distro-header-icon">
+                            <h4>Linux (RPM / DNF)</h4>
+                        </div>
                         <a href="https://github.com/steve-rock-wheelhouser/wheelhouserllc-repo" class="btn-download" id="download-linux" style="margin-bottom: 0.5rem;">
                             <img src="../images/icons/linux.svg" alt="Linux icon" class="os-icon">
                             <span id="download-linux-text">Wheelhouser RPM Repo (v0.14.1)</span>
                         </a>
-                        <div style="background: rgba(15, 23, 42, 0.7); border: 1px solid var(--border-color); border-radius: 6px; padding: 0.6rem 0.8rem; font-family: monospace; font-size: 0.85rem; color: #38bdf8; word-break: break-all;">
-                            <code>sudo dnf install web-browser</code>
+                        <div class="code-snippet-box">
+                            <pre id="cmd-web-browser-dnf"><code>sudo dnf install -y web-browser</code></pre>
+                            <button class="copy-code-btn" onclick="copyCodeSnippet('cmd-web-browser-dnf', this)" title="Copy command" aria-label="Copy to clipboard">
+                                <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                <span class="copy-label">Copy</span>
+                            </button>
                         </div>
                     </div>
 
@@ -247,5 +264,6 @@
         }
         fetchAndUpdateVersion();
     </script>
+    <script src="../js/main.js"></script>
 </body>
 </html>
