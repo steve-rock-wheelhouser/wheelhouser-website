@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto-Updates | Wheelhouser LLC</title>
+    <meta name="description" content="Automated system package updates and reboot policy manager for Linux (Rocky Linux, AlmaLinux, Fedora, Debian, Ubuntu). Zero-day security patching, intelligent compiler protection, and unified CLI.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="../images/wheelhouser-W/web/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="/manifest.json">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <img src="../images/wheelhouser-W/wheelhouser-07.png" alt="Wheelhouser Logo">
+                Wheelhouser LLC
+            </a>
+            <nav>
+                <a href="index.html">Products</a>
+                <a href="../index.html#portfolio">Software Portfolio</a>
+                <a href="https://repo.wheelhouser.com">Linux Repository</a>
+                <a href="../about.html">Company</a>
+                <a href="../index.html#contact" class="btn-primary">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="product-page">
+
+        <section class="product-header">
+            <div class="container">
+                <div class="product-header-content">
+                    <img src="../images/auto-updates/icon.svg" alt="Auto-Updates Icon" class="product-big-icon">
+                    <div class="product-title-block">
+                        <h1>Auto-Updates</h1>
+                        <p class="product-tagline">Turnkey automated package maintenance, zero-day CVE patching, compiler-aware reboot protection, and unified multi-distribution management for Linux.</p>
+                        <div class="product-meta-row">
+                            <span class="meta-pill">v1.1.8-1</span>
+                            <span class="meta-pill">GPL-3.0-or-later</span>
+                            <span class="meta-pill distro-pill"><img src="../images/icons/rocky.svg" alt="Rocky Linux" class="distro-pill-icon"> Rocky 10</span>
+                            <span class="meta-pill distro-pill"><img src="../images/icons/almalinux.svg" alt="AlmaLinux" class="distro-pill-icon"> Alma 10</span>
+                            <span class="meta-pill distro-pill"><img src="../images/icons/fedora.svg" alt="Fedora" class="distro-pill-icon"> Fedora 44</span>
+                            <span class="meta-pill distro-pill"><img src="../images/icons/debian.svg" alt="Debian" class="distro-pill-icon"> Debian 13</span>
+                            <span class="meta-pill distro-pill"><img src="../images/icons/ubuntu.svg" alt="Ubuntu" class="distro-pill-icon"> Ubuntu 26.04 LTS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SCREENSHOT & HERO CAROUSEL -->
+        <div class="container">
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="carousel-item">
+                        <img src="../images/auto-updates/auto-updates-banner.png" alt="Auto-Updates Showcase Hero Banner" loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/auto-updates/screenshots/1.png" alt="Real-time system status and scheduled update timer inspection" loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/auto-updates/screenshots/2.png" alt="Interactive command-line interface and configuration options" loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/auto-updates/screenshots/3.png" alt="Comprehensive Unix system administration manual page" loading="lazy">
+                    </div>
+                </div>
+                <p class="carousel-hint">Scroll for more images &rarr;</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="product-main-full">
+                
+                <div class="content-block">
+                    <h2>The "UFW" for Linux Package Maintenance</h2>
+                    <p>
+                        Linux distributions have long shipped raw update automation engines—such as <code>dnf-automatic</code> on RPM systems and <code>unattended-upgrades</code> on Debian and Ubuntu. Yet on millions of Linux servers and developer workstations, automatic updates are left disabled or half-configured out of fear: fear of unannounced middle-of-the-night reboots, fear of broken daily upgrades, or simply the friction of juggling disparate config files, cron entries, and systemd overrides.
+                    </p>
+                    <p>
+                        <strong>Auto-Updates</strong> provides an intelligent, human-friendly management layer that brings turnkey reliability to Linux maintenance. What <code>ufw</code> did for <code>iptables</code>, <code>auto-updates</code> does for package automation—delivering unified CLI semantics, zero-configuration defaults, real-time observability, and smart compile-time protection across enterprise and community Linux.
+                    </p>
+                </div>
+
+                <div class="content-block">
+                    <h2>Key Features</h2>
+                    <ul class="feature-list">
+                        <li><strong>Unified Multi-Distro CLI:</strong> Control your update policies with the exact same commands across Rocky Linux 10, AlmaLinux 10, Fedora 44, Debian 13, and Ubuntu 26.04 LTS.</li>
+                        <li><strong>"Goldilocks" Hybrid Schedule (<code>weekly-all</code>):</strong> Applies fast, low-risk zero-day security CVE patches Monday through Saturday, then performs a full system upgrade on Sunday at 03:30 AM.</li>
+                        <li><strong>Build &amp; Compiler Protection:</strong> Never lose an overnight compile or training run. Intelligently scans for active build processes (<code>gcc</code>, <code>cargo</code>, <code>make</code>, <code>ninja</code>, <code>rpmbuild</code>, <code>containerd</code>) and system inhibitor locks before any reboot.</li>
+                        <li><strong>Instant Observability Dashboard:</strong> Run <code>auto-updates status</code> for immediate, color-coded visibility into systemd timers, next scheduled action, active backend (DNF5 / DNF4 / APT), and reboot state.</li>
+                        <li><strong>Granular Reboot Policies:</strong> Configure reboots with full clarity using <code>never</code>, <code>when-needed</code> (reboots only when kernel or glibc patches mandate it), or <code>when-changed</code>.</li>
+                        <li><strong>Safe Dry-Run Auditing:</strong> Inspect pending updates non-destructively at any time using <code>auto-updates check</code>.</li>
+                        <li><strong>Zero-Config Turnkey Activation:</strong> Automatically coordinates systemd timers upon package installation, resolving and disabling conflicting stock distro timers out-of-the-box.</li>
+                        <li><strong>Native Desktop &amp; AppStream Cataloging:</strong> Fully cataloged in GNOME Software and KDE Discover with rich 1080p hero banners, multi-screenshot galleries, and desktop app integration.</li>
+                    </ul>
+                </div>
+
+                <div class="content-block">
+                    <h2>Comparative Analysis</h2>
+                    <p>How <code>auto-updates</code> compares against raw, low-level distro automation utilities:</p>
+                    
+                    <div class="comparison-table-wrapper">
+                        <table class="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>Capability</th>
+                                    <th>Raw dnf-automatic</th>
+                                    <th>Raw unattended-upgrades</th>
+                                    <th>Auto-Updates</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Turnkey Activation</strong></td>
+                                    <td>Manual timer &amp; conf editing</td>
+                                    <td>Varies by distribution</td>
+                                    <td class="highlight-cell">Active on install (03:30 AM)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Multi-Distro CLI</strong></td>
+                                    <td>RPM only</td>
+                                    <td>APT only</td>
+                                    <td class="highlight-cell">Unified across RPM &amp; DEB</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Hybrid Weekly Mode</strong></td>
+                                    <td>Requires custom scripts</td>
+                                    <td>Requires cron/script hacks</td>
+                                    <td class="highlight-cell">Native <code>weekly-all</code> schedule</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Status Dashboard</strong></td>
+                                    <td>Complex journalctl parsing</td>
+                                    <td>Inspect raw log files</td>
+                                    <td class="highlight-cell"><code>auto-updates status</code></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Build &amp; Compile Protection</strong></td>
+                                    <td>Blind reboot</td>
+                                    <td>Blind reboot</td>
+                                    <td class="highlight-cell">Detects build locks &amp; defers</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Safe Dry-Run Audit</strong></td>
+                                    <td>Complex flags</td>
+                                    <td>Complex flags</td>
+                                    <td class="highlight-cell"><code>auto-updates check</code></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Schedule Adjustment</strong></td>
+                                    <td>Systemd timer drop-ins</td>
+                                    <td>Systemd / cron overrides</td>
+                                    <td class="highlight-cell"><code>sudo auto-updates set-time</code></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h2>Management CLI Commands</h2>
+                    <p>The installed <code>auto-updates</code> utility provides complete administrative management and configuration:</p>
+                    <div class="code-snippet-box">
+                        <pre id="cmd-auto-updates-cli"><code># Inspect real-time status, timers, backend, and reboot state:
+auto-updates status
+
+# Configure update schedule (security, all, or weekly-all):
+sudo auto-updates set-mode weekly-all
+
+# Set intelligent reboot policy (never, when-needed, when-changed):
+sudo auto-updates set-reboot when-needed
+
+# Adjust daily execution schedule time:
+sudo auto-updates set-time 03:30
+
+# Perform a safe, read-only dry-run check:
+auto-updates check
+
+# Trigger an immediate manual update run:
+sudo auto-updates run
+
+# View comprehensive Unix manual page:
+man auto-updates</code></pre>
+                        <button class="copy-code-btn" onclick="copyCodeSnippet('cmd-auto-updates-cli', this)" title="Copy commands" aria-label="Copy to clipboard">
+                            <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                            <span class="copy-label">Copy</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="product-bottom-grid">
+                
+                <div class="sidebar-card action-card">
+                    <h3>Downloads &amp; Installation</h3>
+
+                    <div class="download-group">
+                        <div class="download-group-header">
+                            <img src="../images/icons/rocky.svg" alt="Rocky Linux" class="distro-header-icon">
+                            <h4>Rocky Linux 10 / Enterprise Linux 10</h4>
+                        </div>
+                        <p style="font-size: 0.85rem; color: var(--accent-color); margin-bottom: 0.5rem;">Install repository release package and application:</p>
+                        <div class="code-snippet-box">
+                            <pre id="cmd-rocky-au"><code>sudo dnf install https://repo.wheelhouser.com/rocky/10/x86_64/steve-rock-wheelhouser-release-1.0-6.el10.noarch.rpm
+sudo dnf install -y auto-updates
+auto-updates status</code></pre>
+                            <button class="copy-code-btn" onclick="copyCodeSnippet('cmd-rocky-au', this)" title="Copy command" aria-label="Copy to clipboard">
+                                <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                <span class="copy-label">Copy</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="download-group">
+                        <div class="download-group-header">
+                            <img src="../images/icons/almalinux.svg" alt="AlmaLinux" class="distro-header-icon">
+                            <h4>AlmaLinux 10</h4>
+                        </div>
+                        <p style="font-size: 0.85rem; color: var(--accent-color); margin-bottom: 0.5rem;">Install repository release package and application:</p>
+                        <div class="code-snippet-box">
+                            <pre id="cmd-alma-au"><code>sudo dnf install https://repo.wheelhouser.com/almalinux/10/x86_64/steve-rock-wheelhouser-release-1.0-6.el10.noarch.rpm
+sudo dnf install -y auto-updates
+auto-updates status</code></pre>
+                            <button class="copy-code-btn" onclick="copyCodeSnippet('cmd-alma-au', this)" title="Copy command" aria-label="Copy to clipboard">
+                                <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                <span class="copy-label">Copy</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="download-group">
+                        <div class="download-group-header">
+                            <img src="../images/icons/fedora.svg" alt="Fedora" class="distro-header-icon">
+                            <h4>Fedora Linux 44</h4>
+                        </div>
+                        <p style="font-size: 0.85rem; color: var(--accent-color); margin-bottom: 0.5rem;">Install repository release package and application:</p>
+                        <div class="code-snippet-box">
+                            <pre id="cmd-fedora-au"><code>sudo dnf install https://repo.wheelhouser.com/fedora/44/x86_64/steve-rock-wheelhouser-release-1.0-6.fc44.noarch.rpm
+sudo dnf install -y auto-updates
+auto-updates status</code></pre>
+                            <button class="copy-code-btn" onclick="copyCodeSnippet('cmd-fedora-au', this)" title="Copy command" aria-label="Copy to clipboard">
+                                <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                <span class="copy-label">Copy</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="download-group">
+                        <div class="download-group-header">
+                            <img src="../images/icons/debian.svg" alt="Debian" class="distro-header-icon">
+                            <h4>Debian 13 (Trixie)</h4>
+                        </div>
+                        <p style="font-size: 0.85rem; color: var(--accent-color); margin-bottom: 0.5rem;">Install GPG keyring and repository source:</p>
+                        <div class="code-snippet-box">
+                            <pre id="cmd-debian-au"><code>sudo install -m 0755 -d /etc/apt/keyrings && curl -fsSL https://repo.wheelhouser.com/steve-rock-wheelhouser-gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/wheelhouser.gpg && sudo chmod a+r /etc/apt/keyrings/wheelhouser.gpg
+echo "deb [signed-by=/etc/apt/keyrings/wheelhouser.gpg] https://repo.wheelhouser.com/debian/13 ./" | sudo tee /etc/apt/sources.list.d/wheelhouser.list
+sudo apt update && sudo apt install -y auto-updates
+auto-updates status</code></pre>
+                            <button class="copy-code-btn" onclick="copyCodeSnippet('cmd-debian-au', this)" title="Copy command" aria-label="Copy to clipboard">
+                                <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                <span class="copy-label">Copy</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="download-group">
+                        <div class="download-group-header">
+                            <img src="../images/icons/ubuntu.svg" alt="Ubuntu" class="distro-header-icon">
+                            <h4>Ubuntu 26.04 LTS (Resolute)</h4>
+                        </div>
+                        <p style="font-size: 0.85rem; color: var(--accent-color); margin-bottom: 0.5rem;">Install GPG keyring and repository source:</p>
+                        <div class="code-snippet-box">
+                            <pre id="cmd-ubuntu-au"><code>sudo install -m 0755 -d /etc/apt/keyrings && curl -fsSL https://repo.wheelhouser.com/steve-rock-wheelhouser-gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/wheelhouser.gpg && sudo chmod a+r /etc/apt/keyrings/wheelhouser.gpg
+echo "deb [signed-by=/etc/apt/keyrings/wheelhouser.gpg] https://repo.wheelhouser.com/ubuntu/26.04 ./" | sudo tee /etc/apt/sources.list.d/wheelhouser.list
+sudo apt update && sudo apt install -y auto-updates
+auto-updates status</code></pre>
+                            <button class="copy-code-btn" onclick="copyCodeSnippet('cmd-ubuntu-au', this)" title="Copy command" aria-label="Copy to clipboard">
+                                <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                <span class="copy-label">Copy</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <hr class="download-divider">
+                    <a href="https://repo.wheelhouser.com" class="btn-primary full-width-btn" style="margin-bottom: 0.5rem; text-align: center; display: block;">Wheelhouser Linux Repository (RPM &amp; APT)</a>
+                    <a href="https://github.com/steve-rock-wheelhouser/auto-updates" class="btn-secondary full-width-btn" style="text-align: center; display: block;" target="_blank" rel="noopener">View Source Code on GitHub</a>
+                </div>
+
+                <div class="sidebar-card info-card">
+                    <h3>Technical Details</h3>
+                    <ul class="specs-list">
+                        <li><strong>Package:</strong> auto-updates</li>
+                        <li><strong>Version:</strong> 1.1.8-1</li>
+                        <li><strong>Architecture:</strong> noarch (RPM) / all (DEB)</li>
+                        <li><strong>License:</strong> GPL-3.0-or-later</li>
+                        <li><strong>Core Stack:</strong> POSIX Shell, Bash, systemd, DNF &amp; APT</li>
+                        <li><strong>Platforms:</strong> Rocky Linux 10, AlmaLinux 10, Fedora 44, Debian 13, Ubuntu 26.04 LTS</li>
+                        <li><strong>Distribution:</strong> repo.wheelhouser.com (Signed with 4096-bit RSA)</li>
+                        <li><strong>Maintainer:</strong> Wheelhouser LLC</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="site-footer" id="contact">
+        <div class="container">
+            <div class="footer-row">
+                <img src="../images/wheelhouser-icon/resized_icons/wheelhouser-icon_256x256.webp" alt="Wheelhouser Icon" class="footer-icon">
+                <div class="footer-stack">
+                    <p class="footer-brand">Wheelhouser LLC</p>
+                    <p>Engineering the next generation of native tools.</p>
+                    <p class="footer-cta">See what we can do for you.</p>
+                    <p>156 Winners Circle, Magnolia, DE</p>
+                    <p><a href="tel:302-506-2442">302-506-2442</a></p>
+                    <p><a href="mailto:steve.rock@wheelhouser.com">steve.rock@wheelhouser.com</a></p>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.7;">
+                        <a href="https://repo.wheelhouser.com" style="margin-right: 1.5rem;">Linux Repository</a>
+                        <a href="../privacy.html">Privacy Policy</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

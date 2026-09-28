@@ -1116,3 +1116,49 @@ nav a:hover {
     background: var(--primary-color);
     color: #0f172a;
 }
+
+/* --- COMPARISON TABLE --- */
+.comparison-table-wrapper {
+    overflow-x: auto;
+    margin: 1.5rem 0 2rem 0;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background: var(--card-bg);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.92rem;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 0.85rem 1.1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.comparison-table th {
+    background: #0f172a;
+    color: var(--primary-color);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+}
+
+.comparison-table tr:last-child td {
+    border-bottom: none;
+}
+
+.comparison-table tr:hover td {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.comparison-table td.highlight-cell {
+    font-weight: 600;
+    color: var(--text-color);
+    background: rgba(56, 189, 248, 0.05);
+}
