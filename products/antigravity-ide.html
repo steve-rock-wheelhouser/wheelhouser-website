@@ -146,10 +146,12 @@ sudo dnf install -y antigravity-ide</code></pre>
                             <img src="../images/icons/debian.svg" alt="Debian" class="distro-header-icon">
                             <h4>Debian 13 (Trixie)</h4>
                         </div>
-                        <p style="font-size: 0.85rem; color: var(--accent-color); margin-bottom: 0.5rem;">Install GPG keyring and repository source:</p>
+                        <p style="font-size: 0.85rem; color: var(--accent-color); margin-bottom: 0.5rem;">Install GPG keyring, repository source, and package:</p>
                         <div class="code-snippet-box">
-                            <pre id="cmd-debian-agi"><code>sudo install -m 0755 -d /etc/apt/keyrings &amp;&amp; curl -fsSL https://repo.wheelhouser.com/steve-rock-wheelhouser-gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/wheelhouser.gpg &amp;&amp; sudo chmod a+r /etc/apt/keyrings/wheelhouser.gpg
-echo "deb [signed-by=/etc/apt/keyrings/wheelhouser.gpg] https://repo.wheelhouser.com/debian/13 ./" | sudo tee /etc/apt/sources.list.d/wheelhouser.list
+                            <pre id="cmd-debian-agi"><code>sudo install -m 0755 -d /etc/apt/keyrings &amp;&amp; \
+curl -fsSL https://repo.wheelhouser.com/steve-rock-wheelhouser-gpg.key | sudo gpg --dearmor --yes -o /etc/apt/keyrings/wheelhouser.gpg &amp;&amp; \
+sudo chmod a+r /etc/apt/keyrings/wheelhouser.gpg &amp;&amp; \
+echo "deb [signed-by=/etc/apt/keyrings/wheelhouser.gpg] https://repo.wheelhouser.com/debian/13 ./" | sudo tee /etc/apt/sources.list.d/wheelhouser.list &amp;&amp; \
 sudo apt update &amp;&amp; sudo apt install -y antigravity-ide</code></pre>
                             <button class="copy-code-btn" onclick="copyCodeSnippet('cmd-debian-agi', this)" title="Copy command" aria-label="Copy to clipboard">
                                 <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
@@ -163,10 +165,12 @@ sudo apt update &amp;&amp; sudo apt install -y antigravity-ide</code></pre>
                             <img src="../images/icons/ubuntu.svg" alt="Ubuntu" class="distro-header-icon">
                             <h4>Ubuntu 26.04 LTS (Resolute)</h4>
                         </div>
-                        <p style="font-size: 0.85rem; color: var(--accent-color); margin-bottom: 0.5rem;">Install GPG keyring and repository source:</p>
+                        <p style="font-size: 0.85rem; color: var(--accent-color); margin-bottom: 0.5rem;">Install GPG keyring, repository source, and package:</p>
                         <div class="code-snippet-box">
-                            <pre id="cmd-ubuntu-agi"><code>sudo install -m 0755 -d /etc/apt/keyrings &amp;&amp; curl -fsSL https://repo.wheelhouser.com/steve-rock-wheelhouser-gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/wheelhouser.gpg &amp;&amp; sudo chmod a+r /etc/apt/keyrings/wheelhouser.gpg
-echo "deb [signed-by=/etc/apt/keyrings/wheelhouser.gpg] https://repo.wheelhouser.com/ubuntu/26.04 ./" | sudo tee /etc/apt/sources.list.d/wheelhouser.list
+                            <pre id="cmd-ubuntu-agi"><code>sudo install -m 0755 -d /etc/apt/keyrings &amp;&amp; \
+curl -fsSL https://repo.wheelhouser.com/steve-rock-wheelhouser-gpg.key | sudo gpg --dearmor --yes -o /etc/apt/keyrings/wheelhouser.gpg &amp;&amp; \
+sudo chmod a+r /etc/apt/keyrings/wheelhouser.gpg &amp;&amp; \
+echo "deb [signed-by=/etc/apt/keyrings/wheelhouser.gpg] https://repo.wheelhouser.com/ubuntu/26.04 ./" | sudo tee /etc/apt/sources.list.d/wheelhouser.list &amp;&amp; \
 sudo apt update &amp;&amp; sudo apt install -y antigravity-ide</code></pre>
                             <button class="copy-code-btn" onclick="copyCodeSnippet('cmd-ubuntu-agi', this)" title="Copy command" aria-label="Copy to clipboard">
                                 <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
