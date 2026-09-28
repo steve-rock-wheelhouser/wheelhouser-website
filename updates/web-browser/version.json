@@ -17,7 +17,7 @@
   "linux": {
     "distro": "rocky/fedora",
     "latest_version": "0.17.4",
-    "url": "https://github.com/steve-rock-wheelhouser/wheelhouserllc-repo",
+    "url": "https://repo.wheelhouser.com",
     "release_notes": "Install or upgrade with: sudo dnf install web-browser"
   },
   "fallback_url": "https://wheelhouser.com/products/web-browser"
