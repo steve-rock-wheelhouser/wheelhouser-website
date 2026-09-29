@@ -3,7 +3,7 @@
     "distro": "fedora/rocky/almalinux/debian/ubuntu",
     "latest_version": "1.2.1",
     "url": "https://repo.wheelhouser.com",
-    "release_notes": "Install or upgrade with: sudo dnf install auto-updates or sudo apt install auto-updates"
+    "release_notes": "Install or upgrade with: sudo dnf install 1.2.1"
   },
   "fallback_url": "https://wheelhouser.com/products/auto-updates.html"
 }
