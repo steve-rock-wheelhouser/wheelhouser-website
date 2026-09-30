@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070c18" />
+      <stop offset="35%" stop-color="#0f172a" />
+      <stop offset="70%" stop-color="#111f38" />
+      <stop offset="100%" stop-color="#060913" />
+    </linearGradient>
+
+    <!-- Center Radial Glow -->
+    <radialGradient id="ambient-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.35" />
+      <stop offset="45%" stop-color="#38bdf8" stop-opacity="0.14" />
+      <stop offset="75%" stop-color="#6366f1" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Outer Border Gradient -->
+    <linearGradient id="border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.85" />
+      <stop offset="30%" stop-color="#818cf8" stop-opacity="0.45" />
+      <stop offset="70%" stop-color="#22c55e" stop-opacity="0.55" />
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.75" />
+    </linearGradient>
+
+    <!-- Git Trunk Gradient -->
+    <linearGradient id="trunk-grad" gradientUnits="userSpaceOnUse" x1="420" y1="720" x2="420" y2="300">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="45%" stop-color="#38bdf8" />
+      <stop offset="85%" stop-color="#22c55e" />
+      <stop offset="100%" stop-color="#4ade80" />
+    </linearGradient>
+
+    <!-- Feature Branch Gradient -->
+    <linearGradient id="branch-grad" gradientUnits="userSpaceOnUse" x1="420" y1="720" x2="620" y2="300">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="25%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#c084fc" />
+      <stop offset="75%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#22c55e" />
+    </linearGradient>
+
+    <!-- Push Flow Gradient (Upward) -->
+    <linearGradient id="push-flow" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="45%" stop-color="#38bdf8" />
+      <stop offset="85%" stop-color="#22c55e" />
+      <stop offset="100%" stop-color="#4ade80" />
+    </linearGradient>
+
+    <!-- Pull Flow Gradient (Downward) -->
+    <linearGradient id="pull-flow" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7" />
+      <stop offset="40%" stop-color="#6366f1" />
+      <stop offset="80%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+
+    <!-- Commit Node Gradients -->
+    <radialGradient id="node-cyan" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="25%" stop-color="#38bdf8" />
+      <stop offset="70%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#0369a1" />
+    </radialGradient>
+
+    <radialGradient id="node-emerald" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="30%" stop-color="#4ade80" />
+      <stop offset="75%" stop-color="#16a34a" />
+      <stop offset="100%" stop-color="#14532d" />
+    </radialGradient>
+
+    <radialGradient id="node-purple" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="25%" stop-color="#e879f9" />
+      <stop offset="70%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#6b21a8" />
+    </radialGradient>
+
+    <!-- Glass Specular Highlight -->
+    <linearGradient id="glass-specular" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.18" />
+      <stop offset="40%" stop-color="#ffffff" stop-opacity="0.04" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="24" stdDeviation="32" flood-color="#000000" flood-opacity="0.75" />
+    </filter>
+
+    <filter id="glow-heavy" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="0" stdDeviation="14" flood-color="#38bdf8" flood-opacity="0.65" />
+    </filter>
+
+    <filter id="glow-emerald" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="0" stdDeviation="16" flood-color="#22c55e" flood-opacity="0.7" />
+    </filter>
+
+    <filter id="glow-purple" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="0" stdDeviation="16" flood-color="#c084fc" flood-opacity="0.7" />
+    </filter>
+
+    <filter id="track-shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#000000" flood-opacity="0.6" />
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#0284c7" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- 1. Base Squircle Container -->
+  <rect x="32" y="32" width="960" height="960" rx="224" ry="224" fill="url(#bg-grad)" filter="url(#shadow)" stroke="url(#border-grad)" stroke-width="10" />
+
+  <!-- 2. Ambient Radial Lighting -->
+  <circle cx="512" cy="512" r="440" fill="url(#ambient-glow)" />
+
+  <!-- 3. Coordinate Grid & Tech Track Rings -->
+  <g opacity="0.45">
+    <circle cx="512" cy="512" r="410" fill="none" stroke="#38bdf8" stroke-opacity="0.08" stroke-width="2" />
+    <circle cx="512" cy="512" r="340" fill="none" stroke="#38bdf8" stroke-opacity="0.16" stroke-width="3" stroke-dasharray="12 18" />
+    <circle cx="512" cy="512" r="230" fill="none" stroke="#818cf8" stroke-opacity="0.12" stroke-width="2" stroke-dasharray="8 14" />
+    <!-- Crosshairs & Cardinal Pips -->
+    <line x1="102" y1="512" x2="162" y2="512" stroke="#38bdf8" stroke-opacity="0.3" stroke-width="3" stroke-linecap="round" />
+    <line x1="862" y1="512" x2="922" y2="512" stroke="#38bdf8" stroke-opacity="0.3" stroke-width="3" stroke-linecap="round" />
+    <line x1="512" y1="102" x2="512" y2="162" stroke="#38bdf8" stroke-opacity="0.3" stroke-width="3" stroke-linecap="round" />
+    <line x1="512" y1="862" x2="512" y2="922" stroke="#38bdf8" stroke-opacity="0.3" stroke-width="3" stroke-linecap="round" />
+    <circle cx="512" cy="172" r="6" fill="#38bdf8" opacity="0.75" />
+    <circle cx="852" cy="512" r="6" fill="#38bdf8" opacity="0.75" />
+    <circle cx="512" cy="852" r="6" fill="#38bdf8" opacity="0.75" />
+    <circle cx="172" cy="512" r="6" fill="#38bdf8" opacity="0.75" />
+  </g>
+
+  <!-- 4. Dynamic Orbital Push & Pull Sync Energy Rings -->
+  <g filter="url(#track-shadow)">
+    <!-- Upward Push Arc (Bottom-Left to Top-Right) -->
+    <path d="M 215 410 A 340 340 0 0 1 800 370" fill="none" stroke="url(#push-flow)" stroke-width="38" stroke-linecap="round" />
+    <!-- Push Arrowhead (Top Right, pointing along arc) -->
+    <polygon points="846,436 764,374 812,364 838,322" fill="#22c55e" stroke="url(#push-flow)" stroke-width="4" stroke-linejoin="round" />
+
+    <!-- Downward Pull Arc (Top-Right to Bottom-Left) -->
+    <path d="M 809 614 A 340 340 0 0 1 224 654" fill="none" stroke="url(#pull-flow)" stroke-width="38" stroke-linecap="round" />
+    <!-- Pull Arrowhead (Bottom Left, pointing along arc) -->
+    <polygon points="178,588 260,650 212,660 186,702" fill="#06b6d4" stroke="url(#pull-flow)" stroke-width="4" stroke-linejoin="round" />
+  </g>
+
+  <!-- 5. Central Git Automation Topology -->
+  <g filter="url(#track-shadow)">
+    <!-- Subtle Shield Safety Backdrop -->
+    <path d="M 512 230
+             C 570 230 670 250 685 275
+             C 690 380 685 540 655 630
+             C 615 750 535 815 512 835
+             C 489 815 409 750 369 630
+             C 339 540 334 380 339 275
+             C 354 250 454 230 512 230 Z"
+          fill="#091326" fill-opacity="0.6" stroke="#38bdf8" stroke-opacity="0.25" stroke-width="6" stroke-dasharray="14 12" />
+
+    <!-- Feature Branch Arc (splits from 420,720 to 620,510 and merges into 420,300) -->
+    <path d="M 420 720
+             C 420 600, 620 630, 620 510
+             C 620 390, 420 420, 420 300"
+          fill="none" stroke="url(#branch-grad)" stroke-width="36" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Main Git Trunk Line (Vertical Core) -->
+    <path d="M 420 720 L 420 300"
+          stroke="url(#trunk-grad)" stroke-width="40" stroke-linecap="round" />
+
+    <!-- Feature Branch Commit Node -->
+    <g filter="url(#glow-purple)">
+      <circle cx="620" cy="510" r="48" fill="url(#node-purple)" stroke="#ffffff" stroke-width="8" />
+      <circle cx="620" cy="510" r="18" fill="#ffffff" opacity="0.95" />
+    </g>
+
+    <!-- Main Trunk: Base Commit Node (Bottom) -->
+    <g filter="url(#glow-heavy)">
+      <circle cx="420" cy="720" r="48" fill="url(#node-cyan)" stroke="#ffffff" stroke-width="8" />
+      <circle cx="420" cy="720" r="18" fill="#ffffff" opacity="0.95" />
+    </g>
+
+    <!-- Main Trunk: Concurrent Main Commit Node (Middle) -->
+    <g filter="url(#glow-heavy)">
+      <circle cx="420" cy="510" r="44" fill="url(#node-cyan)" stroke="#ffffff" stroke-width="7" />
+      <circle cx="420" cy="510" r="16" fill="#ffffff" opacity="0.9" />
+    </g>
+
+    <!-- Main Trunk: Merged Head Release Node (Top) -->
+    <g filter="url(#glow-emerald)">
+      <circle cx="420" cy="300" r="54" fill="url(#node-emerald)" stroke="#ffffff" stroke-width="9" />
+      <circle cx="420" cy="300" r="22" fill="#ffffff" opacity="0.95" />
+    </g>
+  </g>
+
+  <!-- 6. Top Specular Glass Curve Highlight -->
+  <path d="M 32 256
+           C 32 132, 132 32, 256 32
+           L 768 32
+           C 892 32, 992 132, 992 256
+           C 992 380, 800 480, 512 480
+           C 224 480, 32 380, 32 256 Z"
+        fill="url(#glass-specular)" pointer-events="none" />
+</svg>
