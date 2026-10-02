@@ -18,7 +18,7 @@
     "distro": "rocky/fedora",
     "latest_version": "0.21.0",
     "url": "https://repo.wheelhouser.com",
-    "release_notes": "Install or upgrade with: sudo dnf install web-browser"
+    "release_notes": "Install or upgrade with: sudo dnf install 0.21.0"
   },
   "fallback_url": "https://wheelhouser.com/products/web-browser"
 }
