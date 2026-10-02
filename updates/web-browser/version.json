@@ -1,6 +1,6 @@
 {
   "windows": {
-    "latest_version": "0.17.4",
+    "latest_version": "0.20.0",
     "url": "ms-windows-store://pdp/?productid=9P0H1XTBN11K",
     "release_notes": "Version 0.17.4 Release."
   },
@@ -16,9 +16,9 @@
   },
   "linux": {
     "distro": "rocky/fedora",
-    "latest_version": "0.17.4",
+    "latest_version": "0.20.0",
     "url": "https://repo.wheelhouser.com",
-    "release_notes": "Install or upgrade with: sudo dnf install web-browser"
+    "release_notes": "Install or upgrade with: sudo dnf install 0.20.0"
   },
   "fallback_url": "https://wheelhouser.com/products/web-browser"
 }
