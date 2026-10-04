@@ -1,9 +1,9 @@
 {
   "linux": {
     "distro": "fedora/rocky/almalinux/debian/ubuntu",
-    "latest_version": "1.4.1",
+    "latest_version": "1.4.3",
     "url": "https://repo.wheelhouser.com",
-    "release_notes": "Install or upgrade with: sudo dnf install 1.4.1"
+    "release_notes": "Install or upgrade with: sudo dnf install 1.4.3"
   },
   "fallback_url": "https://wheelhouser.com/products/auto-updates.html"
 }
