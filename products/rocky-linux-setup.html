@@ -37,7 +37,7 @@
                         <h1>Rocky Linux Setup</h1>
                         <p class="product-tagline">Automated workstation provisioning, repository bootstrapping, and developer environment management CLI for Enterprise Linux 10.</p>
                         <div class="product-meta-row">
-                            <span class="meta-pill">v1.0.0-1</span>
+                            <span class="meta-pill">v1.1.0-1</span>
                             <span class="meta-pill">GPL-3.0</span>
                             <span class="meta-pill distro-pill"><img src="../images/icons/rocky.svg" alt="Rocky Linux" class="distro-pill-icon"> Rocky Linux 10</span>
                         </div>
@@ -50,17 +50,18 @@
             <div class="product-main-full">
                 <div class="content-block">
                     <h2>About the Application</h2>
-                    <p><strong>Rocky Linux Setup</strong> is an automated workstation provisioning and developer orchestration suite engineered by Wheelhouser LLC for <strong>Rocky Linux 10</strong> and Enterprise Linux systems. Designed to eliminate manual setup overhead across physical developer workstations, virtual machines, and cloud instances, it bootstraps official Wheelhouser repositories, configures essential upstream package channels, and provisions modern development environments.</p>
-                    <p>Packaged natively as an RPM meta-package (<code>rocky-linux-setup</code>), it coordinates repository activation (including CodeReady Linux Builder and EPEL 10), installs development and RPM packaging toolchains, integrates Google Antigravity IDE, and supplies the <code>rocky-linux-setup</code> management CLI for ongoing system health auditing.</p>
+                    <p><strong>Rocky Linux Setup</strong> is an automated workstation provisioning and developer orchestration suite engineered by Wheelhouser LLC for <strong>Rocky Linux 10</strong> and Enterprise Linux systems. Designed to eliminate manual setup overhead across physical developer workstations, virtual machines, and cloud instances, it bootstraps official Wheelhouser repositories, configures essential upstream package channels, delivers the full Wheelhouser application suite, and provisions modern development environments.</p>
+                    <p>Packaged natively as an RPM meta-package (<code>rocky-linux-setup</code>), it coordinates repository activation (including CodeReady Linux Builder and EPEL 10), installs development and RPM packaging toolchains, deploys the complete Wheelhouser desktop application suite, integrates Google Antigravity IDE, installs full manual pages (<code>man 1</code> &amp; <code>man 8</code>), and supplies the <code>rocky-linux-setup</code> management CLI for ongoing system health auditing.</p>
                 </div>
 
                 <div class="content-block">
                     <h2>Key Features</h2>
                     <ul class="feature-list">
+                        <li><strong>Wheelhouser Application Suite Delivery:</strong> Installs and configures the complete suite: <code>git-tools</code>, <code>auto-updates</code>, <code>web-browser</code>, <code>text-editor</code>, and <code>antigravity-ide</code>.</li>
                         <li><strong>Repository Coordination:</strong> Installs the official Wheelhouser release package and automatically enables <strong>CodeReady Linux Builder (CRB)</strong> and <strong>EPEL 10</strong>.</li>
                         <li><strong>Developer Toolchain Provisioning:</strong> Deploys core engineering utilities (<code>git</code>, <code>curl</code>, <code>wget</code>) alongside native RPM packaging suites (<code>rpm-build</code>, <code>rpm-sign</code>, <code>createrepo_c</code>).</li>
-                        <li><strong>Workstation Desktop Integration:</strong> Automatically provisions and configures <strong>Google Antigravity IDE</strong> with desktop launcher menus, icons, and shell shortcuts.</li>
                         <li><strong>Interactive Management CLI:</strong> Includes <code>/usr/bin/rocky-linux-setup</code> to audit workstation readiness, inspect repository states, adjust hostnames, and manage GPG release keys.</li>
+                        <li><strong>System Manual Pages:</strong> Complete manual pages installed to sections 1 and 8 (<code>man rocky-linux-setup</code>).</li>
                         <li><strong>100% Unattended OS Automation:</strong> Ships production-tested Kickstart profiles (<code>rocky10-workstation.ks</code>) for hands-free bare-metal and KVM/QEMU automated installations.</li>
                         <li><strong>Enterprise Cryptographic Signing:</strong> Hosted and cryptographically signed with Wheelhouser LLC's 4096-bit RSA key on <code>repo.wheelhouser.com</code>.</li>
                     </ul>
@@ -135,7 +136,7 @@ rocky-linux-setup --status</code></pre>
                     <h3>Technical Details</h3>
                     <ul class="specs-list">
                         <li><strong>Package:</strong> rocky-linux-setup</li>
-                        <li><strong>Version:</strong> 1.0.0-1</li>
+                        <li><strong>Version:</strong> 1.1.0-1</li>
                         <li><strong>Architecture:</strong> noarch</li>
                         <li><strong>License:</strong> GPL-3.0-or-later</li>
                         <li><strong>Platforms:</strong> Rocky Linux 10, Enterprise Linux 10, RHEL 10</li>

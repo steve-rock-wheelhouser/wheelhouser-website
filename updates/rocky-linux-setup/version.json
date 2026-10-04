@@ -1,0 +1,11 @@
+{
+    "project": "rocky-linux-setup",
+    "latest_version": "1.1.0",
+    "linux": {
+        "latest_version": "1.1.0",
+        "distros": [
+            "rocky"
+        ],
+        "download_url": "https://repo.wheelhouser.com/rocky/10/x86_64/rocky-linux-setup-1.1.0-1.el10.noarch.rpm"
+    }
+}
