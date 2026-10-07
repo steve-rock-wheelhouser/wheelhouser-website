@@ -1,18 +1,18 @@
 {
   "windows": {
-    "latest_version": "0.23.2",
+    "latest_version": "0.32.0",
     "url": "ms-windows-store://pdp/?productid=XPDLH560H237SN",
     "release_notes": "Initial release."
   },
   "macos": {
-    "latest_version": "0.23.2",
+    "latest_version": "0.32.0",
     "url": "https://github.com/WheelhouserLLC/Terminal/releases/download/v0.23.2/Terminal_0.23.2_macOS.dmg",
     "release_notes": "Bug fixes for macOS rendering."
   },
   "linux": {
-    "latest_version": "0.23.2",
+    "latest_version": "0.32.0",
     "url": "https://github.com/WheelhouserLLC/Terminal/releases/download/v0.23.2/Terminal-0.23.2.x86_64.rpm",
-    "release_notes": "Added transparent background exports."
+    "release_notes": "Install or upgrade with: sudo dnf install 0.32.0"
   },
   "fallback_url": "https://wheelhouser.com/products/terminal"
 }
