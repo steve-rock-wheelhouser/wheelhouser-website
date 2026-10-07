@@ -1,24 +1,24 @@
 {
   "windows": {
-    "latest_version": "0.21.0",
+    "latest_version": "0.23.0",
     "url": "ms-windows-store://pdp/?productid=9P0H1XTBN11K",
-    "release_notes": "Version 0.21.0 Release."
+    "release_notes": "Version 0.23.0 Release."
   },
   "macos_arm64": {
-    "latest_version": "0.21.0",
-    "url": "https://marqueemagic.shop/assets/downloads/Web-Browser_0.21.0_macOS_arm64.dmg",
-    "release_notes": "Version 0.21.0 Release (Apple Silicon)."
+    "latest_version": "0.23.0",
+    "url": "https://marqueemagic.shop/assets/downloads/Web-Browser_0.23.0_macOS_arm64.dmg",
+    "release_notes": "Version 0.23.0 Release (Apple Silicon)."
   },
   "macos_x86_64": {
-    "latest_version": "0.21.0",
-    "url": "https://marqueemagic.shop/assets/downloads/Web-Browser_0.21.0_macOS_x86_64.dmg",
-    "release_notes": "Version 0.21.0 Release (Intel)."
+    "latest_version": "0.23.0",
+    "url": "https://marqueemagic.shop/assets/downloads/Web-Browser_0.23.0_macOS_x86_64.dmg",
+    "release_notes": "Version 0.23.0 Release (Intel)."
   },
   "linux": {
     "distro": "rocky/fedora",
-    "latest_version": "0.21.0",
+    "latest_version": "0.23.0",
     "url": "https://repo.wheelhouser.com",
-    "release_notes": "Install or upgrade with: sudo dnf install 0.21.0"
+    "release_notes": "Install or upgrade with: sudo dnf install 0.23.0"
   },
   "fallback_url": "https://wheelhouser.com/products/web-browser"
 }
