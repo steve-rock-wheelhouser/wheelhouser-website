@@ -1,6 +1,6 @@
 {
   "windows": {
-    "latest_version": "1.8.0",
+    "latest_version": "1.9.1",
     "url": "https://staging.wheelhouser.com/downloads/git-tools/windows/git-tools-1.4.1-x64.msix",
     "sideload_url": "https://staging.wheelhouser.com/downloads/git-tools/windows/git-tools-1.4.1-Sideload.msix",
     "release_notes": "Version 1.4.1 Release: Strict Authenticode verification and cross-platform native shims."
@@ -17,9 +17,9 @@
   },
   "linux": {
     "distro": "rocky/almalinux/fedora/debian/ubuntu",
-    "latest_version": "1.8.0",
+    "latest_version": "1.9.1",
     "url": "https://repo.wheelhouser.com",
-    "release_notes": "Install or upgrade with: sudo dnf install 1.8.0"
+    "release_notes": "Install or upgrade with: sudo dnf install 1.9.1"
   },
   "fallback_url": "https://wheelhouser.com/products/git-tools.html"
 }
