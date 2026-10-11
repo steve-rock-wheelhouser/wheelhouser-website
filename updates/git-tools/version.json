@@ -1,18 +1,18 @@
 {
   "windows": {
     "latest_version": "1.10.1",
-    "url": "https://staging.wheelhouser.com/downloads/git-tools/windows/git-tools-1.4.1-x64.msix",
-    "sideload_url": "https://staging.wheelhouser.com/downloads/git-tools/windows/git-tools-1.4.1-Sideload.msix",
+    "url": "https://staging.wheelhouser.com/downloads/git-tools/windows/git-tools-1.10.1-x64.msix",
+    "sideload_url": "https://staging.wheelhouser.com/downloads/git-tools/windows/git-tools-1.10.1-Sideload.msix",
     "release_notes": "Version 1.4.1 Release: Strict Authenticode verification and cross-platform native shims."
   },
   "macos_arm64": {
-    "latest_version": "1.4.1",
-    "url": "https://staging.wheelhouser.com/downloads/git-tools/macos/git-tools-1.4.1_macOS_arm64.dmg",
+    "latest_version": "1.10.1",
+    "url": "https://staging.wheelhouser.com/downloads/git-tools/macos/git-tools-1.10.1_macOS_arm64.dmg",
     "release_notes": "Version 1.4.1 Release (Apple Silicon)."
   },
   "macos_x86_64": {
-    "latest_version": "1.4.1",
-    "url": "https://staging.wheelhouser.com/downloads/git-tools/macos/git-tools-1.4.1_macOS_x86_64.dmg",
+    "latest_version": "1.10.1",
+    "url": "https://staging.wheelhouser.com/downloads/git-tools/macos/git-tools-1.10.1_macOS_x86_64.dmg",
     "release_notes": "Version 1.4.1 Release (Intel)."
   },
   "linux": {
