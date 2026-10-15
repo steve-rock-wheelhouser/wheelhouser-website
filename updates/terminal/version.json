@@ -1,18 +1,18 @@
 {
   "windows": {
     "latest_version": "0.32.0",
-    "url": "ms-windows-store://pdp/?productid=XPDLH560H237SN",
-    "release_notes": "Initial release."
+    "url": "ms-windows-store://pdp/?productid=9N2HWXSPTS19",
+    "release_notes": "MSIX automatic updates."
   },
   "macos": {
     "latest_version": "0.32.0",
-    "url": "https://github.com/WheelhouserLLC/Terminal/releases/download/v0.23.2/Terminal_0.32.0_macOS.dmg",
+    "url": "https://github.com/WheelhouserLLC/Terminal/releases/download/v0.32.0/Terminal_0.32.0_macOS.dmg",
     "release_notes": "Bug fixes for macOS rendering."
   },
   "linux": {
     "latest_version": "0.32.0",
-    "url": "https://github.com/WheelhouserLLC/Terminal/releases/download/v0.23.2/Terminal-0.23.2.x86_64.rpm",
-    "release_notes": "Install or upgrade with: sudo dnf install 0.32.0"
+    "url": "https://github.com/WheelhouserLLC/Terminal/releases/download/v0.32.0/Terminal-0.32.0.x86_64.rpm",
+    "release_notes": "Update or upgrade with: sudo dnf update terminal"
   },
   "fallback_url": "https://wheelhouser.com/products/terminal"
 }
