@@ -1,6 +1,6 @@
 {
   "windows": {
-    "latest_version": "0.10.1",
+    "latest_version": "0.10.0",
     "url": "ms-windows-store://pdp/?productid=9MZNVMR6LJNM",
     "release_notes": "Initial release of File Browser."
   },
