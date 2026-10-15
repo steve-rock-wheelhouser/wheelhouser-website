@@ -12,7 +12,7 @@
   "linux": {
     "latest_version": "0.10.0",
     "url": "https://github.com/WheelhouserLLC/FileBrowser/releases/download/v0.10.0/FileBrowser-0.10.0.x86_64.rpm",
-    "release_notes": "Install or upgrade with: sudo dnf install 0.10.0"
+    "release_notes": "Install or upgrade with: sudo dnf install file-browser"
   },
   "fallback_url": "https://wheelhouser.com/products/file-browser"
 }
