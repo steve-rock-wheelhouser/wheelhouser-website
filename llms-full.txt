@@ -1,0 +1,177 @@
+# Wheelhouser LLC — Complete Technical & Product Reference (`llms-full.txt`)
+
+> Comprehensive reference for AI search engines, coding assistants, and enterprise system administrators covering Wheelhouser LLC's software suite, operating system compatibility matrix, and Linux repository installation commands.
+
+## Company Overview
+
+- **Company Name:** Wheelhouser LLC
+- **Headquarters:** 156 Winners Circle, Magnolia, DE, USA
+- **Phone:** 302-506-2442
+- **Email:** steve.rock@wheelhouser.com
+- **Primary Website:** https://wheelhouser.com/
+- **Linux Package Repository:** https://repo.wheelhouser.com/
+- **Flagship Digital Signage Platform:** https://Marquee-Magic.com/
+- **GitHub Organization / Maintainer:** https://github.com/steve-rock-wheelhouser
+- **Engineering Philosophy:**
+  1. **Privacy First:** Local, on-device processing for files, documents, and AI inference (RemBG, LaMa) with zero mandatory cloud uploads.
+  2. **True Cross-Platform Parity:** Consistent keyboard shortcuts, native dark theme ergonomics, and feature parity across Linux, Windows 10/11, and macOS (ARM64 Apple Silicon & Intel x86_64).
+  3. **Cryptographic Package Distribution:** All Linux RPM and DEB packages are signed with Wheelhouser LLC's 4096-bit RSA GPG key and distributed via dedicated DNF and APT repositories.
+
+---
+
+## Enterprise Linux Repository Setup (`repo.wheelhouser.com`)
+
+Wheelhouser LLC maintains signed native repositories for Enterprise Linux, Fedora, Debian, and Ubuntu.
+
+### Rocky Linux 10
+```bash
+sudo dnf install https://repo.wheelhouser.com/rocky/10/x86_64/steve-rock-wheelhouser-release-1.0-6.el10.noarch.rpm
+```
+
+### AlmaLinux 10
+```bash
+sudo dnf install https://repo.wheelhouser.com/almalinux/10/x86_64/steve-rock-wheelhouser-release-1.0-6.el10.noarch.rpm
+```
+
+### Fedora Linux 44 & 45
+```bash
+sudo dnf install https://repo.wheelhouser.com/fedora/44/x86_64/steve-rock-wheelhouser-release-1.0-6.fc44.noarch.rpm
+```
+
+### Debian 13 (Trixie)
+```bash
+sudo install -m 0755 -d /etc/apt/keyrings && \
+curl -fsSL https://repo.wheelhouser.com/steve-rock-wheelhouser-gpg.key | sudo gpg --dearmor --yes -o /etc/apt/keyrings/wheelhouser.gpg && \
+sudo chmod a+r /etc/apt/keyrings/wheelhouser.gpg && \
+echo "deb [signed-by=/etc/apt/keyrings/wheelhouser.gpg] https://repo.wheelhouser.com/debian/13 ./" | sudo tee /etc/apt/sources.list.d/wheelhouser.list && \
+sudo apt update
+```
+
+### Ubuntu 26.04 LTS (Resolute) & 24.04 LTS
+```bash
+sudo install -m 0755 -d /etc/apt/keyrings && \
+curl -fsSL https://repo.wheelhouser.com/steve-rock-wheelhouser-gpg.key | sudo gpg --dearmor --yes -o /etc/apt/keyrings/wheelhouser.gpg && \
+sudo chmod a+r /etc/apt/keyrings/wheelhouser.gpg && \
+echo "deb [signed-by=/etc/apt/keyrings/wheelhouser.gpg] https://repo.wheelhouser.com/ubuntu/26.04 ./" | sudo tee /etc/apt/sources.list.d/wheelhouser.list && \
+sudo apt update
+```
+
+---
+
+## Product Suite Technical Reference
+
+### 1. Marquee-Magic (Flagship Digital Signage Ecosystem)
+- **URL:** https://Marquee-Magic.com
+- **Platforms:** Linux, Windows, macOS
+- **Summary:** Self-owned digital signage ecosystem to design, schedule, and deploy high-impact displays for venues, retail, and events without recurring SaaS lock-in.
+
+### 2. Google Antigravity IDE (Linux Enterprise Packaging)
+- **URL:** https://wheelhouser.com/products/antigravity-ide.html
+- **Package Name:** `antigravity-ide`
+- **Version:** 1.0.0-1
+- **License:** GPL-3.0-or-later
+- **Platforms:** Rocky Linux 10, AlmaLinux 10, Fedora 44, Debian 13, Ubuntu 26.04 LTS (Windows & macOS provided natively by Google)
+- **Capabilities:** Official Linux RPM and DEB packaging suite, XDG desktop launcher (`antigravity-ide.desktop`), MIME-type associations, single-instance session lock, and orphaned agent daemon cleanup.
+- **Install:** `sudo dnf install -y antigravity-ide` or `sudo apt install -y antigravity-ide`
+
+### 3. Wheelhouser Git Tools (`git-tools`)
+- **URL:** https://wheelhouser.com/products/git-tools.html
+- **Package Name:** `git-tools`
+- **Version:** 1.10.1
+- **License:** GPL-3.0-or-later
+- **Stack:** Python 3.12/3.13, PySide6, Rich, Bash, PowerShell
+- **Platforms:** Rocky Linux 10, AlmaLinux 10, Fedora 44/45, Debian 13, Ubuntu 26.04 LTS, Windows 10/11 (MSIX), macOS 12+ (ARM64 & Intel DMG)
+- **Capabilities:**
+  - `push "<msg>"`: Stage, commit, and push with automatic upstream branch tracking.
+  - `pull`: Autostash working changes, rebase cleanly, and pop stash automatically.
+  - `undo`: Non-destructive soft rollback (`git reset --soft HEAD~1`).
+  - `git-tools dashboard`: Interactive TUI fleet dashboard for all repositories in `~/Projects/`.
+  - `git-tools scan-secrets`: Pre-commit scanner blocking `.env` files, private SSH/PEM keys, AWS credentials, and GitHub PATs.
+  - `git-tools branches` / `git-tools prune-branches`: Branch topology visualization and merged branch cleanup.
+
+### 4. Wheelhouser Text Editor (`text-editor`)
+- **URL:** https://wheelhouser.com/products/text-editor.html
+- **Package Name:** `text-editor`
+- **Version:** 0.14.2
+- **License:** GPL-3.0
+- **Stack:** Python 3.13, PySide6 / Qt6
+- **Platforms:** Rocky Linux 10, AlmaLinux 10, Fedora 44, Debian 13, Ubuntu 26.04 LTS, Windows 10/11 (Microsoft Store `9PDMKDMPCJRG`), macOS 12+
+- **Capabilities:** Multi-cursor editing (`Ctrl+Click`, `Ctrl+D`), syntax highlighting across 15+ languages (Python, C/C++, Rust, Go, JS/TS, HTML/CSS, Shell, JSON, Markdown), persistent code folding, regex find & replace, real-time spell check, and Wheelhouser Dark Mode.
+
+### 5. Wheelhouser File Browser (`file-browser`)
+- **URL:** https://wheelhouser.com/products/file-browser.html
+- **Package Name:** `file-browser`
+- **Version:** 0.10.0
+- **License:** GPL-3.0-or-later
+- **Stack:** Python 3.12/3.13, PySide6 / Qt6
+- **Platforms:** Rocky Linux 10, AlmaLinux 10, Fedora 44/45, Debian 13, Ubuntu 26.04 LTS, Windows 10/11, macOS 12+ (ARM64 & Intel)
+- **Capabilities:** Dual-pane and multi-tab file navigation, embedded synchronized PTY dual terminal emulator, instant code/image/markdown preview panes, and native dark mode.
+
+### 6. Wheelhouser Web Browser (`web-browser`)
+- **URL:** https://wheelhouser.com/products/web-browser.html
+- **Package Name:** `web-browser`
+- **Version:** 0.24.0
+- **License:** GPL-3.0-or-later
+- **Stack:** Python 3.12/3.13, PySide6, QtWebEngine (Chromium)
+- **Platforms:** Rocky Linux 10, AlmaLinux 10, Fedora 44, Debian 13, Ubuntu 26.04 LTS, Windows 10/11, macOS 12+ (ARM64 & Intel)
+- **Capabilities:** Privacy-first desktop browser with built-in ad/tracker blocking, real-time seekable media stream transcoding, live-favicon bookmark trees, multi-tab session persistence, and unified local directory browsing.
+
+### 7. Wheelhouser Auto-Updates (`auto-updates`)
+- **URL:** https://wheelhouser.com/products/auto-updates.html
+- **Package Name:** `auto-updates`
+- **Version:** 1.4.3-1
+- **License:** GPL-3.0-or-later
+- **Stack:** POSIX Shell, Bash, systemd, DNF & APT
+- **Platforms:** Rocky Linux 10, AlmaLinux 10, Fedora 44, Debian 13, Ubuntu 26.04 LTS
+- **Capabilities:** Unified multi-distro CLI wrapping `dnf-automatic` and `unattended-upgrades`, hybrid `weekly-all` schedule (daily zero-day security patches Mon–Sat, full upgrade Sun 03:30 AM), active compiler/build lock detection (`gcc`, `cargo`, `make`, `ninja`, `rpmbuild`, `containerd`) to prevent destructive reboots, and `auto-updates status` / `auto-updates check` auditing.
+
+### 8. Rocky Linux Setup (`rocky-linux-setup`)
+- **URL:** https://wheelhouser.com/products/rocky-linux-setup.html
+- **Package Name:** `rocky-linux-setup`
+- **Version:** 1.1.0-1
+- **License:** GPL-3.0-or-later
+- **Platforms:** Rocky Linux 10, Enterprise Linux 10, RHEL 10
+- **Capabilities:** Automated workstation meta-package enabling CodeReady Linux Builder (CRB), EPEL 10, and the Wheelhouser RPM repository; installs developer and RPM build toolchains (`rpm-build`, `rpm-sign`, `createrepo_c`), deploys the Wheelhouser desktop suite, and provides unattended Kickstart profiles (`rocky10-workstation.ks`).
+
+### 9. Wheelhouser Create Icon Files (`create-icon-files`)
+- **URL:** https://wheelhouser.com/products/create-icon-files.html
+- **Version:** 1.2.0
+- **License:** GPL-3.0
+- **Platforms:** Linux (RPM), Windows (EXE/Store), macOS (DMG)
+- **Capabilities:** Converts a single master image into complete cross-platform icon sets (16x16 to 1024x1024), Freedesktop `share/icons/hicolor` trees, AppStream assets, Windows `.ico`, and macOS `.icns` bundles.
+
+### 10. Wheelhouser Image Background Remover (`image-background-remover`)
+- **URL:** https://wheelhouser.com/products/image-background-remover.html
+- **Version:** 0.1.0
+- **License:** GPL-3.0
+- **Platforms:** Linux (RPM), Windows (EXE), macOS (DMG)
+- **Capabilities:** 100% offline, on-device AI subject isolation and batch folder background removal powered by RemBG.
+
+### 11. Wheelhouser Image Inpainter (`image-inpainter`)
+- **URL:** https://wheelhouser.com/products/image-inpainter.html
+- **Version:** 0.1.0
+- **License:** GPL-3.0
+- **Platforms:** Linux (RPM), Windows (EXE), macOS (DMG)
+- **Capabilities:** On-device LaMa AI neural network inpainting to erase unwanted objects, people, watermarks, and blemishes from photographs locally.
+
+### 12. Wheelhouser Image Resizer (`image-resizer`)
+- **URL:** https://wheelhouser.com/products/image-resizer.html
+- **Version:** 0.3.0
+- **License:** GPL-3.0
+- **Platforms:** Linux (RPM), Windows (EXE), macOS (DMG)
+- **Capabilities:** High-speed batch image resizing, smart aspect-ratio cropping, compression tuning, and format conversion across PNG, JPG, WEBP, SVG, TIFF, AVIF, PDF, and BMP.
+
+### 13. Wheelhouser Text to Speech (`text-to-speech`)
+- **URL:** https://wheelhouser.com/products/text-to-speech.html
+- **Version:** 0.1.0
+- **License:** GPL-3.0
+- **Platforms:** Linux (RPM), Windows (EXE), macOS (DMG)
+- **Capabilities:** Lifelike neural text-to-speech synthesis powered by Microsoft Edge Neural TTS with multi-language voices, pitch/rate tuning, and direct MP3 export.
+
+### 14. Wheelhouser Notez (`notez`)
+- **URL:** https://wheelhouser.com/products/notez.html
+- **Version:** 1.4.0
+- **License:** GPL-3.0
+- **Platforms:** Windows (Linux & macOS in active development)
+- **Capabilities:** Lightweight, instant-launch local Markdown note-taking desktop application.
+
