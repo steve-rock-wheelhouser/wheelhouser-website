@@ -1,13 +1,14 @@
-// Ultra-minimal Service Worker for Wheelhouser LLC (v9 — Products Catalog Overhaul)
-const CACHE_NAME = 'wheelhouser-minimal-v9';
+// Ultra-minimal Service Worker for Wheelhouser LLC (v10 — Dedicated Core Suite Page & Streamlined Homepage)
+const CACHE_NAME = 'wheelhouser-minimal-v10';
 
 const PRE_CACHE_RESOURCES = [
   '/',
   '/index.html',
+  '/core-suite.html',
   '/services.html',
   '/about.html',
   '/offline.html',
-  '/css/styles.css?v=2.0.3',
+  '/css/styles.css?v=2.0.4',
   '/js/main.js?v=2.0.1',
   '/manifest.json'
 ];

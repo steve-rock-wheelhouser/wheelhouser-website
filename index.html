@@ -18,7 +18,7 @@
     <meta name="twitter:image" content="https://wheelhouser.com/images/wheelhouser-icon/resized_icons/wheelhouser-icon_512x512.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="css/styles.css?v=2.0.3">
+    <link rel="stylesheet" href="css/styles.css?v=2.0.4">
     <link rel="icon" href="images/wheelhouser-W/web/favicon.ico" type="image/x-icon">
     <link rel="manifest" href="/manifest.json">
     <script type="application/ld+json">
@@ -33,7 +33,9 @@
           "logo": "https://wheelhouser.com/images/wheelhouser-icon/resized_icons/wheelhouser-icon_512x512.png",
           "description": "Privacy-first sovereign software studio engineering the Marquee-Magic commercial digital signage platform, a cross-platform native desktop workstation suite, and custom cross-platform desktop applications for Windows, macOS, and Linux—built with zero tracking, zero customer data use or sales, and zero ads.",
           "founder": {
-            "@id": "https://wheelhouser.com/about.html#steve-rock"
+            "@type": "Person",
+            "name": "Steve Rock",
+            "url": "https://wheelhouser.com/about.html#cv"
           },
           "email": "steve.rock@wheelhouser.com",
           "telephone": "+1-302-506-2442",
@@ -49,17 +51,6 @@
             "https://repo.wheelhouser.com",
             "https://Marquee-Magic.com"
           ]
-        },
-        {
-          "@type": "Person",
-          "@id": "https://wheelhouser.com/about.html#steve-rock",
-          "name": "Steve Rock",
-          "jobTitle": "Founder & Principal Systems Architect",
-          "worksFor": {
-            "@id": "https://wheelhouser.com/#organization"
-          },
-          "description": "U.S. Air Force War on Terror Veteran, NASA Space Grant Scholar (M.S. Optical Physics), former Global Product Manager of Industrial IoT at Xylem, former Lead Technical Product Manager of Strategy at Optum, and Founder of Wheelhouser LLC.",
-          "url": "https://wheelhouser.com/about.html#cv"
         },
         {
           "@type": "Service",
@@ -103,7 +94,7 @@
 
             <nav>
                 <a href="#flagship">Marquee-Magic</a>
-                <a href="#core-suite">Core Suite</a>
+                <a href="core-suite.html">Core Suite</a>
                 <a href="products/index.html">All Products</a>
                 <a href="services.html" class="nav-highlight">Custom Desktop Apps</a>
                 <a href="about.html#cv">Executive CV</a>
@@ -132,8 +123,8 @@
                     </p>
                     <div class="wh-hero-actions">
                         <a href="services.html" class="btn-primary btn-lg">Commission a Custom Desktop App &rarr;</a>
-                        <a href="#core-suite" class="btn-glass btn-lg">Explore Core Workstation Suite</a>
-                        <a href="about.html#cv" class="btn-glass btn-lg">Meet Founder Steve Rock</a>
+                        <a href="core-suite.html" class="btn-glass btn-lg">Explore Core Workstation Suite &rarr;</a>
+                        <a href="about.html#cv" class="btn-glass btn-lg">Executive Bio &amp; CV</a>
                     </div>
                 </div>
 
@@ -155,8 +146,8 @@
                         <div class="wh-metric-label">Tracking, Customer Data Harvesting/Sales, or Intrusive Ads</div>
                     </div>
                     <div class="wh-metric-item">
-                        <div class="wh-metric-value">Fortune <span>5</span></div>
-                        <div class="wh-metric-label">USAF &bull; NASA Scholar &bull; Xylem IIoT &bull; Optum Strategy</div>
+                        <div class="wh-metric-value">100<span>% IP</span></div>
+                        <div class="wh-metric-label">Full Client Ownership &amp; Perpetual Software Licensing</div>
                     </div>
                 </div>
 
@@ -247,220 +238,55 @@
             </div>
         </section>
 
-        <!-- 3. FOREFRONT WORKSTATION SUITE: WEB BROWSER, FILE BROWSER, TEXT EDITOR, TERMINAL -->
-        <section id="core-suite" class="section-block">
+        <!-- 3. CORE WORKSTATION SUITE GATEWAY -->
+        <section class="section-block" style="padding: 2rem 0 3.5rem;">
             <div class="container">
-                <div class="section-header">
-                    <div class="eyebrow-pill">
-                        <span class="eyebrow-dot"></span>
-                        Forefront Workstation Suite &bull; Linux &bull; Windows &bull; macOS
+                <div class="core-suite-gateway">
+                    <div class="core-gateway-top">
+                        <div class="core-gateway-copy">
+                            <div class="eyebrow-pill" style="margin-bottom: 0.85rem;">
+                                <span class="eyebrow-dot"></span>
+                                Core Workstation Suite &bull; Windows 11 &bull; macOS &bull; Linux
+                            </div>
+                            <h2>Four Essential Desktop Powerhouses.</h2>
+                            <p>
+                                Native Python &amp; Qt6 daily-driver applications engineered with cohesive dark ergonomics, instant startup, zero telemetry, and true cross-OS parity.
+                            </p>
+                        </div>
+                        <div>
+                            <a href="core-suite.html" class="btn-primary btn-lg">Explore the Core Suite &rarr;</a>
+                        </div>
                     </div>
-                    <h2>Four Essential Desktop Powerhouses. One Cohesive Dark Aesthetic.</h2>
-                    <p>
-                        Engineered from first principles with Python and Qt6 for developers, executives, and power users who demand zero telemetry, instant cold-start speed, and identical keyboard ergonomics across every operating system.
-                    </p>
-                </div>
 
-                <!-- Quick-Select Spotlight Bar -->
-                <div class="workstation-stage-card">
-                    <div class="workstation-tabs" role="tablist" aria-label="Core Workstation Applications">
-                        <button type="button" class="workstation-tab active" data-target="card-web-browser">
-                            <img src="images/web-browser/icon.png" alt="Web Browser Icon">
-                            <div class="workstation-tab-text">
+                    <div class="core-gateway-apps">
+                        <a href="core-suite.html#card-web-browser" class="core-gateway-pill">
+                            <img src="images/web-browser/icon.webp" width="44" height="44" alt="Web Browser Icon" loading="lazy">
+                            <div>
                                 <strong>Web Browser</strong>
-                                <span id="tab-ver-web-browser">v0.24.0 &bull; Privacy Engine</span>
+                                <span>Chromium + Privacy Shield</span>
                             </div>
-                        </button>
-                        <button type="button" class="workstation-tab" data-target="card-file-browser">
-                            <img src="images/file-browser/icon.png" alt="File Browser Icon">
-                            <div class="workstation-tab-text">
+                        </a>
+                        <a href="core-suite.html#card-file-browser" class="core-gateway-pill">
+                            <img src="images/file-browser/icon.webp" width="44" height="44" alt="File Browser Icon" loading="lazy">
+                            <div>
                                 <strong>File Browser</strong>
-                                <span id="tab-ver-file-browser">v0.10.0 &bull; Dual-Pane + PTY</span>
+                                <span>Dual-Pane + Synced PTY</span>
                             </div>
-                        </button>
-                        <button type="button" class="workstation-tab" data-target="card-text-editor">
-                            <img src="images/text-editor/icon.png" alt="Text Editor Icon">
-                            <div class="workstation-tab-text">
+                        </a>
+                        <a href="core-suite.html#card-text-editor" class="core-gateway-pill">
+                            <img src="images/text-editor/icon.webp" width="44" height="44" alt="Text Editor Icon" loading="lazy">
+                            <div>
                                 <strong>Text Editor</strong>
-                                <span id="tab-ver-text-editor">v0.14.2 &bull; Multi-Cursor Code</span>
+                                <span>Multi-Cursor Code Studio</span>
                             </div>
-                        </button>
-                        <button type="button" class="workstation-tab" data-target="card-terminal">
-                            <img src="images/terminal/icon.png" alt="Terminal Icon">
-                            <div class="workstation-tab-text">
+                        </a>
+                        <a href="core-suite.html#card-terminal" class="core-gateway-pill">
+                            <img src="images/terminal/icon.webp" width="44" height="44" alt="Terminal Icon" loading="lazy">
+                            <div>
                                 <strong>Terminal</strong>
-                                <span id="tab-ver-terminal">v0.32.0 &bull; Unified POSIX Shell</span>
+                                <span>POSIX + SSH + Local WAI</span>
                             </div>
-                        </button>
-                    </div>
-
-                    <!-- 2x2 Studio Bento Grid -->
-                    <div class="forefront-grid">
-
-                        <!-- Forefront 1: Web Browser -->
-                        <article id="card-web-browser" class="forefront-card spotlight-active">
-                            <div class="studio-window-frame">
-                                <div class="studio-window-bar">
-                                    <span class="window-dots"><i></i><i></i><i></i></span>
-                                    <span class="window-caption">Wheelhouser Web-Browser &mdash; Chromium + Privacy Shield</span>
-                                    <span class="window-version" id="ver-web-browser">v0.24.0</span>
-                                </div>
-                                <a href="products/web-browser.html" class="studio-screenshot-wrap" aria-label="Explore Wheelhouser Web Browser">
-                                    <img src="images/web-browser/screenshots/preview.webp" width="1100" height="688" alt="Wheelhouser Web Browser Dark Mode Multi-Tab Desktop Interface" loading="lazy">
-                                </a>
-                            </div>
-                            <div class="forefront-body">
-                                <div class="forefront-title-row">
-                                    <img src="images/web-browser/icon.png" alt="Wheelhouser Web Browser Icon" class="forefront-app-icon">
-                                    <div>
-                                        <div class="forefront-kicker">Private Desktop Web &amp; Media</div>
-                                        <h3><a href="products/web-browser.html">Web Browser</a></h3>
-                                    </div>
-                                </div>
-                                <p class="forefront-desc">
-                                    Fast, privacy-hardened desktop browser built on QtWebEngine and Chromium with cohesive Wheelhouser Dark Mode, tracker blocking, seekable live media transcoding, and local directory exploration.
-                                </p>
-                                <ul class="forefront-highlights">
-                                    <li>Built-in Ad &amp; Tracker Shield</li>
-                                    <li>Seekable Media Streamer</li>
-                                    <li>Multi-Tab Session Memory</li>
-                                    <li>Unified Web &amp; File View</li>
-                                </ul>
-                                <div class="forefront-footer">
-                                    <span class="app-platform-pill cross-platform">
-                                        <img src="images/icons/linux.svg" alt="Linux" class="card-os-icon">
-                                        <img src="images/icons/windows.svg" alt="Windows" class="card-os-icon">
-                                        <img src="images/icons/apple.svg" alt="macOS" class="card-os-icon">
-                                        Linux &bull; Windows &bull; macOS
-                                    </span>
-                                    <a href="products/web-browser.html" class="forefront-cta">Explore &amp; Install &rarr;</a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <!-- Forefront 2: File Browser -->
-                        <article id="card-file-browser" class="forefront-card">
-                            <div class="studio-window-frame">
-                                <div class="studio-window-bar">
-                                    <span class="window-dots"><i></i><i></i><i></i></span>
-                                    <span class="window-caption">Wheelhouser File-Browser &mdash; Dual-Pane + Embedded Shell</span>
-                                    <span class="window-version" id="ver-file-browser">v0.10.0</span>
-                                </div>
-                                <a href="products/file-browser.html" class="studio-screenshot-wrap" aria-label="Explore Wheelhouser File Browser">
-                                    <img src="images/file-browser/screenshots/preview.webp" width="1100" height="688" alt="Wheelhouser File Browser Dual-Pane File Manager with Embedded Terminal" loading="lazy">
-                                </a>
-                            </div>
-                            <div class="forefront-body">
-                                <div class="forefront-title-row">
-                                    <img src="images/file-browser/icon.png" alt="Wheelhouser File Browser Icon" class="forefront-app-icon">
-                                    <div>
-                                        <div class="forefront-kicker">Power-User File Management</div>
-                                        <h3><a href="products/file-browser.html">File Browser</a></h3>
-                                    </div>
-                                </div>
-                                <p class="forefront-desc">
-                                    Ergonomic desktop file commander uniting multi-tab and dual-pane navigation with an embedded, directory-synchronized PTY terminal emulator and instant source/media preview panes.
-                                </p>
-                                <ul class="forefront-highlights">
-                                    <li>Synchronized PTY Terminal</li>
-                                    <li>Dual-Pane &amp; Multi-Tab UI</li>
-                                    <li>Instant Code &amp; Media Preview</li>
-                                    <li>Zero-Latency Native I/O</li>
-                                </ul>
-                                <div class="forefront-footer">
-                                    <span class="app-platform-pill cross-platform">
-                                        <img src="images/icons/linux.svg" alt="Linux" class="card-os-icon">
-                                        <img src="images/icons/windows.svg" alt="Windows" class="card-os-icon">
-                                        <img src="images/icons/apple.svg" alt="macOS" class="card-os-icon">
-                                        Linux &bull; Windows &bull; macOS
-                                    </span>
-                                    <a href="products/file-browser.html" class="forefront-cta">Explore &amp; Install &rarr;</a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <!-- Forefront 3: Text Editor -->
-                        <article id="card-text-editor" class="forefront-card">
-                            <div class="studio-window-frame">
-                                <div class="studio-window-bar">
-                                    <span class="window-dots"><i></i><i></i><i></i></span>
-                                    <span class="window-caption">Wheelhouser Text-Editor &mdash; Multi-Cursor Code Studio</span>
-                                    <span class="window-version" id="ver-text-editor">v0.14.2</span>
-                                </div>
-                                <a href="products/text-editor.html" class="studio-screenshot-wrap" aria-label="Explore Wheelhouser Text Editor">
-                                    <img src="images/text-editor/screenshots/preview.webp" width="1100" height="688" alt="Wheelhouser Text Editor Syntax Highlighting and Multi-Tab Python Code View" loading="lazy">
-                                </a>
-                            </div>
-                            <div class="forefront-body">
-                                <div class="forefront-title-row">
-                                    <img src="images/text-editor/icon.png" alt="Wheelhouser Text Editor Icon" class="forefront-app-icon">
-                                    <div>
-                                        <div class="forefront-kicker">High-Speed Code &amp; Text Studio</div>
-                                        <h3><a href="products/text-editor.html">Text Editor</a></h3>
-                                    </div>
-                                </div>
-                                <p class="forefront-desc">
-                                    Distraction-free, native cross-platform code and text editor featuring simultaneous multi-cursor editing, persistent code folding, regex search, spell checking, and syntax highlighting for 15+ languages.
-                                </p>
-                                <ul class="forefront-highlights">
-                                    <li>Simultaneous Multi-Cursor</li>
-                                    <li>15+ Language Highlighters</li>
-                                    <li>Persistent Code Folding</li>
-                                    <li>Regex Search &amp; Spellcheck</li>
-                                </ul>
-                                <div class="forefront-footer">
-                                    <span class="app-platform-pill cross-platform">
-                                        <img src="images/icons/linux.svg" alt="Linux" class="card-os-icon">
-                                        <img src="images/icons/windows.svg" alt="Windows" class="card-os-icon">
-                                        <img src="images/icons/apple.svg" alt="macOS" class="card-os-icon">
-                                        Linux &bull; Windows &bull; macOS
-                                    </span>
-                                    <a href="products/text-editor.html" class="forefront-cta">Explore &amp; Install &rarr;</a>
-                                </div>
-                            </div>
-                        </article>
-
-                        <!-- Forefront 4: Terminal -->
-                        <article id="card-terminal" class="forefront-card">
-                            <div class="studio-window-frame">
-                                <div class="studio-window-bar">
-                                    <span class="window-dots"><i></i><i></i><i></i></span>
-                                    <span class="window-caption">Wheelhouser Terminal &mdash; POSIX + SSH + Local WAI</span>
-                                    <span class="window-version" id="ver-terminal">v0.32.0</span>
-                                </div>
-                                <a href="products/terminal.html" class="studio-screenshot-wrap" aria-label="Explore Wheelhouser Terminal">
-                                    <img src="images/terminal/screenshots/preview.webp" width="1100" height="581" alt="Wheelhouser Terminal Multi-Tab TrueColor Command Shell Interface" loading="lazy">
-                                </a>
-                            </div>
-                            <div class="forefront-body">
-                                <div class="forefront-title-row">
-                                    <img src="images/terminal/icon.png" alt="Wheelhouser Terminal Icon" class="forefront-app-icon">
-                                    <div>
-                                        <div class="forefront-kicker">Unified Cross-OS Command Shell</div>
-                                        <h3><a href="products/terminal.html">Terminal</a></h3>
-                                    </div>
-                                </div>
-                                <p class="forefront-desc">
-                                    Hardware-accelerated multi-tab terminal emulator uniting native shell execution with built-in POSIX utilities directly on Windows (<code>ssh</code>, <code>rsync</code>, <code>grep</code>, <code>awk</code>, <code>curl</code> &mdash; no WSL required) plus local WAI assistance.
-                                </p>
-                                <ul class="forefront-highlights">
-                                    <li>Built-In SSH, SCP &amp; Rsync</li>
-                                    <li>Native POSIX Suite on Win11</li>
-                                    <li>24-Bit TrueColor &amp; Themes</li>
-                                    <li>Private Local WAI Assistant</li>
-                                </ul>
-                                <div class="forefront-footer">
-                                    <span class="app-platform-pill cross-platform">
-                                        <img src="images/icons/linux.svg" alt="Linux" class="card-os-icon">
-                                        <img src="images/icons/windows.svg" alt="Windows" class="card-os-icon">
-                                        <img src="images/icons/apple.svg" alt="macOS" class="card-os-icon">
-                                        Linux &bull; Windows &bull; macOS
-                                    </span>
-                                    <a href="products/terminal.html" class="forefront-cta">Explore &amp; Install &rarr;</a>
-                                </div>
-                            </div>
-                        </article>
-
+                        </a>
                     </div>
                 </div>
             </div>
@@ -557,87 +383,7 @@
             </div>
         </section>
 
-        <!-- 5. EXECUTIVE LEADERSHIP & HYPE-PROFESSIONAL BIO (CV) SPOTLIGHT -->
-        <section id="leadership" class="executive-section">
-            <div class="container">
-                <div class="executive-dossier">
-                    <div class="executive-top-grid">
-                        <div class="founder-seal" aria-hidden="true">
-                            <span class="founder-seal-initials">SR</span>
-                            <span class="founder-seal-tag">Principal Architect</span>
-                        </div>
-                        <div class="executive-headline">
-                            <div class="eyebrow-pill gold">
-                                <span class="eyebrow-dot"></span>
-                                Executive Leadership &amp; Principal Systems Architecture
-                            </div>
-                            <h2>Steve Rock &mdash; Physics-Trained. Combat-Tested. Fortune-Proven.</h2>
-                            <div class="executive-role-line">
-                                Founder, Wheelhouser LLC &bull; Former Optum Strategy &amp; Xylem Global IIoT Leader &bull; M.S. Optical Physics (NASA Scholar) &bull; USAF Veteran
-                            </div>
-                            <p class="executive-quote">
-                                When you partner with Wheelhouser LLC, your product isn&rsquo;t outsourced to a revolving door of junior contractors. Every system is architected and led directly by a <strong>U.S. Air Force War on Terror veteran</strong>, <strong>NASA Space Grant Optical Physicist</strong>, and seasoned <strong>Global &amp; Fortune-5 Technical Product Leader</strong> who turns complex business strategy into shipped, revenue-driving software.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="pedigree-grid">
-                        <div class="pedigree-card gold-tier">
-                            <div class="pedigree-era">Current &bull; Founder</div>
-                            <div class="pedigree-org">Wheelhouser LLC</div>
-                            <div class="pedigree-role">Founder &amp; Principal Architect</div>
-                            <p class="pedigree-summary">
-                                Architected 14+ cross-platform desktop apps, the Marquee-Magic hardware/AI/cloud signage platform, MarqueeOS, and signed multi-distro RPM/APT infrastructure.
-                            </p>
-                        </div>
-
-                        <div class="pedigree-card">
-                            <div class="pedigree-era">Enterprise Strategy</div>
-                            <div class="pedigree-org">Optum</div>
-                            <div class="pedigree-role">Lead Technical PM, Strategy</div>
-                            <p class="pedigree-summary">
-                                Drove enterprise-scale technical product strategy, platform modernization, and high-compliance architecture alignment at Fortune-5 healthcare scale.
-                            </p>
-                        </div>
-
-                        <div class="pedigree-card">
-                            <div class="pedigree-era">Global Connected Systems</div>
-                            <div class="pedigree-org">Xylem</div>
-                            <div class="pedigree-role">Global Product Manager, IIoT</div>
-                            <p class="pedigree-summary">
-                                Led global Industrial Internet of Things (IIoT) product strategy uniting connected field hardware, edge telemetry, and mission-critical cloud analytics.
-                            </p>
-                        </div>
-
-                        <div class="pedigree-card gold-tier">
-                            <div class="pedigree-era">Scientific Foundation</div>
-                            <div class="pedigree-org">M.S. Optical Physics</div>
-                            <div class="pedigree-role">NASA Space Grant Scholar</div>
-                            <p class="pedigree-summary">
-                                Master of Science in Optical Physics awarded a prestigious NASA Space Grant Scholarship&mdash;grounding software systems in first-principles mathematical rigor.
-                            </p>
-                        </div>
-
-                        <div class="pedigree-card">
-                            <div class="pedigree-era">Military Service</div>
-                            <div class="pedigree-org">U.S. Air Force</div>
-                            <div class="pedigree-role">War on Terror Veteran</div>
-                            <p class="pedigree-summary">
-                                Forged in high-consequence operational deployments during the Global War on Terror&mdash;delivering unwavering discipline, security rigor, and mission ownership.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="flagship-actions">
-                        <a href="about.html#cv" class="btn-gold">View Full Executive Bio &amp; Printable CV &rarr;</a>
-                        <a href="services.html#inquire" class="btn-glass btn-lg">Book a Direct Consultation with Steve</a>
-                        <a href="tel:302-506-2442" class="btn-glass btn-lg">Call (302) 506-2442</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 6. EXTENDED WHEELHOUSER ECOSYSTEM & DEVELOPER SUITE -->
+        <!-- 5. EXTENDED WHEELHOUSER ECOSYSTEM & DEVELOPER SUITE -->
         <section id="portfolio" class="app-grid-section">
             <div class="container">
                 <div class="section-header">
@@ -657,7 +403,7 @@
 
                     <a href="products/antigravity-ide.html" class="app-card">
                         <div class="app-icon">
-                            <img src="images/antigravity-ide/icon.png" alt="Google Antigravity IDE Icon" loading="lazy">
+                            <img src="images/antigravity-ide/icon.webp" width="60" height="60" alt="Google Antigravity IDE Icon" loading="lazy">
                         </div>
                         <div class="app-details">
                             <h3>Google Antigravity IDE</h3>
@@ -671,7 +417,7 @@
 
                     <a href="products/git-tools.html" class="app-card">
                         <div class="app-icon">
-                            <img src="images/git-tools/icon.svg" alt="Git Tools Icon" loading="lazy">
+                            <img src="images/git-tools/icon.webp" width="60" height="60" alt="Git Tools Icon" loading="lazy">
                         </div>
                         <div class="app-details">
                             <h3>Git Tools</h3>
@@ -685,7 +431,7 @@
 
                     <a href="products/auto-updates.html" class="app-card">
                         <div class="app-icon">
-                            <img src="images/auto-updates/icon.svg" alt="Auto-Updates Icon" loading="lazy">
+                            <img src="images/auto-updates/icon.webp" width="60" height="60" alt="Auto-Updates Icon" loading="lazy">
                         </div>
                         <div class="app-details">
                             <h3>Auto-Updates</h3>
@@ -699,7 +445,7 @@
 
                     <a href="products/rocky-linux-setup.html" class="app-card">
                         <div class="app-icon">
-                            <img src="images/rocky-linux-setup/icon.svg" alt="Rocky Linux Setup Icon" loading="lazy">
+                            <img src="images/rocky-linux-setup/icon.webp" width="60" height="60" alt="Rocky Linux Setup Icon" loading="lazy">
                         </div>
                         <div class="app-details">
                             <h3>Rocky Linux Setup</h3>
@@ -713,7 +459,7 @@
 
                     <a href="products/create-icon-files.html" class="app-card">
                         <div class="app-icon">
-                            <img src="images/create-icons/icon.svg" alt="Create Icon Files Icon" loading="lazy">
+                            <img src="images/create-icons/icon.webp" width="60" height="60" alt="Create Icon Files Icon" loading="lazy">
                         </div>
                         <div class="app-details">
                             <h3>Create Icon Files</h3>
@@ -727,7 +473,7 @@
 
                     <a href="products/notez.html" class="app-card">
                         <div class="app-icon">
-                            <img src="images/notez/icon.svg" alt="Notez Icon" loading="lazy">
+                            <img src="images/notez/icon.webp" width="60" height="60" alt="Notez Icon" loading="lazy">
                         </div>
                         <div class="app-details">
                             <h3>Notez</h3>
@@ -743,7 +489,7 @@
 
                     <a href="products/image-background-remover.html" class="app-card">
                         <div class="app-icon">
-                            <img src="images/image-background-remover/icon.svg" alt="Image Background Remover Icon" loading="lazy">
+                            <img src="images/image-background-remover/icon.webp" width="60" height="60" alt="Image Background Remover Icon" loading="lazy">
                         </div>
                         <div class="app-details">
                             <h3>Image Background Remover</h3>
@@ -757,7 +503,7 @@
 
                     <a href="products/image-inpainter.html" class="app-card">
                         <div class="app-icon">
-                            <img src="images/image-inpainter/icon.svg" alt="Image Inpainter Icon" loading="lazy">
+                            <img src="images/image-inpainter/icon.webp" width="60" height="60" alt="Image Inpainter Icon" loading="lazy">
                         </div>
                         <div class="app-details">
                             <h3>Image Inpainter</h3>
@@ -771,7 +517,7 @@
 
                     <a href="products/image-resizer.html" class="app-card">
                         <div class="app-icon">
-                            <img src="images/image-resizer/icon.svg" alt="Image Resizer Icon" loading="lazy">
+                            <img src="images/image-resizer/icon.webp" width="60" height="60" alt="Image Resizer Icon" loading="lazy">
                         </div>
                         <div class="app-details">
                             <h3>Image Resizer</h3>
@@ -785,7 +531,7 @@
 
                     <a href="products/text-to-speech.html" class="app-card">
                         <div class="app-icon">
-                            <img src="images/text-to-speech/icon.svg" alt="Text to Speech Icon" loading="lazy">
+                            <img src="images/text-to-speech/icon.webp" width="60" height="60" alt="Text to Speech Icon" loading="lazy">
                         </div>
                         <div class="app-details">
                             <h3>Text to Speech</h3>

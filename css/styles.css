@@ -711,6 +711,91 @@ a {
     line-height: 1.68;
 }
 
+/* Compact Core Suite Gateway Card (Homepage) */
+.core-suite-gateway {
+    background: var(--glass-surface);
+    border: 1px solid rgba(56, 189, 248, 0.34);
+    border-radius: 22px;
+    padding: 2.35rem 2.5rem;
+    box-shadow: var(--shadow-card);
+}
+
+.core-gateway-top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 1.75rem;
+}
+
+.core-gateway-copy {
+    max-width: 680px;
+}
+
+.core-gateway-copy h2 {
+    font-size: clamp(1.75rem, 3.1vw, 2.4rem);
+    font-weight: 800;
+    line-height: 1.14;
+    color: #ffffff;
+    margin-bottom: 0.6rem;
+    letter-spacing: -0.03em;
+}
+
+.core-gateway-copy p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.62;
+    margin: 0;
+}
+
+.core-gateway-apps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.core-gateway-pill {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    padding: 1rem 1.1rem;
+    border-radius: 14px;
+    background: rgba(15, 23, 42, 0.72);
+    border: 1px solid var(--border-color);
+    transition: transform 0.22s ease, border-color 0.22s ease, background 0.22s ease;
+}
+
+.core-gateway-pill:hover {
+    transform: translateY(-3px);
+    border-color: var(--border-highlight);
+    background: var(--hover-bg);
+}
+
+.core-gateway-pill img {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.core-gateway-pill strong {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 1rem;
+    color: #ffffff;
+    line-height: 1.2;
+}
+
+.core-gateway-pill span {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--primary-color);
+    margin-top: 2px;
+}
+
 /* Interactive Workstation Spotlight Switcher */
 .workstation-stage-card {
     background: var(--glass-surface);
@@ -2362,6 +2447,10 @@ a {
         grid-template-columns: 1fr;
     }
 
+    .core-gateway-apps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .services-guarantee-banner {
         flex-direction: column;
         text-align: center;
@@ -2428,13 +2517,15 @@ a {
 
     .flagship-card,
     .executive-dossier,
-    .inquiry-composer {
+    .inquiry-composer,
+    .core-suite-gateway {
         padding: 1.65rem 1.35rem;
     }
 
     .flagship-capabilities,
     .forefront-highlights,
     .workstation-tabs,
+    .core-gateway-apps,
     .pedigree-grid,
     .process-grid,
     .form-row-2,

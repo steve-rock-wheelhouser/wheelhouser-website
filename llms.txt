@@ -13,7 +13,8 @@
 
 ## Core Pages & Commercial Services
 
-- [Home](https://wheelhouser.com/): Flagship Marquee-Magic showcase, Core Workstation Suite, Custom Desktop App Engineering, and Founder Steve Rock executive profile.
+- [Home](https://wheelhouser.com/): Overview of Wheelhouser LLC, Flagship Marquee-Magic, Custom Desktop App Engineering, Core Workstation Suite gateway, and Extended Native Ecosystem.
+- [Core Workstation Suite](https://wheelhouser.com/core-suite.html): Dedicated showcase and 1-command Linux installation guide for Wheelhouser Web Browser, File Browser, Text Editor, and Terminal across Windows 10/11, macOS, and Enterprise Linux.
 - [Custom Cross-Platform Desktop Apps](https://wheelhouser.com/services.html): Commercial desktop software architecture, native Python/Qt6/C++/Rust development, cryptographic signing, and multi-OS installer delivery (Windows MSIX/Store, macOS notarized DMG, Linux RPM & DEB) with full client IP ownership.
 - [About Wheelhouser LLC & Steve Rock Executive CV](https://wheelhouser.com/about.html): Company manifesto and printable Curriculum Vitae for Founder & Principal Systems Architect Steve Rock (U.S. Air Force War on Terror Veteran, M.S. Optical Physics & NASA Space Grant Scholar, former Global PM of Industrial IoT at Xylem, former Lead Technical PM of Strategy at Optum).
 - [Software Catalog & Engineering Capabilities](https://wheelhouser.com/products/): Complete 14-product cross-platform portfolio and cryptographic Linux repository overview.
