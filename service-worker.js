@@ -1,12 +1,14 @@
-// Ultra-minimal Service Worker for Wheelhouser LLC
-const CACHE_NAME = 'wheelhouser-minimal-v5';
+// Ultra-minimal Service Worker for Wheelhouser LLC (v9 — Products Catalog Overhaul)
+const CACHE_NAME = 'wheelhouser-minimal-v9';
 
-// We only cache the absolute essentials to prevent any install failures
 const PRE_CACHE_RESOURCES = [
   '/',
   '/index.html',
+  '/services.html',
+  '/about.html',
   '/offline.html',
-  '/css/styles.css',
+  '/css/styles.css?v=2.0.3',
+  '/js/main.js?v=2.0.1',
   '/manifest.json'
 ];
 
@@ -39,7 +41,6 @@ self.addEventListener('fetch', (event) => {
               if (response) {
                 return response;
               }
-              // If it's a page navigation, show the offline page
               if (event.request.mode === 'navigate') {
                 return caches.match('/offline.html');
               }

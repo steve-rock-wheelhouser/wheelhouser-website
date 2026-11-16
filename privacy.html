@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Privacy Policy for Wheelhouser LLC and its native desktop applications, local-first AI tools, and Marquee-Magic digital signage services.">
+    <meta name="description" content="Privacy Policy for Wheelhouser LLC and its native desktop applications, local-first AI tools, custom desktop app engagements, and Marquee-Magic digital signage services.">
     <title>Privacy Policy | Wheelhouser LLC</title>
     <link rel="canonical" href="https://wheelhouser.com/privacy.html">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Wheelhouser LLC">
     <meta property="og:title" content="Privacy Policy | Wheelhouser LLC">
-    <meta property="og:description" content="Privacy Policy and local-first data processing standards for Wheelhouser LLC and its applications.">
+    <meta property="og:description" content="Privacy Policy and local-first data processing standards for Wheelhouser LLC and its native desktop applications.">
     <meta property="og:url" content="https://wheelhouser.com/privacy.html">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/styles.css?v=2.0.3">
     <link rel="icon" href="images/wheelhouser-W/web/favicon.ico" type="image/x-icon">
     <link rel="manifest" href="/manifest.json">
 </head>
@@ -20,15 +22,25 @@
     <header class="site-header">
         <div class="container">
             <a href="index.html" class="logo">
-                <img src="images/wheelhouser-W/wheelhouser-07.png" alt="Wheelhouser Logo">
-                Wheelhouser LLC
+                <img src="images/wheelhouser-W/wheelhouser-07.png" alt="Wheelhouser LLC Emblem">
+                <span class="logo-wordmark">
+                    <span class="logo-title">Wheelhouser</span>
+                    <span class="logo-subtitle">Native Software Studio</span>
+                </span>
             </a>
-            
+
+            <button id="mobile-menu-toggle" class="mobile-menu-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+
             <nav>
-                <a href="index.html#portfolio">Software Portfolio</a>
-                <a href="https://repo.wheelhouser.com">Linux Repository</a>
-                <a href="about.html">Company</a>
-                <a href="index.html#contact" class="btn-primary">Contact</a>
+                <a href="index.html#flagship">Marquee-Magic</a>
+                <a href="index.html#core-suite">Core Suite</a>
+                <a href="products/index.html">All Products</a>
+                <a href="services.html" class="nav-highlight">Custom Desktop Apps</a>
+                <a href="about.html#cv">Executive CV</a>
+                <a href="https://repo.wheelhouser.com">Linux Repo</a>
+                <a href="services.html#inquire" class="btn-primary">Build Your App &rarr;</a>
             </nav>
         </div>
     </header>
@@ -36,71 +48,122 @@
     <main>
         <section class="brand-intro">
             <div class="container">
+                <div class="eyebrow-pill">
+                    <span class="eyebrow-dot"></span>
+                    Zero Tracking &bull; Zero Data Sales &bull; Zero Ads
+                </div>
                 <h1>Privacy Policy</h1>
-                <p class="brand-subtitle">Last Updated: October 10, 2025</p>
+                <p class="brand-subtitle">Last Updated: November 16, 2026</p>
             </div>
         </section>
 
-        <section class="container" style="padding-bottom: 6rem;">
-            <div class="content-block" style="max-width: 800px; margin: 0 auto;">
-                <p>This Privacy Policy explains how Wheelhouser LLC ("we," "us," or "our") collects, uses, and discloses information about you when you use our website, applications, and the services we provide.</p>
-                
-                <h2>General Principles</h2>
-                <p>At Wheelhouser LLC, we believe in privacy by design. Most of our applications are native tools that process your data locally on your device. We do not collect, store, or transmit your personal files, images, or data to our servers unless explicitly required for a specific service you have opted into (such as social media integration).</p>
+        <section class="container" style="padding: 4rem 1.5rem 6rem;">
+            <div class="content-block" style="max-width: 820px; margin: 0 auto; background: rgba(15, 23, 42, 0.7); border: 1px solid var(--border-color); border-radius: 16px; padding: 2.75rem;">
+                <div style="background: linear-gradient(145deg, rgba(16, 185, 129, 0.1), rgba(15, 23, 42, 0.85)); border: 1px solid rgba(16, 185, 129, 0.35); border-radius: 12px; padding: 1.35rem 1.5rem; margin-bottom: 2rem;">
+                    <h2 style="margin-top: 0; color: #34d399; font-size: 1.15rem; margin-bottom: 0.65rem;">Ironclad Privacy Charter</h2>
+                    <ul class="feature-list" style="margin-bottom: 0;">
+                        <li><strong>We Never Track You:</strong> Zero hidden telemetry beacons, usage surveillance, keystroke logging, or cross-app fingerprinting.</li>
+                        <li><strong>We Never Collect, Use, Mine, or Sell Customer Data:</strong> Your files, prompts, workflows, and operational records never leave your hardware unless you explicitly configure an optional third-party action.</li>
+                        <li><strong>We Never Push Ads:</strong> 100% ad-free software&mdash;no ad networks, sponsored clutter, or dark-pattern interruptions shoved into your experience.</li>
+                    </ul>
+                </div>
 
-                <h2>Information We Collect</h2>
-                <p>When you use specific features, such as the Meta Platform integration in Marquee-Magic, we may collect the following information provided by the platform:</p>
+                <p>This Privacy Policy explains how Wheelhouser LLC ("we," "us," or "our") collects, uses, and safeguards information when you use our website, native desktop applications, and custom engineering services.</p>
+
+                <h2>General Principles &mdash; Zero Telemetry by Design</h2>
+                <p>At Wheelhouser LLC, we engineer sovereign software with privacy by design. Our desktop applications (including the Core Workstation Suite and Visual AI utilities) execute locally on your workstation hardware. We do not embed background analytics, keystroke telemetry, or cloud document scraping into our native desktop software.</p>
+
+                <h2>Information Collected via Optional Integrations or Inquiries</h2>
+                <p>When you voluntarily submit a custom desktop app brief or enable third-party publishing integrations (such as the Meta Platform integration in Marquee-Magic), we may process only the information required to fulfill that request:</p>
                 <ul class="feature-list">
-                    <li>Your name, email address, and public profile information.</li>
-                    <li>A list of Facebook Pages and linked Instagram Business Accounts that you manage.</li>
-                    <li>An access token required to publish content to your selected Pages or accounts on your behalf.</li>
+                    <li>Contact details you provide directly (name, organization, email, phone number, and project scope).</li>
+                    <li>When authorized in Marquee-Magic: public profile metadata, managed Facebook Pages / Instagram Business Accounts, and OAuth access tokens required strictly to publish content you initiate.</li>
                 </ul>
 
                 <h2>How We Use Your Information</h2>
-                <p>We use the information we collect solely to:</p>
+                <p>We use any information you voluntarily provide solely to:</p>
                 <ul class="feature-list">
-                    <li>Authenticate your account.</li>
-                    <li>Enable you to post images and text from our applications directly to the platforms you select.</li>
-                    <li>Provide and improve our services.</li>
+                    <li>Respond to custom software architecture inquiries and fulfill contracted engineering engagements.</li>
+                    <li>Authenticate optional third-party social publishing workflows that you explicitly configure.</li>
+                    <li>Maintain cryptographic package repositories and software update channels.</li>
                 </ul>
-                <p><strong>We do not sell, trade, or otherwise transfer your personally identifiable information to outside parties.</strong></p>
+                <p><strong>We never sell, rent, trade, or monetize your personal or organizational data with third parties.</strong></p>
 
                 <h2>Data Security</h2>
-                <p>We implement a variety of security measures to maintain the safety of your personal information. Access tokens are stored securely and used only for the purposes you have authorized.</p>
+                <p>All software distributions are signed with 4096-bit RSA GPG keys, Microsoft Store / Authenticode certificates, or Apple notarization credentials. Any optional integration tokens remain stored locally on your authorized workstation.</p>
 
                 <h2>Contact Us</h2>
-                <p>If you have any questions about this Privacy Policy, please contact us at <a href="mailto:steve.rock@wheelhouser.com">steve.rock@wheelhouser.com</a>.</p>
+                <p>For privacy inquiries or enterprise security questionnaires, contact Founder &amp; Principal Systems Architect Steve Rock at <a href="mailto:steve.rock@wheelhouser.com" style="color: var(--primary-color); font-weight: 600;">steve.rock@wheelhouser.com</a> or <a href="tel:302-506-2442" style="color: var(--primary-color);">(302) 506-2442</a>.</p>
             </div>
         </section>
     </main>
 
     <footer class="site-footer" id="contact">
         <div class="container">
-            <div class="footer-row">
-                <img src="images/wheelhouser-icon/resized_icons/wheelhouser-icon_256x256.webp" alt="Wheelhouser Icon" class="footer-icon">
-                
-                <div class="footer-stack">
-                    <p class="footer-brand">Wheelhouser LLC</p>
-                    <p>Engineering the next generation of native tools.</p>
-                    <p class="footer-cta">See what we can do for you.</p>
-                    <p>156 Winners Circle, Magnolia, DE</p>
-                    <p><a href="tel:302-506-2442">302-506-2442</a></p>
-                    <p><a href="mailto:steve.rock@wheelhouser.com">steve.rock@wheelhouser.com</a></p>
-                    <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.7;">
-                        <a href="https://repo.wheelhouser.com" style="margin-right: 1.5rem;">Linux Repository</a>
-                        <a href="privacy.html">Privacy Policy</a>
+            <div class="footer-enterprise-grid">
+                <div class="footer-brand-col">
+                    <div class="footer-crest-row">
+                        <img src="images/wheelhouser-icon/resized_icons/wheelhouser-icon_256x256.webp" alt="Wheelhouser LLC Waterwheel Crest">
+                        <div>
+                            <div class="footer-brand-title">Wheelhouser LLC</div>
+                            <div class="footer-brand-sub">Sovereign Native Software</div>
+                        </div>
+                    </div>
+                    <p class="footer-mission">
+                        Engineering commercial digital signage ecosystems, native workstation suites, and custom cross-platform desktop applications. Built for privacy: we never track users, never use or sell customer data, and never push ads.
                     </p>
+                    <ul class="footer-contact-list">
+                        <li>156 Winners Circle, Magnolia, DE</li>
+                        <li>Phone: <a href="tel:302-506-2442">(302) 506-2442</a></li>
+                        <li>Email: <a href="mailto:steve.rock@wheelhouser.com">steve.rock@wheelhouser.com</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Flagship &amp; Core Suite</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://Marquee-Magic.com" target="_blank" rel="noopener">Marquee-Magic Platform &nearr;</a></li>
+                        <li><a href="products/web-browser.html">Wheelhouser Web Browser</a></li>
+                        <li><a href="products/file-browser.html">Wheelhouser File Browser</a></li>
+                        <li><a href="products/text-editor.html">Wheelhouser Text Editor</a></li>
+                        <li><a href="products/terminal.html">Wheelhouser Terminal</a></li>
+                        <li><a href="products/index.html">All 14 Native Products</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Custom Engineering</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Custom Desktop Apps</a></li>
+                        <li><a href="services.html#process">4-Phase Delivery Architecture</a></li>
+                        <li><a href="services.html#inquire">Scope Your Custom App</a></li>
+                        <li><a href="https://repo.wheelhouser.com">Enterprise Linux Repo (RPM/APT)</a></li>
+                        <li><a href="products/git-tools.html">Git Tools &amp; Dev Automation</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Leadership &amp; Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Wheelhouser LLC</a></li>
+                        <li><a href="about.html#cv">Steve Rock &mdash; Executive CV</a></li>
+                        <li><a href="https://github.com/steve-rock-wheelhouser" target="_blank" rel="noopener">GitHub Organization &nearr;</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom-bar">
+                <div>&copy; 2026 Wheelhouser LLC. All Rights Reserved.</div>
+                <div class="footer-trust-pills">
+                    <span class="trust-pill">Zero Tracking &bull; Never Sells Data &bull; Zero Ads</span>
+                    <span class="trust-pill">4096-Bit GPG &amp; Authenticode Signed</span>
+                    <span class="trust-pill">Windows &bull; macOS &bull; Linux Parity</span>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/service-worker.js')
-                .then(reg => console.log('Service Worker registered'))
-                .catch(err => console.log('Service Worker registration failed'));
-        }
-    </script>
+    <script src="js/main.js?v=2.0.1"></script>
 </body>
 </html>

@@ -13,7 +13,9 @@
     <meta property="og:url" content="https://wheelhouser.com/products/image-background-remover.html">
     <meta property="og:image" content="https://wheelhouser.com/images/image-background-remover/android-chrome-512x512.png">
     <meta name="twitter:card" content="summary">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../css/styles.css?v=2.0.3">
     <link rel="icon" href="../images/wheelhouser-W/web/favicon.ico" type="image/x-icon">
     <link rel="manifest" href="/manifest.json">
     <script type="application/ld+json">
@@ -46,15 +48,25 @@
     <header class="site-header">
         <div class="container">
             <a href="../index.html" class="logo">
-                <img src="../images/wheelhouser-W/wheelhouser-07.png" alt="Wheelhouser Logo">
-                Wheelhouser LLC
+                <img src="../images/wheelhouser-W/wheelhouser-07.png" alt="Wheelhouser LLC Emblem">
+                <span class="logo-wordmark">
+                    <span class="logo-title">Wheelhouser</span>
+                    <span class="logo-subtitle">Native Software Studio</span>
+                </span>
             </a>
+
+            <button id="mobile-menu-toggle" class="mobile-menu-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+
             <nav>
-                <a href="index.html">Products</a>
-                <a href="../index.html#portfolio">Software Portfolio</a>
-                <a href="https://repo.wheelhouser.com">Linux Repository</a>
-                <a href="../about.html">Company</a>
-                <a href="../index.html#contact" class="btn-primary">Contact</a>
+                <a href="../index.html#flagship">Marquee-Magic</a>
+                <a href="../index.html#core-suite">Core Suite</a>
+                <a href="index.html" class="active">All Products</a>
+                <a href="../services.html" class="nav-highlight">Custom Desktop Apps</a>
+                <a href="../about.html#cv">Executive CV</a>
+                <a href="https://repo.wheelhouser.com">Linux Repo</a>
+                <a href="../services.html#inquire" class="btn-primary">Build Your App &rarr;</a>
             </nav>
         </div>
     </header>
@@ -173,19 +185,65 @@
 
     <footer class="site-footer" id="contact">
         <div class="container">
-            <div class="footer-row">
-                <img src="../images/wheelhouser-icon/resized_icons/wheelhouser-icon_256x256.webp" alt="Wheelhouser Icon" class="footer-icon">
-                <div class="footer-stack">
-                    <p class="footer-brand">Wheelhouser LLC</p>
-                    <p>Engineering the next generation of native tools.</p>
-                    <p class="footer-cta">See what we can do for you.</p>
-                    <p>156 Winners Circle, Magnolia, DE</p>
-                    <p><a href="tel:302-506-2442">302-506-2442</a></p>
-                    <p><a href="mailto:steve.rock@wheelhouser.com">steve.rock@wheelhouser.com</a></p>
-                    <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.7;">
-                        <a href="https://repo.wheelhouser.com" style="margin-right: 1.5rem;">Linux Repository</a>
-                        <a href="../privacy.html">Privacy Policy</a>
+            <div class="footer-enterprise-grid">
+                <div class="footer-brand-col">
+                    <div class="footer-crest-row">
+                        <img src="../images/wheelhouser-icon/resized_icons/wheelhouser-icon_256x256.webp" alt="Wheelhouser LLC Waterwheel Crest">
+                        <div>
+                            <div class="footer-brand-title">Wheelhouser LLC</div>
+                            <div class="footer-brand-sub">Sovereign Native Software</div>
+                        </div>
+                    </div>
+                    <p class="footer-mission">
+                        Engineering commercial digital signage ecosystems, native workstation suites, and custom cross-platform desktop applications. Built for privacy: we never track users, never use or sell customer data, and never push ads.
                     </p>
+                    <ul class="footer-contact-list">
+                        <li>156 Winners Circle, Magnolia, DE</li>
+                        <li>Phone: <a href="tel:302-506-2442">(302) 506-2442</a></li>
+                        <li>Email: <a href="mailto:steve.rock@wheelhouser.com">steve.rock@wheelhouser.com</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Flagship &amp; Core Suite</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://Marquee-Magic.com" target="_blank" rel="noopener">Marquee-Magic Platform &nearr;</a></li>
+                        <li><a href="web-browser.html">Wheelhouser Web Browser</a></li>
+                        <li><a href="file-browser.html">Wheelhouser File Browser</a></li>
+                        <li><a href="text-editor.html">Wheelhouser Text Editor</a></li>
+                        <li><a href="terminal.html">Wheelhouser Terminal</a></li>
+                        <li><a href="index.html">All 14 Native Products</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Custom Engineering</h4>
+                    <ul class="footer-links">
+                        <li><a href="../services.html">Custom Desktop Apps</a></li>
+                        <li><a href="../services.html#process">4-Phase Delivery Architecture</a></li>
+                        <li><a href="../services.html#inquire">Scope Your Custom App</a></li>
+                        <li><a href="https://repo.wheelhouser.com">Enterprise Linux Repo (RPM/APT)</a></li>
+                        <li><a href="git-tools.html">Git Tools &amp; Dev Automation</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Leadership &amp; Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="../about.html">About Wheelhouser LLC</a></li>
+                        <li><a href="../about.html#cv">Steve Rock &mdash; Executive CV</a></li>
+                        <li><a href="https://github.com/steve-rock-wheelhouser" target="_blank" rel="noopener">GitHub Organization &nearr;</a></li>
+                        <li><a href="../privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom-bar">
+                <div>&copy; 2026 Wheelhouser LLC. All Rights Reserved.</div>
+                <div class="footer-trust-pills">
+                    <span class="trust-pill">Zero Tracking &bull; Never Sells Data &bull; Zero Ads</span>
+                    <span class="trust-pill">4096-Bit GPG &amp; Authenticode Signed</span>
+                    <span class="trust-pill">Windows &bull; macOS &bull; Linux Parity</span>
                 </div>
             </div>
         </div>
@@ -198,6 +256,6 @@
                 .catch(err => console.log('Service Worker registration failed'));
         }
     </script>
-    <script src="../js/main.js"></script>
+    <script src="../js/main.js?v=2.0.1"></script>
 </body>
 </html>

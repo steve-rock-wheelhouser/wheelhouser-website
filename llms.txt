@@ -1,20 +1,34 @@
 # Wheelhouser LLC
 
-> Wheelhouser LLC is a native software engineering company building privacy-first, high-performance, cross-platform desktop applications, developer toolchains, and digital signage ecosystems across Linux (Rocky Linux 10, AlmaLinux 10, Fedora 44/45, Debian 13, Ubuntu 26.04 LTS), Windows 10/11, and macOS (Apple Silicon & Intel).
+> Wheelhouser LLC is a privacy-first native software engineering studio—built with zero tracking, zero customer data use or sales, and zero ads—building the flagship Marquee-Magic digital signage ecosystem, a sovereign Cross-Platform Core Workstation Suite (Web Browser, File Browser, Text Editor, Terminal), and bespoke Custom Cross-Platform Desktop Applications across Windows 10/11, macOS (Apple Silicon & Intel), and Enterprise Linux (Rocky Linux 10, AlmaLinux 10, Fedora 44/45, Debian 13, Ubuntu 26.04 LTS).
 
 - Website: https://wheelhouser.com/
+- Custom Desktop App Engineering Services: https://wheelhouser.com/services.html
+- Founder & Principal Architect Executive CV (Steve Rock, M.S.): https://wheelhouser.com/about.html#cv
 - Complete LLM Technical Documentation: https://wheelhouser.com/llms-full.txt
-- Enterprise Linux Package Repository (RPM & APT): https://repo.wheelhouser.com
 - Flagship Digital Signage Platform: https://Marquee-Magic.com
+- Enterprise Linux Package Repository (RPM & APT): https://repo.wheelhouser.com
 - Location: 156 Winners Circle, Magnolia, DE
 - Contact: steve.rock@wheelhouser.com | +1-302-506-2442
 
-## Core Pages
+## Core Pages & Commercial Services
 
-- [Home](https://wheelhouser.com/): Overview of Wheelhouser LLC, the Marquee-Magic digital signage platform, and the Wheelhouser desktop software suite.
-- [Software Catalog & Engineering Capabilities](https://wheelhouser.com/products/): Complete cross-platform portfolio, supported Linux distributions, and cryptographic repository overview.
-- [About Wheelhouser LLC](https://wheelhouser.com/about.html): Company mission, privacy-first local AI philosophy, and native Python/Qt/GTK4 engineering stack.
-- [Privacy Policy](https://wheelhouser.com/privacy.html): Data handling and local-first processing guarantees.
+- [Home](https://wheelhouser.com/): Flagship Marquee-Magic showcase, Core Workstation Suite, Custom Desktop App Engineering, and Founder Steve Rock executive profile.
+- [Custom Cross-Platform Desktop Apps](https://wheelhouser.com/services.html): Commercial desktop software architecture, native Python/Qt6/C++/Rust development, cryptographic signing, and multi-OS installer delivery (Windows MSIX/Store, macOS notarized DMG, Linux RPM & DEB) with full client IP ownership.
+- [About Wheelhouser LLC & Steve Rock Executive CV](https://wheelhouser.com/about.html): Company manifesto and printable Curriculum Vitae for Founder & Principal Systems Architect Steve Rock (U.S. Air Force War on Terror Veteran, M.S. Optical Physics & NASA Space Grant Scholar, former Global PM of Industrial IoT at Xylem, former Lead Technical PM of Strategy at Optum).
+- [Software Catalog & Engineering Capabilities](https://wheelhouser.com/products/): Complete 14-product cross-platform portfolio and cryptographic Linux repository overview.
+- [Privacy Policy](https://wheelhouser.com/privacy.html): Ironclad privacy guarantee: Wheelhouser never tracks users, never uses or sells customer data, and never pushes ads.
+
+## Flagship Commercial Platform
+
+- [Marquee-Magic Digital Signage Platform](https://Marquee-Magic.com): Self-owned 4K/60fps commercial digital signage ecosystem with Designer Studio, portable & wall display players, and zero recurring SaaS lock-in.
+
+## Forefront Core Workstation Suite (Windows, macOS & Linux)
+
+- [Wheelhouser Web Browser](https://wheelhouser.com/products/web-browser.html): Privacy-focused QtWebEngine/Chromium desktop web browser featuring Wheelhouser Dark Mode, real-time seekable media stream transcoding, ad/tracker blocking, and unified local directory exploration.
+- [Wheelhouser File Browser](https://wheelhouser.com/products/file-browser.html): High-velocity dark-mode desktop file manager with dual-pane navigation, embedded directory-synchronized dual PTY terminals, and instant code/media previews.
+- [Wheelhouser Text Editor](https://wheelhouser.com/products/text-editor.html): Native cross-platform desktop code and text editor with multi-cursor editing, persistent code folding, regex search, spell check, and syntax highlighting across 15+ languages.
+- [Wheelhouser Terminal](https://wheelhouser.com/products/terminal.html): Hardware-accelerated multi-tab desktop terminal emulator with built-in POSIX/Unix utilities natively on Windows (SSH, SCP, Rsync, grep, awk, sed, curl), 24-bit TrueColor themes, and local WAI command assistance.
 
 ## Developer Ecosystem & System Automation
 
@@ -24,17 +38,10 @@
 - [Rocky Linux Setup](https://wheelhouser.com/products/rocky-linux-setup.html): Automated Enterprise Linux 10 workstation provisioning, CRB and EPEL 10 repository coordinator, developer toolchain deployment, and unattended Kickstart automation.
 - [Wheelhouser Create Icon Files](https://wheelhouser.com/products/create-icon-files.html): One-click cross-platform application icon generator producing Freedesktop Hicolor PNG/SVG trees, Windows `.ico`, and macOS `.icns` bundles.
 
-## Productivity & Desktop Applications
-
-- [Wheelhouser Text Editor](https://wheelhouser.com/products/text-editor.html): High-performance cross-platform desktop code and text editor with multi-cursor editing, code folding, regex search, spell check, and syntax highlighting for 15+ languages on Linux, Windows, and macOS.
-- [Wheelhouser File Browser](https://wheelhouser.com/products/file-browser.html): Modern dark-mode desktop file manager with dual-pane navigation, embedded synchronized PTY terminal emulation, and instant file/media previews across Linux, Windows, and macOS.
-- [Wheelhouser Web Browser](https://wheelhouser.com/products/web-browser.html): Privacy-focused QtWebEngine/Chromium desktop web browser featuring Wheelhouser Dark Mode, built-in media stream transcoding, ad/tracker blocking, and unified local file exploration.
-- [Wheelhouser Notez](https://wheelhouser.com/products/notez.html): Fast, local-first Markdown note-taking desktop utility.
-
-## Visual Intelligence & Audio (On-Device AI)
+## Visual Intelligence, Audio & Productivity (On-Device AI)
 
 - [Wheelhouser Image Background Remover](https://wheelhouser.com/products/image-background-remover.html): 100% offline, on-device AI subject isolation and batch background removal powered by RemBG for Linux, Windows, and macOS.
 - [Wheelhouser Image Inpainter](https://wheelhouser.com/products/image-inpainter.html): Local neural network photo object and blemish eraser powered by on-device LaMa AI for Linux, Windows, and macOS.
 - [Wheelhouser Image Resizer](https://wheelhouser.com/products/image-resizer.html): High-speed batch image resizer, aspect-ratio cropper, and format converter (PNG, WEBP, SVG, JPG) for Linux, Windows, and macOS.
 - [Wheelhouser Text to Speech](https://wheelhouser.com/products/text-to-speech.html): Lifelike neural voice synthesis and MP3 audio export powered by Microsoft Edge Neural TTS across Linux, Windows, and macOS.
-
+- [Wheelhouser Notez](https://wheelhouser.com/products/notez.html): Fast, local-first Markdown note-taking desktop utility.
