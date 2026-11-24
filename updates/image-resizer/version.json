@@ -2,17 +2,18 @@
   "windows": {
     "latest_version": "0.5.3",
     "url": "ms-windows-store://pdp/?productid=XP9CNJZX7011FP",
-    "release_notes": "Initial release of Image Resizer."
+    "direct_url": "https://wheelhouser.com/releases/image-resizer/v0.5.3/Image_Resizer_Setup.exe",
+    "release_notes": "Version 0.5.3 Release of Image Resizer."
   },
   "macos": {
-    "latest_version": "0.5.0",
-    "url": "https://github.com/WheelhouserLLC/ImageResizer/releases/download/v0.5.0/ImageResizer_0.5.0_macOS.dmg",
-    "release_notes": "Initial release of Image Resizer."
+    "latest_version": "0.3.0",
+    "url": "https://marquee-magic.com/assets/downloads/ImageResizer-0.3.0.dmg",
+    "release_notes": "Version 0.3.0 Release of Image Resizer."
   },
   "linux": {
-    "latest_version": "0.5.0",
-    "url": "https://github.com/WheelhouserLLC/ImageResizer/releases/download/v0.5.0/ImageResizer-0.5.0.x86_64.rpm",
-    "release_notes": "Initial release of Image Resizer."
+    "latest_version": "0.5.3",
+    "url": "https://wheelhouser.com/products/image-resizer.html",
+    "release_notes": "Linux packages migrating to repo.wheelhouser.com."
   },
-  "fallback_url": "https://wheelhouser.com/products/image-resizer"
+  "fallback_url": "https://wheelhouser.com/products/image-resizer.html"
 }

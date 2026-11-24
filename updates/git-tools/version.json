@@ -1,25 +1,25 @@
 {
   "windows": {
     "latest_version": "1.10.1",
-    "url": "https://staging.wheelhouser.com/downloads/git-tools/windows/git-tools-1.10.1-x64.msix",
-    "sideload_url": "https://staging.wheelhouser.com/downloads/git-tools/windows/git-tools-1.10.1-Sideload.msix",
-    "release_notes": "Version 1.4.1 Release: Strict Authenticode verification and cross-platform native shims."
+    "url": "https://marquee-magic.com/assets/downloads/git-tools-1.10.1-x64.msix",
+    "sideload_url": "https://marquee-magic.com/assets/downloads/git-tools-1.10.1-Sideload.msix",
+    "release_notes": "Version 1.10.1 Release: Strict Authenticode verification and cross-platform native shims."
   },
   "macos_arm64": {
     "latest_version": "1.10.1",
-    "url": "https://staging.wheelhouser.com/downloads/git-tools/macos/git-tools-1.10.1_macOS_arm64.dmg",
-    "release_notes": "Version 1.4.1 Release (Apple Silicon)."
+    "url": "https://marquee-magic.com/assets/downloads/git-tools-1.10.1_macOS_arm64.dmg",
+    "release_notes": "Version 1.10.1 Release (Apple Silicon)."
   },
   "macos_x86_64": {
     "latest_version": "1.10.1",
-    "url": "https://staging.wheelhouser.com/downloads/git-tools/macos/git-tools-1.10.1_macOS_x86_64.dmg",
-    "release_notes": "Version 1.4.1 Release (Intel)."
+    "url": "https://marquee-magic.com/assets/downloads/git-tools-1.10.1_macOS_x86_64.dmg",
+    "release_notes": "Version 1.10.1 Release (Intel)."
   },
   "linux": {
     "distro": "rocky/almalinux/fedora/debian/ubuntu",
     "latest_version": "1.10.1",
     "url": "https://repo.wheelhouser.com",
-    "release_notes": "Install or upgrade with: sudo dnf install 1.10.1"
+    "release_notes": "Install or upgrade with: sudo dnf install git-tools"
   },
   "fallback_url": "https://wheelhouser.com/products/git-tools.html"
 }

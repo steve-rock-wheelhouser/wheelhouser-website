@@ -146,7 +146,7 @@
                             <img src="../images/icons/windows.svg" alt="Windows" class="distro-header-icon">
                             <h4>Windows</h4>
                         </div>
-                        <a href="ms-windows-store://pdp/?productid=XPFFSVRL9XW59R" class="btn-download" id="download-windows">
+                        <a href="ms-windows-store://pdp/?productid=9MZNVMR6LJNM" class="btn-download" id="download-windows">
                             <img src="../images/icons/windows.svg" alt="Windows icon" class="os-icon">
                             <span id="download-windows-text">Microsoft Store (v0.10.0)</span>
                         </a>
@@ -157,11 +157,11 @@
                             <img src="../images/icons/apple.svg" alt="macOS" class="distro-header-icon">
                             <h4>macOS</h4>
                         </div>
-                        <a href="https://marqueemagic.shop/assets/downloads/File-Browser_0.8.4_macOS_arm64.dmg" class="btn-download" id="download-mac-arm" style="margin-bottom: 0.5rem;">
+                        <a href="https://marquee-magic.com/assets/downloads/File-Browser_0.10.0_macOS_arm64.dmg" class="btn-download" id="download-mac-arm" style="margin-bottom: 0.5rem;">
                             <img src="../images/icons/apple.svg" alt="Apple icon" class="os-icon">
                             <span id="download-mac-arm-text">Apple Silicon DMG (ARM64 &bull; v0.10.0)</span>
                         </a>
-                        <a href="https://marqueemagic.shop/assets/downloads/File-Browser_0.8.4_macOS_x86_64.dmg" class="btn-download" id="download-mac-x86">
+                        <a href="https://marquee-magic.com/assets/downloads/File-Browser_0.10.0_macOS_x86_64.dmg" class="btn-download" id="download-mac-x86">
                             <img src="../images/icons/apple.svg" alt="Apple icon" class="os-icon">
                             <span id="download-mac-x86-text">Intel DMG (x86_64 &bull; v0.10.0)</span>
                         </a>
@@ -176,7 +176,7 @@
                         </div>
                         <a href="https://repo.wheelhouser.com" class="btn-download" id="download-linux" style="margin-bottom: 0.5rem;">
                             <img src="../images/icons/linux.svg" alt="Linux icon" class="os-icon">
-                            <span id="download-linux-text">Wheelhouser Package Repo (v0.8.4)</span>
+                            <span id="download-linux-text">Wheelhouser Package Repo (v0.10.0)</span>
                         </a>
                         <div class="code-snippet-box">
                             <pre id="cmd-file-browser-dnf"><code>sudo dnf install -y file-browser</code></pre>
@@ -343,8 +343,11 @@ sudo apt update &amp;&amp; sudo apt install -y file-browser</code></pre>
 
                 const winVer = data.windows?.latest_version;
                 const winUrl = data.windows?.url;
-                const macVer = data.macos?.latest_version;
-                const macUrl = data.macos?.url;
+                const macArmVer = data.macos_arm64?.latest_version || data.macos?.latest_version;
+                const macArmUrl = data.macos_arm64?.url || data.macos?.url;
+                const macX86Ver = data.macos_x86_64?.latest_version || data.macos?.latest_version;
+                const macX86Url = data.macos_x86_64?.url || data.macos?.url;
+                const macVer = macArmVer || macX86Ver;
                 const linuxVer = data.linux?.latest_version;
                 const linuxUrl = data.linux?.url;
 
@@ -360,11 +363,23 @@ sudo apt update &amp;&amp; sudo apt install -y file-browser</code></pre>
                 if (winLink && winUrl) winLink.href = winUrl;
                 if (winText && winVer) winText.textContent = `Microsoft Store (v${winVer})`;
 
+                // macOS ARM64
+                const macArmLink = document.getElementById('download-mac-arm');
+                const macArmText = document.getElementById('download-mac-arm-text');
+                if (macArmLink && macArmUrl) macArmLink.href = macArmUrl;
+                if (macArmText && macArmVer) macArmText.innerHTML = `Apple Silicon DMG (ARM64 &bull; v${macArmVer})`;
+
+                // macOS x86_64
+                const macX86Link = document.getElementById('download-mac-x86');
+                const macX86Text = document.getElementById('download-mac-x86-text');
+                if (macX86Link && macX86Url) macX86Link.href = macX86Url;
+                if (macX86Text && macX86Ver) macX86Text.innerHTML = `Intel DMG (x86_64 &bull; v${macX86Ver})`;
+
                 // Linux
                 const linuxLink = document.getElementById('download-linux');
                 const linuxText = document.getElementById('download-linux-text');
                 if (linuxLink && linuxUrl) linuxLink.href = linuxUrl;
-                if (linuxText && linuxVer) linuxText.textContent = `Linux Repository (v${linuxVer})`;
+                if (linuxText && linuxVer) linuxText.textContent = `Wheelhouser Package Repo (v${linuxVer})`;
 
                 // Specs list
                 const specsVersion = document.getElementById('specs-version');

@@ -2,17 +2,17 @@
   "windows": {
     "latest_version": "1.0.0",
     "url": "ms-windows-store://pdp/?productid=XP9M157TJMC9HC",
-    "release_notes": "Initial release of Template App."
+    "release_notes": "Template application manifest."
   },
   "macos": {
     "latest_version": "1.0.0",
-    "url": "https://github.com/WheelhouserLLC/template-app/releases/download/v1.0.0/Template-App_1.0.0_macOS.dmg",
-    "release_notes": "Initial release of Template App."
+    "url": "https://wheelhouser.com/products/index.html",
+    "release_notes": "Template application manifest."
   },
   "linux": {
     "latest_version": "1.0.0",
-    "url": "https://github.com/WheelhouserLLC/template-app/releases/download/v1.0.0/Template-App-1.0.0.x86_64.rpm",
-    "release_notes": "Initial release of Template App."
+    "url": "https://wheelhouser.com/products/index.html",
+    "release_notes": "Template application manifest."
   },
-  "fallback_url": "https://wheelhouser.com/products/template-app"
+  "fallback_url": "https://wheelhouser.com/products/index.html"
 }

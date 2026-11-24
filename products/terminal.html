@@ -154,11 +154,15 @@
                     <div class="download-group">
                         <div class="download-group-header">
                             <img src="../images/icons/apple.svg" alt="macOS" class="distro-header-icon">
-                            <h4>macOS (Apple Silicon &amp; Intel)</h4>
+                            <h4>macOS</h4>
                         </div>
-                        <a href="https://github.com/WheelhouserLLC/Terminal/releases/download/v0.32.0/Terminal_0.32.0_macOS.dmg" class="btn-download" id="download-mac">
+                        <a href="https://marquee-magic.com/assets/downloads/Terminal_0.32.0_macOS_arm64.dmg" class="btn-download" id="download-mac-arm" style="margin-bottom: 0.5rem;">
                             <img src="../images/icons/apple.svg" alt="Apple icon" class="os-icon">
-                            <span id="download-mac-text">macOS Universal / DMG (v0.32.0)</span>
+                            <span id="download-mac-arm-text">Apple Silicon DMG (ARM64 &bull; v0.32.0)</span>
+                        </a>
+                        <a href="https://marquee-magic.com/assets/downloads/Terminal_0.32.0_macOS_x86_64.dmg" class="btn-download" id="download-mac-x86">
+                            <img src="../images/icons/apple.svg" alt="Apple icon" class="os-icon">
+                            <span id="download-mac-x86-text">Intel DMG (x86_64 &bull; v0.32.0)</span>
                         </a>
                     </div>
 
@@ -330,8 +334,11 @@ sudo apt update &amp;&amp; sudo apt install -y terminal</code></pre>
 
                 const winVer = data.windows?.latest_version;
                 const winUrl = data.windows?.url;
-                const macVer = data.macos?.latest_version || data.macos_arm64?.latest_version;
-                const macUrl = data.macos?.url || data.macos_arm64?.url;
+                const macArmVer = data.macos_arm64?.latest_version || data.macos?.latest_version;
+                const macArmUrl = data.macos_arm64?.url || data.macos?.url;
+                const macX86Ver = data.macos_x86_64?.latest_version || data.macos?.latest_version;
+                const macX86Url = data.macos_x86_64?.url || data.macos?.url;
+                const macVer = macArmVer || macX86Ver;
                 const linuxVer = data.linux?.latest_version;
 
                 const pillEl = document.getElementById('terminal-version-pill');
@@ -344,10 +351,15 @@ sudo apt update &amp;&amp; sudo apt install -y terminal</code></pre>
                 if (winLink && winUrl) winLink.href = winUrl;
                 if (winText && winVer) winText.textContent = `Microsoft Store (v${winVer})`;
 
-                const macLink = document.getElementById('download-mac');
-                const macText = document.getElementById('download-mac-text');
-                if (macLink && macUrl) macLink.href = macUrl;
-                if (macText && macVer) macText.textContent = `macOS Universal / DMG (v${macVer})`;
+                const macArmLink = document.getElementById('download-mac-arm');
+                const macArmText = document.getElementById('download-mac-arm-text');
+                if (macArmLink && macArmUrl) macArmLink.href = macArmUrl;
+                if (macArmText && macArmVer) macArmText.innerHTML = `Apple Silicon DMG (ARM64 &bull; v${macArmVer})`;
+
+                const macX86Link = document.getElementById('download-mac-x86');
+                const macX86Text = document.getElementById('download-mac-x86-text');
+                if (macX86Link && macX86Url) macX86Link.href = macX86Url;
+                if (macX86Text && macX86Ver) macX86Text.innerHTML = `Intel DMG (x86_64 &bull; v${macX86Ver})`;
 
                 const linuxText = document.getElementById('download-linux-text');
                 if (linuxText && linuxVer) linuxText.textContent = `Wheelhouser Package Repo (v${linuxVer})`;

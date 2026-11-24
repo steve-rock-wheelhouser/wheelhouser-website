@@ -2,17 +2,28 @@
   "windows": {
     "latest_version": "0.10.0",
     "url": "ms-windows-store://pdp/?productid=9MZNVMR6LJNM",
-    "release_notes": "Initial release of File Browser."
+    "release_notes": "Version 0.10.0 Release."
   },
   "macos": {
     "latest_version": "0.10.0",
-    "url": "https://github.com/WheelhouserLLC/FileBrowser/releases/download/v0.10.0/FileBrowser_0.10.0_macOS.dmg",
-    "release_notes": "Initial release of File Browser."
+    "url": "https://marquee-magic.com/assets/downloads/File-Browser_0.10.0_macOS_arm64.dmg",
+    "release_notes": "Version 0.10.0 Release."
+  },
+  "macos_arm64": {
+    "latest_version": "0.10.0",
+    "url": "https://marquee-magic.com/assets/downloads/File-Browser_0.10.0_macOS_arm64.dmg",
+    "release_notes": "Version 0.10.0 Release (Apple Silicon)."
+  },
+  "macos_x86_64": {
+    "latest_version": "0.10.0",
+    "url": "https://marquee-magic.com/assets/downloads/File-Browser_0.10.0_macOS_x86_64.dmg",
+    "release_notes": "Version 0.10.0 Release (Intel)."
   },
   "linux": {
+    "distro": "rocky/almalinux/fedora/debian/ubuntu",
     "latest_version": "0.10.0",
-    "url": "https://github.com/WheelhouserLLC/FileBrowser/releases/download/v0.10.0/FileBrowser-0.10.0.x86_64.rpm",
+    "url": "https://repo.wheelhouser.com",
     "release_notes": "Install or upgrade with: sudo dnf install file-browser"
   },
-  "fallback_url": "https://wheelhouser.com/products/file-browser"
+  "fallback_url": "https://wheelhouser.com/products/file-browser.html"
 }

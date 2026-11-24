@@ -159,9 +159,13 @@
                             <img src="../images/icons/apple.svg" alt="macOS" class="distro-header-icon">
                             <h4>macOS</h4>
                         </div>
-                        <a href="https://github.com/steve-rock-wheelhouser/text-editor" class="btn-download" id="download-mac" target="_blank" rel="noopener">
+                        <a href="https://marquee-magic.com/assets/downloads/Text-Editor_0.14.2_macOS_arm64.dmg" class="btn-download" id="download-mac-arm" style="margin-bottom: 0.5rem;">
                             <img src="../images/icons/apple.svg" alt="Apple icon" class="os-icon">
-                            <span id="download-mac-text">GitHub Releases (macOS)</span>
+                            <span id="download-mac-arm-text">Apple Silicon DMG (ARM64 &bull; v0.14.2)</span>
+                        </a>
+                        <a href="https://marquee-magic.com/assets/downloads/Text-Editor_0.14.2_macOS_x86_64.dmg" class="btn-download" id="download-mac-x86">
+                            <img src="../images/icons/apple.svg" alt="Apple icon" class="os-icon">
+                            <span id="download-mac-x86-text">Intel DMG (x86_64 &bull; v0.14.2)</span>
                         </a>
                     </div>
 
@@ -371,6 +375,10 @@ sudo apt update &amp;&amp; sudo apt install -y text-editor</code></pre>
 
                 const winVer = data.windows?.latest_version;
                 const winUrl = data.windows?.url;
+                const macArmVer = data.macos_arm64?.latest_version || data.macos?.latest_version;
+                const macArmUrl = data.macos_arm64?.url || data.macos?.url;
+                const macX86Ver = data.macos_x86_64?.latest_version || data.macos?.latest_version;
+                const macX86Url = data.macos_x86_64?.url || data.macos?.url;
                 const linuxVer = data.linux?.latest_version;
                 const linuxUrl = data.linux?.url;
 
@@ -386,6 +394,16 @@ sudo apt update &amp;&amp; sudo apt install -y text-editor</code></pre>
                     const btn = document.getElementById('download-windows');
                     if (btn) btn.href = winUrl;
                 }
+                const macArmLink = document.getElementById('download-mac-arm');
+                const macArmText = document.getElementById('download-mac-arm-text');
+                if (macArmLink && macArmUrl) macArmLink.href = macArmUrl;
+                if (macArmText && macArmVer) macArmText.innerHTML = `Apple Silicon DMG (ARM64 &bull; v${macArmVer})`;
+
+                const macX86Link = document.getElementById('download-mac-x86');
+                const macX86Text = document.getElementById('download-mac-x86-text');
+                if (macX86Link && macX86Url) macX86Link.href = macX86Url;
+                if (macX86Text && macX86Ver) macX86Text.innerHTML = `Intel DMG (x86_64 &bull; v${macX86Ver})`;
+
                 if (linuxVer) {
                     const el = document.getElementById('download-linux-text');
                     if (el) el.textContent = `Wheelhouser Linux Repo (v${linuxVer})`;

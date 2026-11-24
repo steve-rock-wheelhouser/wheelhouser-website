@@ -1,18 +1,18 @@
 {
   "windows": {
     "latest_version": "0.9.29",
-    "url": "https://marqueemagic.shop/assets/downloads/Video-Stitcher_Setup.exe",
-    "release_notes": "Full Product Release."
+    "url": "https://wheelhouser.com/products/index.html",
+    "release_notes": "Legacy utility manifest."
   },
   "macos": {
     "latest_version": "0.9.29",
-    "url": "https://marqueemagic.shop/assets/downloads/Video-Stitcher_Setup_macOS.dmg",
-    "release_notes": "Full Product Release."
+    "url": "https://wheelhouser.com/products/index.html",
+    "release_notes": "Legacy utility manifest."
   },
   "linux": {
     "latest_version": "0.9.29",
-    "url": "https://marqueemagic.shop",
-    "release_notes": "Full Product Release."
+    "url": "https://wheelhouser.com/products/index.html",
+    "release_notes": "Legacy utility manifest."
   },
-  "fallback_url": "https://wheelhouser.com/products/video-stitcher"
+  "fallback_url": "https://wheelhouser.com/products/index.html"
 }
