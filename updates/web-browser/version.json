@@ -10,9 +10,9 @@
     "release_notes": "Version 0.24.0 Release (Apple Silicon)."
   },
   "macos_x86_64": {
-    "latest_version": "0.23.0",
-    "url": "https://marquee-magic.com/assets/downloads/Web-Browser_0.23.0_macOS_x86_64.dmg",
-    "release_notes": "Version 0.23.0 Release (Intel)."
+    "latest_version": "0.24.0",
+    "url": "https://marquee-magic.com/assets/downloads/Web-Browser_0.24.0_macOS_x86_64.dmg",
+    "release_notes": "Version 0.24.0 Release (Intel)."
   },
   "linux": {
     "distro": "rocky/almalinux/fedora/debian/ubuntu",
