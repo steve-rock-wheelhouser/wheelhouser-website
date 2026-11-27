@@ -92,7 +92,7 @@ sudo apt update
 ### 2. Wheelhouser Web Browser (`web-browser`) — Core Workstation Suite
 - **URL:** https://wheelhouser.com/products/web-browser.html
 - **Package Name:** `web-browser`
-- **Version:** 0.24.0
+- **Version:** 0.24.2
 - **Stack:** Python 3.12/3.13, PySide6, QtWebEngine (Chromium)
 - **Platforms:** Rocky Linux 10, AlmaLinux 10, Fedora 44, Debian 13, Ubuntu 26.04 LTS, Windows 10/11, macOS 12+ (ARM64 & Intel)
 - **Capabilities:** Privacy-first desktop browser with built-in ad/tracker blocking, real-time seekable media stream transcoding, live-favicon bookmark trees, multi-tab session persistence, and unified local directory browsing.
